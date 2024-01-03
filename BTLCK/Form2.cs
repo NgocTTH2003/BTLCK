@@ -12,6 +12,8 @@ namespace BTLCK
 {
     public partial class Form2 : Form
     {
+        bool sidebarExpand;
+        bool DanhMucCollapsed;
         public Form2()
         {
             InitializeComponent();
@@ -31,5 +33,22 @@ namespace BTLCK
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DanhMucPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
