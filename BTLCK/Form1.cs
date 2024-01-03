@@ -15,6 +15,8 @@ namespace BTLCK
         public Form1()
         {
             InitializeComponent();
+            // oop
+            // test
         }
 
         private void label1_Click(object sender, EventArgs e)
