@@ -258,7 +258,7 @@
             this.DanhMucPanel.Controls.Add(this.panel9);
             this.DanhMucPanel.Controls.Add(this.panel8);
             this.DanhMucPanel.Controls.Add(this.panel3);
-            this.DanhMucPanel.Location = new System.Drawing.Point(416, 154);
+            this.DanhMucPanel.Location = new System.Drawing.Point(671, 117);
             this.DanhMucPanel.Name = "DanhMucPanel";
             this.DanhMucPanel.Size = new System.Drawing.Size(290, 380);
             this.DanhMucPanel.TabIndex = 1;
