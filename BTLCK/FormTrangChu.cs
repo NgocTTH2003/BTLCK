@@ -203,12 +203,14 @@ namespace BTLCK
         {
 
         }
-
+        //mở form danh mục thiết bị
         private void buttonDMThietBi_Click(object sender, EventArgs e)
         {
-            FormDanhMucThietBi newForm = new FormDanhMucThietBi();
-            newForm.Show();
+            FormDanhMucThietBi formDanhMucThietBi = new FormDanhMucThietBi(this);
+            formDanhMucThietBi.Show();
             this.Hide();
         }
+
+        
     }
 }
