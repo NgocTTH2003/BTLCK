@@ -118,7 +118,7 @@ namespace BTLCK
             if (TheoDoiExpand == false)
             {
                 TheoDoiContainer.Height += 5;
-                if (TheoDoiContainer.Height >= 259)
+                if (TheoDoiContainer.Height >= 337)
                 {
                     TheoDoiTimer.Stop();
                     TheoDoiExpand = true;

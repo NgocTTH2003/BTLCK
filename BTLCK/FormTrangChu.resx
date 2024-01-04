@@ -738,7 +738,7 @@
         AAAAAAAAAAAAYBStfQF1SVkEsij+/AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="buttonBaoCaoNhapMua.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonBaoCaoNhapXuat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAATrzAAE68wEXCzLMAAAAxElE
@@ -814,13 +814,23 @@
   <metadata name="TaiKhoanTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>571, 17</value>
   </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAATrzAAE68wEXCzLMAAAAxElE
+        QVR4Xu3WMQrCQBCF4a3UswgKehE9oxghXkWw8RbqCbTQ9yDCFGOZZvJ/8IOEbcZssmkAAAAAAAAAAADA
+        qBZqq/ZqpzZqribBg5/VU72HHuqkVqo0D39Tnz9d1VqV5C3eq2zw2FGVfBx8973Vs6FjXuN3Qjl+2b1U
+        NnTMa7y2nMn/Ad7Wd5UNHfOako/ATPmoy4aOHZTXluRz3kddNri7qKUqzed8p+KHkH/7zpcf/if7FPY1
+        AAAAAAAAAAAAYBStfQF1SVkEsij+/AAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>67</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABmgAAAOcCAYAAABKQj5wAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAADx0RVh0Q29tbWVudAB4cjpkOkRBRjQ1b1ZNQ1BVOjE3LGo6NjQxNDY2NjE4NDQ0
+        wQAADsEBuJFr7QAAADx0RVh0Q29tbWVudAB4cjpkOkRBRjQ1b1ZNQ1BVOjE3LGo6NjQxNDY2NjE4NDQ0
         NjE0NjE5Nyx0OjI0MDEwNDA4+2BUBgAA/2pJREFUeF7s/feflfWaJ3o//8NzznSfeebMnJ7pnu7ee/cO
         WlWgbrcRAwoKiKJgDqgkySo5Z8lQFDnnnHNGQbJKBnfOs/PunjnnzFzP+t5FYVGsIggsAd++Xu/XvWqt
         O637Xi9+uD9e1/X/mfb5ugAAAAAAAKBwBDQAAAAAAAAFJqABAAAAAAAoMAENAAAAAABAgQloAAAAAAAA
