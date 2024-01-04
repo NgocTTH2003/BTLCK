@@ -203,5 +203,12 @@ namespace BTLCK
         {
 
         }
+
+        private void buttonDMThietBi_Click(object sender, EventArgs e)
+        {
+            FormDanhMucThietBi newForm = new FormDanhMucThietBi();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }
