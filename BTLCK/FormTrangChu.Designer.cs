@@ -196,6 +196,7 @@
             this.buttonDMKhoVatTu.Text = "             Kho vật tư";
             this.buttonDMKhoVatTu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDMKhoVatTu.UseVisualStyleBackColor = false;
+            this.buttonDMKhoVatTu.Click += new System.EventHandler(this.buttonDMKhoVatTu_Click);
             // 
             // panel11
             // 
@@ -220,6 +221,7 @@
             this.buttonDMKhoaPhong.Text = "             Khoa/Phòng";
             this.buttonDMKhoaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDMKhoaPhong.UseVisualStyleBackColor = false;
+            this.buttonDMKhoaPhong.Click += new System.EventHandler(this.buttonDMKhoaPhong_Click);
             // 
             // panel10
             // 
@@ -244,6 +246,7 @@
             this.buttonDMNhanVien.Text = "             Nhân viên";
             this.buttonDMNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDMNhanVien.UseVisualStyleBackColor = false;
+            this.buttonDMNhanVien.Click += new System.EventHandler(this.buttonDMNhanVien_Click);
             // 
             // panel9
             // 
@@ -268,6 +271,7 @@
             this.buttonDMNhaCungCap.Text = "             Nhà cung cấp";
             this.buttonDMNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDMNhaCungCap.UseVisualStyleBackColor = false;
+            this.buttonDMNhaCungCap.Click += new System.EventHandler(this.buttonDMNhaCungCap_Click);
             // 
             // panel8
             // 

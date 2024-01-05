@@ -54,22 +54,41 @@ namespace BTLCK
             dateTimePickerNSX.CustomFormat = "yyyy-MM-dd";
         }
 
-        private void Them_Click(object sender, EventArgs e)
+        private void buttonThem_Click(object sender, EventArgs e)
         {
             //gọi hàm để hiển thị/ẩn groupbox
-            ToggleGroupBox();
+            ShowGroupBox();
         }
 
 
-        private void ToggleGroupBox()
+        private void ShowGroupBox()
         {
-            //đảo ngược trạng thái hiển thị của groupbox
-            groupBoxThemThietBi.Visible = !groupBoxThemThietBi.Visible;
+            groupBoxThemThietBi.Visible = true;
         }
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            ToggleGroupBox();
+
         }
+
+        private void buttonKhoiTao_Click(object sender, EventArgs e)
+        {
+            textBoxTenTB.ResetText();
+            textBoxGiaTB.ResetText();
+            textBoxMaKho.ResetText();
+            textBoxMaNV.ResetText();
+            textBoxNCC.ResetText();
+            comboBoxLoaiTB.Text = string.Empty;
+            comboBoxTTTB.Text = string.Empty;
+            comboBoxVTDat.Text = string.Empty;
+            dateTimePickerNSX.Text = string.Empty;
+        }
+
+        private void buttonHuy_Click(object sender, EventArgs e)
+        {
+            groupBoxThemThietBi.Visible = false;
+        }
+
+
     }
 }
