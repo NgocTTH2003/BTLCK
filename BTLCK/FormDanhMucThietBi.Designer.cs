@@ -275,7 +275,7 @@
             this.groupBoxThemThietBi.Size = new System.Drawing.Size(426, 491);
             this.groupBoxThemThietBi.TabIndex = 25;
             this.groupBoxThemThietBi.TabStop = false;
-            this.groupBoxThemThietBi.Text = "Thêm thiết bị";
+            this.groupBoxThemThietBi.Text = "Thông tin";
             // 
             // labelLoaiTB
             // 
@@ -363,6 +363,7 @@
             this.buttonSua.TabIndex = 23;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // pictureBox3
             // 
@@ -389,6 +390,7 @@
             this.buttonThem.TabIndex = 21;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = false;
+            this.buttonThem.Click += new System.EventHandler(this.Them_Click);
             // 
             // pictureBox2
             // 

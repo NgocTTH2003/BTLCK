@@ -17,6 +17,15 @@ namespace BTLCK
             InitializeComponent();
             this.formTrangChu = formTrangChu;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+            //sự kiện ẩn hiện groupbox
+            this.Load += FormDanhMucThietBi_Load;
+        }
+
+        private void FormDanhMucThietBi_Load(object sender, EventArgs e)
+        {
+            //khi hiển thị form thì ẩn groupboxThemThietBi
+            groupBoxThemThietBi.Visible = false;
         }
 
         private void labelTimKiem_Click(object sender, EventArgs e)
@@ -29,10 +38,6 @@ namespace BTLCK
 
         }
 
-        private void FormDanhMucThietBi_Load(object sender, EventArgs e)
-        {
-
-        }
 
         //nhấn back để trở về trang chủ 
         private FormTrangChu formTrangChu;
@@ -43,15 +48,28 @@ namespace BTLCK
             this.Close();
         }
 
-        private void groupBoxThemThietBi_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void dateTimePickerNSX_ValueChanged(object sender, EventArgs e)
         {
             dateTimePickerNSX.Format = DateTimePickerFormat.Custom;
             dateTimePickerNSX.CustomFormat = "yyyy-MM-dd";
+        }
+
+        private void Them_Click(object sender, EventArgs e)
+        {
+            //gọi hàm để hiển thị/ẩn groupbox
+            ToggleGroupBox();
+        }
+
+
+        private void ToggleGroupBox()
+        {
+            //đảo ngược trạng thái hiển thị của groupbox
+            groupBoxThemThietBi.Visible = !groupBoxThemThietBi.Visible;
+        }
+
+        private void buttonSua_Click(object sender, EventArgs e)
+        {
+            ToggleGroupBox();
         }
     }
 }
