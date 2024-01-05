@@ -211,6 +211,9 @@ namespace BTLCK
             this.Hide();
         }
 
-        
+        private void panel25_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

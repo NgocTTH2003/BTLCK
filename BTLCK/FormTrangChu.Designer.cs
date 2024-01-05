@@ -125,6 +125,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.DanhMucContainer);
@@ -803,12 +805,13 @@
             // 
             // TenPhanMem
             // 
+            this.TenPhanMem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TenPhanMem.AutoSize = true;
             this.TenPhanMem.BackColor = System.Drawing.Color.Transparent;
-            this.TenPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenPhanMem.Location = new System.Drawing.Point(300, 124);
+            this.TenPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenPhanMem.Location = new System.Drawing.Point(330, 156);
             this.TenPhanMem.Name = "TenPhanMem";
-            this.TenPhanMem.Size = new System.Drawing.Size(828, 33);
+            this.TenPhanMem.Size = new System.Drawing.Size(777, 31);
             this.TenPhanMem.TabIndex = 1;
             this.TenPhanMem.Text = "HỆ THỐNG QUẢN LÝ THIẾT BỊ Y TẾ TRONG BỆNH VIỆN";
             // 
@@ -826,6 +829,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormTrangChu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
