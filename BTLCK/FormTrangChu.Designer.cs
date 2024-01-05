@@ -46,6 +46,13 @@
             this.buttonDMThietBi = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DanhMuc = new System.Windows.Forms.Button();
+            this.NhapVaKiemKeContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.NhapVaKiemKe = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.buttonNhapMuaTB = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.buttonKiemKeTB = new System.Windows.Forms.Button();
             this.TheoDoiContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,13 +62,8 @@
             this.buttonSuaChuaTB = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.buttonBaoTriTB = new System.Windows.Forms.Button();
-            this.NhapVaKiemKeContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.NhapVaKiemKe = new System.Windows.Forms.Button();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.buttonNhapMuaTB = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.buttonKiemKeTB = new System.Windows.Forms.Button();
+            this.panelThanhLy = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.BaoCaoContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.BaoCao = new System.Windows.Forms.Button();
@@ -87,8 +89,6 @@
             this.TheoDoiTimer = new System.Windows.Forms.Timer(this.components);
             this.BaoCaoTimer = new System.Windows.Forms.Timer(this.components);
             this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
-            this.panelThanhLy = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.TenPhanMem = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -100,15 +100,16 @@
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.NhapVaKiemKeContainer.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
             this.TheoDoiContainer.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.NhapVaKiemKeContainer.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
+            this.panelThanhLy.SuspendLayout();
             this.BaoCaoContainer.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel18.SuspendLayout();
@@ -120,7 +121,6 @@
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel22.SuspendLayout();
-            this.panelThanhLy.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -317,6 +317,90 @@
             this.DanhMuc.UseVisualStyleBackColor = false;
             this.DanhMuc.Click += new System.EventHandler(this.DanhMuc_Click);
             // 
+            // NhapVaKiemKeContainer
+            // 
+            this.NhapVaKiemKeContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.NhapVaKiemKeContainer.Controls.Add(this.panel4);
+            this.NhapVaKiemKeContainer.Controls.Add(this.panel16);
+            this.NhapVaKiemKeContainer.Controls.Add(this.panel17);
+            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 286);
+            this.NhapVaKiemKeContainer.Name = "NhapVaKiemKeContainer";
+            this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(290, 58);
+            this.NhapVaKiemKeContainer.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.NhapVaKiemKe);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(290, 58);
+            this.panel4.TabIndex = 3;
+            // 
+            // NhapVaKiemKe
+            // 
+            this.NhapVaKiemKe.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.NhapVaKiemKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.NhapVaKiemKe.Image = ((System.Drawing.Image)(resources.GetObject("NhapVaKiemKe.Image")));
+            this.NhapVaKiemKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NhapVaKiemKe.Location = new System.Drawing.Point(-35, -17);
+            this.NhapVaKiemKe.Name = "NhapVaKiemKe";
+            this.NhapVaKiemKe.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.NhapVaKiemKe.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NhapVaKiemKe.Size = new System.Drawing.Size(340, 86);
+            this.NhapVaKiemKe.TabIndex = 2;
+            this.NhapVaKiemKe.Text = "             Quản lý thiết bị";
+            this.NhapVaKiemKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NhapVaKiemKe.UseVisualStyleBackColor = false;
+            this.NhapVaKiemKe.Click += new System.EventHandler(this.NhapVaKiemKe_Click);
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.buttonNhapMuaTB);
+            this.panel16.Location = new System.Drawing.Point(3, 67);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(290, 58);
+            this.panel16.TabIndex = 8;
+            // 
+            // buttonNhapMuaTB
+            // 
+            this.buttonNhapMuaTB.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.buttonNhapMuaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonNhapMuaTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonNhapMuaTB.Image")));
+            this.buttonNhapMuaTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNhapMuaTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonNhapMuaTB.Name = "buttonNhapMuaTB";
+            this.buttonNhapMuaTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonNhapMuaTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonNhapMuaTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonNhapMuaTB.TabIndex = 2;
+            this.buttonNhapMuaTB.Text = "           Quản lý hóa đơn";
+            this.buttonNhapMuaTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNhapMuaTB.UseVisualStyleBackColor = false;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.buttonKiemKeTB);
+            this.panel17.Location = new System.Drawing.Point(3, 131);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(290, 58);
+            this.panel17.TabIndex = 9;
+            // 
+            // buttonKiemKeTB
+            // 
+            this.buttonKiemKeTB.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.buttonKiemKeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonKiemKeTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonKiemKeTB.Image")));
+            this.buttonKiemKeTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonKiemKeTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonKiemKeTB.Name = "buttonKiemKeTB";
+            this.buttonKiemKeTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonKiemKeTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonKiemKeTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonKiemKeTB.TabIndex = 2;
+            this.buttonKiemKeTB.Text = "           Kiểm kê thiết bị";
+            this.buttonKiemKeTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonKiemKeTB.UseVisualStyleBackColor = false;
+            // 
             // TheoDoiContainer
             // 
             this.TheoDoiContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -428,89 +512,29 @@
             this.buttonBaoTriTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBaoTriTB.UseVisualStyleBackColor = false;
             // 
-            // NhapVaKiemKeContainer
+            // panelThanhLy
             // 
-            this.NhapVaKiemKeContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.NhapVaKiemKeContainer.Controls.Add(this.panel4);
-            this.NhapVaKiemKeContainer.Controls.Add(this.panel16);
-            this.NhapVaKiemKeContainer.Controls.Add(this.panel17);
-            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 286);
-            this.NhapVaKiemKeContainer.Name = "NhapVaKiemKeContainer";
-            this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(290, 58);
-            this.NhapVaKiemKeContainer.TabIndex = 7;
+            this.panelThanhLy.Controls.Add(this.button1);
+            this.panelThanhLy.Location = new System.Drawing.Point(3, 259);
+            this.panelThanhLy.Name = "panelThanhLy";
+            this.panelThanhLy.Size = new System.Drawing.Size(290, 58);
+            this.panelThanhLy.TabIndex = 5;
             // 
-            // panel4
+            // button1
             // 
-            this.panel4.Controls.Add(this.NhapVaKiemKe);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 58);
-            this.panel4.TabIndex = 3;
-            // 
-            // NhapVaKiemKe
-            // 
-            this.NhapVaKiemKe.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.NhapVaKiemKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.NhapVaKiemKe.Image = ((System.Drawing.Image)(resources.GetObject("NhapVaKiemKe.Image")));
-            this.NhapVaKiemKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NhapVaKiemKe.Location = new System.Drawing.Point(-35, -17);
-            this.NhapVaKiemKe.Name = "NhapVaKiemKe";
-            this.NhapVaKiemKe.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.NhapVaKiemKe.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NhapVaKiemKe.Size = new System.Drawing.Size(340, 86);
-            this.NhapVaKiemKe.TabIndex = 2;
-            this.NhapVaKiemKe.Text = "             Quản lý thiết bị";
-            this.NhapVaKiemKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NhapVaKiemKe.UseVisualStyleBackColor = false;
-            this.NhapVaKiemKe.Click += new System.EventHandler(this.NhapVaKiemKe_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.buttonNhapMuaTB);
-            this.panel16.Location = new System.Drawing.Point(3, 67);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(290, 58);
-            this.panel16.TabIndex = 8;
-            // 
-            // buttonNhapMuaTB
-            // 
-            this.buttonNhapMuaTB.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.buttonNhapMuaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonNhapMuaTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonNhapMuaTB.Image")));
-            this.buttonNhapMuaTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhapMuaTB.Location = new System.Drawing.Point(-35, -14);
-            this.buttonNhapMuaTB.Name = "buttonNhapMuaTB";
-            this.buttonNhapMuaTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.buttonNhapMuaTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonNhapMuaTB.Size = new System.Drawing.Size(340, 86);
-            this.buttonNhapMuaTB.TabIndex = 2;
-            this.buttonNhapMuaTB.Text = "           Quản lý hóa đơn";
-            this.buttonNhapMuaTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhapMuaTB.UseVisualStyleBackColor = false;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.buttonKiemKeTB);
-            this.panel17.Location = new System.Drawing.Point(3, 131);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(290, 58);
-            this.panel17.TabIndex = 9;
-            // 
-            // buttonKiemKeTB
-            // 
-            this.buttonKiemKeTB.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.buttonKiemKeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonKiemKeTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonKiemKeTB.Image")));
-            this.buttonKiemKeTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonKiemKeTB.Location = new System.Drawing.Point(-35, -14);
-            this.buttonKiemKeTB.Name = "buttonKiemKeTB";
-            this.buttonKiemKeTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.buttonKiemKeTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonKiemKeTB.Size = new System.Drawing.Size(340, 86);
-            this.buttonKiemKeTB.TabIndex = 2;
-            this.buttonKiemKeTB.Text = "           Kiểm kê thiết bị";
-            this.buttonKiemKeTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonKiemKeTB.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-35, -14);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(340, 86);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "           Thanh lý thiết bị";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // BaoCaoContainer
             // 
@@ -777,40 +801,16 @@
             // 
             this.TaiKhoanTimer.Tick += new System.EventHandler(this.TaiKhoanTimer_Tick);
             // 
-            // panelThanhLy
-            // 
-            this.panelThanhLy.Controls.Add(this.button1);
-            this.panelThanhLy.Location = new System.Drawing.Point(3, 259);
-            this.panelThanhLy.Name = "panelThanhLy";
-            this.panelThanhLy.Size = new System.Drawing.Size(290, 58);
-            this.panelThanhLy.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-35, -14);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(340, 86);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "           Thanh lý thiết bị";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // TenPhanMem
             // 
             this.TenPhanMem.AutoSize = true;
             this.TenPhanMem.BackColor = System.Drawing.Color.Transparent;
-            this.TenPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenPhanMem.Location = new System.Drawing.Point(361, 95);
+            this.TenPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TenPhanMem.Location = new System.Drawing.Point(300, 124);
             this.TenPhanMem.Name = "TenPhanMem";
-            this.TenPhanMem.Size = new System.Drawing.Size(698, 39);
+            this.TenPhanMem.Size = new System.Drawing.Size(828, 33);
             this.TenPhanMem.TabIndex = 1;
-            this.TenPhanMem.Text = "Hệ thống quản lý thiết bị y tế trong bệnh viện";
+            this.TenPhanMem.Text = "HỆ THỐNG QUẢN LÝ THIẾT BỊ Y TẾ TRONG BỆNH VIỆN";
             // 
             // FormTrangChu
             // 
@@ -838,15 +838,16 @@
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.NhapVaKiemKeContainer.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
             this.TheoDoiContainer.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            this.NhapVaKiemKeContainer.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
+            this.panelThanhLy.ResumeLayout(false);
             this.BaoCaoContainer.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
@@ -858,7 +859,6 @@
             this.panel23.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
-            this.panelThanhLy.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

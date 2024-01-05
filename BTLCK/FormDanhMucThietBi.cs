@@ -16,6 +16,7 @@ namespace BTLCK
         {
             InitializeComponent();
             this.formTrangChu = formTrangChu;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         }
 
         private void labelTimKiem_Click(object sender, EventArgs e)
@@ -40,6 +41,17 @@ namespace BTLCK
         {
             this.formTrangChu.Show();
             this.Close();
+        }
+
+        private void groupBoxThemThietBi_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerNSX_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePickerNSX.Format = DateTimePickerFormat.Custom;
+            dateTimePickerNSX.CustomFormat = "yyyy-MM-dd";
         }
     }
 }
