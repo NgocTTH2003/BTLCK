@@ -1,6 +1,6 @@
 ﻿namespace BTLCK
 {
-    partial class Form1
+    partial class FormDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblClose = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.txtPass);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label5);
@@ -63,8 +62,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblClose);
+            this.panel1.Controls.Add(this.pictureBoxAnhDangNhap);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(450, 0);
             this.panel1.Name = "panel1";
@@ -76,7 +74,7 @@
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(20, 323);
+            this.btnSignUp.Location = new System.Drawing.Point(23, 338);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(220, 41);
             this.btnSignUp.TabIndex = 14;
@@ -88,25 +86,12 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(20, 274);
+            this.btnLogin.Location = new System.Drawing.Point(23, 279);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(220, 41);
             this.btnLogin.TabIndex = 13;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(20, 238);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(145, 26);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "Ghi nhớ tài khoản";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txtPass
             // 
@@ -114,7 +99,7 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(63, 195);
+            this.txtPass.Location = new System.Drawing.Point(66, 217);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(177, 20);
             this.txtPass.TabIndex = 11;
@@ -123,7 +108,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(20, 190);
+            this.pictureBox3.Location = new System.Drawing.Point(23, 212);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +119,7 @@
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(60, 221);
+            this.label5.Location = new System.Drawing.Point(63, 243);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 1);
             this.label5.TabIndex = 9;
@@ -146,16 +131,16 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(63, 143);
+            this.txtUser.Location = new System.Drawing.Point(66, 165);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(177, 20);
             this.txtUser.TabIndex = 8;
-            this.txtUser.Text = "Email";
+            this.txtUser.Text = "Tài khoản";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 138);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,16 +150,27 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(60, 169);
+            this.label3.Location = new System.Drawing.Point(63, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 1);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
+            // pictureBoxAnhDangNhap
+            // 
+            this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
+            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(99, 63);
+            this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
+            this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
+            this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAnhDangNhap.TabIndex = 4;
+            this.pictureBoxAnhDangNhap.TabStop = false;
+            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(168, 86);
+            this.label2.Location = new System.Drawing.Point(171, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 3);
             this.label2.TabIndex = 6;
@@ -183,37 +179,24 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(39, 86);
+            this.label4.Location = new System.Drawing.Point(42, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 3);
             this.label4.TabIndex = 5;
             this.label4.Text = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(98, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(48, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ĐĂNG NHẬP";
             // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(243, 9);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(27, 25);
-            this.lblClose.TabIndex = 0;
-            this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
-            // 
-            // Form1
+            // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,16 +205,17 @@
             this.ClientSize = new System.Drawing.Size(720, 400);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "FormDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,19 +223,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblClose;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxAnhDangNhap;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -18,6 +18,7 @@ namespace BTLCK
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormTrangChu());
 
+
         }
     }
 }
