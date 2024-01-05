@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BTLCK
 {
-    public partial class FormSignUp : Form
+    public partial class FormDangKy : Form
     {
-        public FormSignUp()
+        public FormDangKy()
         {
             InitializeComponent();
         }
