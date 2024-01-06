@@ -30,17 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucNhaCungCap));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxTTNCC = new System.Windows.Forms.GroupBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.comboBoxDC = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.labelVTDat = new System.Windows.Forms.Label();
-            this.labelMaNV = new System.Windows.Forms.Label();
             this.labelTenNCC = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.buttonHuy = new System.Windows.Forms.Button();
@@ -56,6 +52,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonSua = new System.Windows.Forms.Button();
             this.labelTimKiem = new System.Windows.Forms.Label();
+            this.labelMaNV = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBoxTTNCC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -81,15 +81,6 @@
             this.pictureBox5.TabIndex = 52;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Email";
-            // 
             // buttonKhoiTao
             // 
             this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -100,6 +91,7 @@
             this.buttonKhoiTao.TabIndex = 16;
             this.buttonKhoiTao.Text = "Khởi tạo";
             this.buttonKhoiTao.UseVisualStyleBackColor = false;
+            this.buttonKhoiTao.Click += new System.EventHandler(this.buttonKhoiTao_Click);
             // 
             // buttonXoa
             // 
@@ -140,14 +132,6 @@
             this.groupBoxTTNCC.TabIndex = 51;
             this.groupBoxTTNCC.TabStop = false;
             this.groupBoxTTNCC.Text = "Thông tin";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(180, 227);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(230, 28);
-            this.txtEmail.TabIndex = 30;
             // 
             // comboBoxDC
             // 
@@ -232,14 +216,6 @@
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(180, 143);
-            this.txtSDT.Multiline = true;
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(230, 28);
-            this.txtSDT.TabIndex = 26;
-            // 
             // txtTenNCC
             // 
             this.txtTenNCC.Location = new System.Drawing.Point(180, 56);
@@ -256,15 +232,6 @@
             this.labelVTDat.Size = new System.Drawing.Size(57, 20);
             this.labelVTDat.TabIndex = 20;
             this.labelVTDat.Text = "Địa chỉ";
-            // 
-            // labelMaNV
-            // 
-            this.labelMaNV.AutoSize = true;
-            this.labelMaNV.Location = new System.Drawing.Point(38, 146);
-            this.labelMaNV.Name = "labelMaNV";
-            this.labelMaNV.Size = new System.Drawing.Size(41, 20);
-            this.labelMaNV.TabIndex = 18;
-            this.labelMaNV.Text = "SDT";
             // 
             // labelTenNCC
             // 
@@ -296,6 +263,7 @@
             this.buttonHuy.TabIndex = 12;
             this.buttonHuy.Text = "Hủy";
             this.buttonHuy.UseVisualStyleBackColor = false;
+            this.buttonHuy.Click += new System.EventHandler(this.buttonHuy_Click);
             // 
             // pictureBox4
             // 
@@ -352,6 +320,7 @@
             this.Back.Size = new System.Drawing.Size(90, 54);
             this.Back.TabIndex = 50;
             this.Back.TabStop = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // pictureBox1
             // 
@@ -391,6 +360,7 @@
             this.buttonThem.TabIndex = 47;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = false;
+            this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
             // pictureBox2
             // 
@@ -443,6 +413,40 @@
             this.labelTimKiem.TabIndex = 44;
             this.labelTimKiem.Text = "Tìm kiếm";
             // 
+            // labelMaNV
+            // 
+            this.labelMaNV.AutoSize = true;
+            this.labelMaNV.Location = new System.Drawing.Point(38, 146);
+            this.labelMaNV.Name = "labelMaNV";
+            this.labelMaNV.Size = new System.Drawing.Size(41, 20);
+            this.labelMaNV.TabIndex = 18;
+            this.labelMaNV.Text = "SDT";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(180, 143);
+            this.txtSDT.Multiline = true;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(230, 28);
+            this.txtSDT.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(180, 227);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(230, 28);
+            this.txtEmail.TabIndex = 30;
+            // 
             // FormDanhMucNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,17 +491,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonKhoiTao;
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.GroupBox groupBoxTTNCC;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.ComboBox comboBoxDC;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtTenNCC;
         private System.Windows.Forms.Label labelVTDat;
-        private System.Windows.Forms.Label labelMaNV;
         private System.Windows.Forms.Label labelTenNCC;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button buttonHuy;
@@ -513,5 +513,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Label labelTimKiem;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Label labelMaNV;
     }
 }

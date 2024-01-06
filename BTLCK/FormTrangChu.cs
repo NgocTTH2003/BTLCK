@@ -230,12 +230,76 @@ namespace BTLCK
             this.Hide();
         }
 
-        private void buttonDMKhoaPhong_Click(object sender, EventArgs e)
+        private void buttonDMVienKhoa_Click(object sender, EventArgs e)
+        {
+            FormDanhMucVienKhoa formDanhMucKhoaPhong = new FormDanhMucVienKhoa(this);
+            formDanhMucKhoaPhong.Show();
+            this.Hide();
+        }
+
+        private void buttonDMKhoVatTu_Click(object sender, EventArgs e)
+        {
+            FormDanhMucKhoVatTu formDanhMucKhoVatTu = new FormDanhMucKhoVatTu(this);
+            formDanhMucKhoVatTu.Show(); 
+            this.Hide();
+        }
+
+        private void buttonNhapKhoTB_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonDMKhoVatTu_Click(object sender, EventArgs e)
+        private void buttonKiemKeTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonVanChuyenTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSuaChuaTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBaoTriTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonThanhLyTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBaoCaoBaoTri_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBaoCaoKiemKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBaoCaoNhapXuat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTKCapNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTKDoiMK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTKDangXuat_Click(object sender, EventArgs e)
         {
 
         }
