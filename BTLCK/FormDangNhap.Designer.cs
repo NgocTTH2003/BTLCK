@@ -80,7 +80,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(48, 20);
+            this.label1.Location = new System.Drawing.Point(53, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 32);
             this.label1.TabIndex = 1;
@@ -90,7 +90,7 @@
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(27, 338);
+            this.btnSignUp.Location = new System.Drawing.Point(34, 338);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(220, 41);
             this.btnSignUp.TabIndex = 14;
@@ -102,7 +102,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(27, 279);
+            this.btnLogin.Location = new System.Drawing.Point(34, 279);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(220, 41);
             this.btnLogin.TabIndex = 13;
@@ -115,7 +115,7 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(63, 217);
+            this.txtPass.Location = new System.Drawing.Point(65, 217);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(177, 20);
             this.txtPass.TabIndex = 11;
@@ -125,7 +125,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(20, 212);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 212);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,9 +136,9 @@
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(60, 243);
+            this.label5.Location = new System.Drawing.Point(62, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 1);
+            this.label5.Size = new System.Drawing.Size(190, 1);
             this.label5.TabIndex = 9;
             this.label5.Text = "label5";
             // 
@@ -148,7 +148,7 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(63, 165);
+            this.txtUser.Location = new System.Drawing.Point(65, 165);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(177, 20);
             this.txtUser.TabIndex = 8;
@@ -158,7 +158,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 160);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,16 +168,16 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(60, 191);
+            this.label3.Location = new System.Drawing.Point(62, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 1);
+            this.label3.Size = new System.Drawing.Size(190, 1);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(171, 108);
+            this.label2.Location = new System.Drawing.Point(177, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 3);
             this.label2.TabIndex = 6;
@@ -186,7 +186,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(42, 108);
+            this.label4.Location = new System.Drawing.Point(48, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 3);
             this.label4.TabIndex = 5;
@@ -196,7 +196,7 @@
             // 
             this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
-            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(99, 63);
+            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(107, 63);
             this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
             this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
             this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,9 +217,9 @@
             // picEye
             // 
             this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
-            this.picEye.Location = new System.Drawing.Point(246, 212);
+            this.picEye.Location = new System.Drawing.Point(255, 212);
             this.picEye.Name = "picEye";
-            this.picEye.Size = new System.Drawing.Size(38, 32);
+            this.picEye.Size = new System.Drawing.Size(29, 32);
             this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picEye.TabIndex = 15;
             this.picEye.TabStop = false;

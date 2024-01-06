@@ -35,22 +35,24 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtXacNhanMK = new System.Windows.Forms.TextBox();
+            this.txtMK = new System.Windows.Forms.TextBox();
+            this.txtTK = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.txtTK = new System.Windows.Forms.TextBox();
-            this.txtMK = new System.Windows.Forms.TextBox();
-            this.txtXacNhanMK = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -63,7 +65,7 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(83, 51);
+            this.groupBox1.Location = new System.Drawing.Point(92, 62);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(638, 370);
             this.groupBox1.TabIndex = 4;
@@ -118,6 +120,90 @@
             this.panel3.Size = new System.Drawing.Size(301, 196);
             this.panel3.TabIndex = 5;
             // 
+            // txtXacNhanMK
+            // 
+            this.txtXacNhanMK.BackColor = System.Drawing.Color.Ivory;
+            this.txtXacNhanMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXacNhanMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXacNhanMK.ForeColor = System.Drawing.Color.Black;
+            this.txtXacNhanMK.Location = new System.Drawing.Point(15, 167);
+            this.txtXacNhanMK.Name = "txtXacNhanMK";
+            this.txtXacNhanMK.Size = new System.Drawing.Size(274, 22);
+            this.txtXacNhanMK.TabIndex = 12;
+            this.txtXacNhanMK.Text = "Xác nhận mật khẩu";
+            // 
+            // txtMK
+            // 
+            this.txtMK.BackColor = System.Drawing.Color.Ivory;
+            this.txtMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMK.ForeColor = System.Drawing.Color.Black;
+            this.txtMK.Location = new System.Drawing.Point(15, 117);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(274, 22);
+            this.txtMK.TabIndex = 11;
+            this.txtMK.Text = "Mật khẩu";
+            // 
+            // txtTK
+            // 
+            this.txtTK.BackColor = System.Drawing.Color.Ivory;
+            this.txtTK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTK.ForeColor = System.Drawing.Color.Black;
+            this.txtTK.Location = new System.Drawing.Point(15, 66);
+            this.txtTK.Name = "txtTK";
+            this.txtTK.Size = new System.Drawing.Size(274, 22);
+            this.txtTK.TabIndex = 10;
+            this.txtTK.Text = "Tài khoản";
+            // 
+            // txtMaNV
+            // 
+            this.txtMaNV.BackColor = System.Drawing.Color.Ivory;
+            this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMaNV.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.ForeColor = System.Drawing.Color.Black;
+            this.txtMaNV.Location = new System.Drawing.Point(15, 17);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(274, 22);
+            this.txtMaNV.TabIndex = 9;
+            this.txtMaNV.Text = "Mã số nhân viên";
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(10, 189);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(279, 1);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "label8";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(10, 139);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(279, 1);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "label7";
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(10, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(279, 1);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "label6";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(10, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(279, 1);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "label5";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
@@ -170,89 +256,17 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu :";
             // 
-            // label5
+            // pictureBox1
             // 
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(279, 1);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(10, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(279, 1);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(10, 139);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(279, 1);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(10, 189);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(279, 1);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "label8";
-            // 
-            // txtMaNV
-            // 
-            this.txtMaNV.BackColor = System.Drawing.Color.Ivory;
-            this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMaNV.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.ForeColor = System.Drawing.Color.Black;
-            this.txtMaNV.Location = new System.Drawing.Point(15, 17);
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(274, 22);
-            this.txtMaNV.TabIndex = 9;
-            this.txtMaNV.Text = "Mã số nhân viên";
-            // 
-            // txtTK
-            // 
-            this.txtTK.BackColor = System.Drawing.Color.Ivory;
-            this.txtTK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTK.ForeColor = System.Drawing.Color.Black;
-            this.txtTK.Location = new System.Drawing.Point(15, 66);
-            this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(274, 22);
-            this.txtTK.TabIndex = 10;
-            this.txtTK.Text = "Tài khoản";
-            // 
-            // txtMK
-            // 
-            this.txtMK.BackColor = System.Drawing.Color.Ivory;
-            this.txtMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK.ForeColor = System.Drawing.Color.Black;
-            this.txtMK.Location = new System.Drawing.Point(15, 117);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(274, 22);
-            this.txtMK.TabIndex = 11;
-            this.txtMK.Text = "Mật khẩu";
-            // 
-            // txtXacNhanMK
-            // 
-            this.txtXacNhanMK.BackColor = System.Drawing.Color.Ivory;
-            this.txtXacNhanMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtXacNhanMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtXacNhanMK.ForeColor = System.Drawing.Color.Black;
-            this.txtXacNhanMK.Location = new System.Drawing.Point(15, 167);
-            this.txtXacNhanMK.Name = "txtXacNhanMK";
-            this.txtXacNhanMK.Size = new System.Drawing.Size(274, 22);
-            this.txtXacNhanMK.TabIndex = 12;
-            this.txtXacNhanMK.Text = "Xác nhận mật khẩu";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormDangKyTK
             // 
@@ -262,16 +276,18 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Name = "FormDangKyTK";
-            this.Text = "FormDangKyTK";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FormDangKyTK_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,5 +312,6 @@
         private System.Windows.Forms.TextBox txtXacNhanMK;
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.TextBox txtTK;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
