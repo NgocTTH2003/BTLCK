@@ -16,7 +16,7 @@ namespace BTLCK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangKy());
+            Application.Run(new FormDangNhap());
         }
     }
 }
