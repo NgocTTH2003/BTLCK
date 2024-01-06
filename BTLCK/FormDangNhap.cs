@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
 namespace BTLCK
 {
@@ -17,7 +18,7 @@ namespace BTLCK
         {
             InitializeComponent();
             InitializePlaceholder();
-            registerEvent();
+            
         }
 
         private void InitializePlaceholder()
@@ -88,25 +89,13 @@ namespace BTLCK
             }
         }
 
-        #region Event
-
-        void registerEvent()
-        {
-            btnSignUp.Click += BtnSignUp_Click;
-            picEye.Click += PicEye_Click;
-        }
 
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            FormDangKyTK signUpForm = new FormDangKyTK();
-            signUpForm.FormClosed += SignUpForm_FormClosed;
-            signUpForm.Show();
+            FormDangKyTK formDangKyTK = new FormDangKyTK(this);
+            formDangKyTK.Show();
             this.Hide();
-        }
-        private void SignUpForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Close();
         }
 
         private void PicEye_Click(object sender, EventArgs e)
@@ -120,8 +109,6 @@ namespace BTLCK
                 txtPass.PasswordChar = '*';
             }
         }
-
-        #endregion
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -158,5 +145,47 @@ namespace BTLCK
                 txtPass.PasswordChar = '*';
             }
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection scn = new SqlConnection(@"Data Source=HONGNGOC;Initial Catalog=QuanLyThietBi;Integrated Security=True"))
+            {
+                try
+                {
+                    scn.Open();
+
+                    string Query = "SELECT * FROM TaiKhoan WHERE TenDangNhap = @TenDangNhap AND MatKhau = @MatKhau";
+                    SqlCommand cmd = new SqlCommand(Query, scn);
+                    cmd.Parameters.AddWithValue("@TenDangNhap", txtUser.Text);
+                    cmd.Parameters.AddWithValue("@MatKhau", txtPass.Text);
+
+                    SqlDataAdapter adap = new SqlDataAdapter(cmd);
+
+                    DataTable dat = new DataTable();
+                    adap.Fill(dat);
+
+                    if (dat.Rows.Count > 0)
+                    {
+                        Form flog = new FormTrangChu();
+                        Hide();
+                        flog.Show();
+                        flog.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khẩu không hợp lệ!!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtUser.Clear();
+                        txtPass.Clear();
+
+                        txtUser.Focus();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
+
     }
 }
