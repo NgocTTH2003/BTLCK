@@ -66,9 +66,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(69, 50);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(478, 301);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
@@ -79,7 +79,7 @@
             this.btnQuayLai.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnQuayLai.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuayLai.Location = new System.Drawing.Point(93, 241);
-            this.btnQuayLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuayLai.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(85, 37);
             this.btnQuayLai.TabIndex = 7;
@@ -92,11 +92,11 @@
             this.btnHuy.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnHuy.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Location = new System.Drawing.Point(304, 241);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(85, 37);
             this.btnHuy.TabIndex = 6;
-            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.Text = "Khởi tạo";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnKhoiTao_Click);
             // 
@@ -105,12 +105,13 @@
             this.btnXacNhan.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnXacNhan.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.Location = new System.Drawing.Point(202, 241);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(85, 37);
             this.btnXacNhan.TabIndex = 5;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // panel3
             // 
@@ -123,7 +124,7 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(202, 59);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(226, 159);
             this.panel3.TabIndex = 5;
@@ -135,7 +136,7 @@
             this.txtXacNhanMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXacNhanMK.ForeColor = System.Drawing.Color.Black;
             this.txtXacNhanMK.Location = new System.Drawing.Point(11, 136);
-            this.txtXacNhanMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtXacNhanMK.Margin = new System.Windows.Forms.Padding(2);
             this.txtXacNhanMK.Name = "txtXacNhanMK";
             this.txtXacNhanMK.Size = new System.Drawing.Size(206, 18);
             this.txtXacNhanMK.TabIndex = 12;
@@ -148,7 +149,7 @@
             this.txtMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMK.ForeColor = System.Drawing.Color.Black;
             this.txtMK.Location = new System.Drawing.Point(11, 95);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMK.Margin = new System.Windows.Forms.Padding(2);
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(206, 18);
             this.txtMK.TabIndex = 11;
@@ -161,7 +162,7 @@
             this.txtTK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTK.ForeColor = System.Drawing.Color.Black;
             this.txtTK.Location = new System.Drawing.Point(11, 54);
-            this.txtTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTK.Margin = new System.Windows.Forms.Padding(2);
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(206, 18);
             this.txtTK.TabIndex = 10;
@@ -174,7 +175,7 @@
             this.txtMaNV.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.ForeColor = System.Drawing.Color.Black;
             this.txtMaNV.Location = new System.Drawing.Point(11, 14);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(206, 18);
             this.txtMaNV.TabIndex = 9;
@@ -281,7 +282,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 51);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -300,8 +301,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDangKyTK";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormDangKyTK_Load);

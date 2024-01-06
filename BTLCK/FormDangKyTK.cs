@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BTLCK
 {
@@ -171,5 +172,68 @@ namespace BTLCK
             txtTK.ResetText();
             txtXacNhanMK.ResetText();
         }
+
+        private void btnXacNhan_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem các ô nhập liệu có được nhập đầy đủ không
+            if (string.IsNullOrWhiteSpace(txtMaNV.Text) ||
+                string.IsNullOrWhiteSpace(txtTK.Text) ||
+                string.IsNullOrWhiteSpace(txtMK.Text) ||
+                string.IsNullOrWhiteSpace(txtXacNhanMK.Text) ||
+                txtMaNV.Text == "Mã số nhân viên" ||
+                txtTK.Text == "Tài khoản" ||
+                txtMK.Text == "Mật khẩu" ||
+                txtXacNhanMK.Text == "Xác nhận mật khẩu")
+            {
+                // Hiển thị thông báo nếu có ô nào đó trống
+                MessageBox.Show("Điền hết dữ liệu trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (txtMK.Text != txtXacNhanMK.Text)
+            {
+                // Hiển thị thông báo nếu mật khẩu và xác nhận mật khẩu khác nhau
+                MessageBox.Show("Xác nhận lại mật khẩu", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                using (SqlConnection scn = new SqlConnection(@"Data Source=HONGNGOC;Initial Catalog=QuanLyThietBi;Integrated Security=True"))
+                {
+                    try
+                    {
+                        scn.Open();
+
+                        // Kiểm tra xem giá trị của txtMaNV có tồn tại trong bảng NhanVien không
+                        string checkExistQuery = $"SELECT COUNT(*) FROM NhanVien WHERE IDNhanVien = '{txtMaNV.Text}'";
+                        SqlCommand checkExistCmd = new SqlCommand(checkExistQuery, scn);
+
+                        int count = Convert.ToInt32(checkExistCmd.ExecuteScalar());
+
+                        if (count > 0)
+                        {
+                            // txtMaNV tồn tại trong bảng NhanVien, thực hiện chèn dữ liệu vào bảng TaiKhoan
+                            string insertQuery = "INSERT INTO TaiKhoan (IDNhanVien, TenDangNhap, MatKhau) VALUES (@IDNhanVien, @TaiKhoan, @MatKhau)";
+                            SqlCommand insertCmd = new SqlCommand(insertQuery, scn);
+
+                            insertCmd.Parameters.AddWithValue("@IDNhanVien", txtMaNV.Text);
+                            insertCmd.Parameters.AddWithValue("@TaiKhoan", txtTK.Text);
+                            insertCmd.Parameters.AddWithValue("@MatKhau", txtMK.Text);
+
+                            insertCmd.ExecuteNonQuery();
+
+                            MessageBox.Show("Chèn dữ liệu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            // txtMaNV không tồn tại trong bảng NhanVien
+                            MessageBox.Show("Mã số nhân viên không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
     }
 }
