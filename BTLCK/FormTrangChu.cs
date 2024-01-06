@@ -307,5 +307,18 @@ namespace BTLCK
         {
 
         }
+
+        private void FormTrangChu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Kiểm tra xem hành động là do người dùng thực hiện hay không
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Đóng tất cả các form khác
+                foreach (Form form in Application.OpenForms.OfType<Form>().Where(f => f != this))
+                {
+                    form.Close();
+                }
+            }
+        }
     }
 }
