@@ -93,12 +93,13 @@ namespace BTLCK
         void registerEvent()
         {
             btnSignUp.Click += BtnSignUp_Click;
+            picEye.Click += PicEye_Click;
         }
 
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            FormDangKy signUpForm = new FormDangKy();
+            FormDangKyTK signUpForm = new FormDangKyTK();
             signUpForm.FormClosed += SignUpForm_FormClosed;
             signUpForm.Show();
             this.Hide();
@@ -106,6 +107,18 @@ namespace BTLCK
         private void SignUpForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
+        }
+
+        private void PicEye_Click(object sender, EventArgs e)
+        {
+            if (txtPass.PasswordChar == '*')
+            {
+                txtPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+            }
         }
 
         #endregion
@@ -122,6 +135,28 @@ namespace BTLCK
         private void btnSignup_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            txtPass.PasswordChar = '*';
+        }
+
+        private void buttonEye_Click(object sender, EventArgs e)
+        {
+            if (txtPass.PasswordChar == '*')
+            {
+                txtPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+            }
         }
     }
 }

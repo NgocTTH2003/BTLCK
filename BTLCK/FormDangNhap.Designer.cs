@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -38,19 +39,23 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picEye = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel1.Controls.Add(this.picEye);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.btnLogin);
@@ -64,17 +69,28 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBoxAnhDangNhap);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(450, 0);
+            this.panel1.Location = new System.Drawing.Point(483, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 400);
+            this.panel1.Size = new System.Drawing.Size(287, 431);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(53, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ĐĂNG NHẬP";
             // 
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(23, 338);
+            this.btnSignUp.Location = new System.Drawing.Point(34, 338);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(220, 41);
             this.btnSignUp.TabIndex = 14;
@@ -86,7 +102,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(23, 279);
+            this.btnLogin.Location = new System.Drawing.Point(34, 279);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(220, 41);
             this.btnLogin.TabIndex = 13;
@@ -99,16 +115,17 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(66, 217);
+            this.txtPass.Location = new System.Drawing.Point(65, 217);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(177, 20);
             this.txtPass.TabIndex = 11;
             this.txtPass.Text = "Mật khẩu";
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(23, 212);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 212);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,9 +136,9 @@
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(63, 243);
+            this.label5.Location = new System.Drawing.Point(62, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 1);
+            this.label5.Size = new System.Drawing.Size(190, 1);
             this.label5.TabIndex = 9;
             this.label5.Text = "label5";
             // 
@@ -131,16 +148,17 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(66, 165);
+            this.txtUser.Location = new System.Drawing.Point(65, 165);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(177, 20);
             this.txtUser.TabIndex = 8;
             this.txtUser.Text = "Tài khoản";
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(23, 160);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -150,27 +168,16 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(63, 191);
+            this.label3.Location = new System.Drawing.Point(62, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 1);
+            this.label3.Size = new System.Drawing.Size(190, 1);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
-            // 
-            // pictureBoxAnhDangNhap
-            // 
-            this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
-            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(99, 63);
-            this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
-            this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
-            this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAnhDangNhap.TabIndex = 4;
-            this.pictureBoxAnhDangNhap.TabStop = false;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(171, 108);
+            this.label2.Location = new System.Drawing.Point(177, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 3);
             this.label2.TabIndex = 6;
@@ -179,22 +186,43 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(42, 108);
+            this.label4.Location = new System.Drawing.Point(48, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 3);
             this.label4.TabIndex = 5;
             this.label4.Text = "label4";
             // 
-            // label1
+            // pictureBoxAnhDangNhap
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(48, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ĐĂNG NHẬP";
+            this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
+            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(107, 63);
+            this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
+            this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
+            this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAnhDangNhap.TabIndex = 4;
+            this.pictureBoxAnhDangNhap.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(81, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picEye
+            // 
+            this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
+            this.picEye.Location = new System.Drawing.Point(255, 212);
+            this.picEye.Name = "picEye";
+            this.picEye.Size = new System.Drawing.Size(29, 32);
+            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEye.TabIndex = 15;
+            this.picEye.TabStop = false;
             // 
             // FormDangNhap
             // 
@@ -202,7 +230,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(720, 400);
+            this.ClientSize = new System.Drawing.Size(770, 431);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -216,6 +245,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,6 +266,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picEye;
     }
 }
 
