@@ -246,12 +246,16 @@ namespace BTLCK
 
         private void buttonNhapKhoTB_Click(object sender, EventArgs e)
         {
-
+            FormQuanLyNhapKho formQuanLyNhapKho = new FormQuanLyNhapKho(this);
+            formQuanLyNhapKho.Show();
+            this.Hide();
         }
 
         private void buttonKiemKeTB_Click(object sender, EventArgs e)
         {
-
+            FormKiemKe formKiemKe = new FormKiemKe(this);
+            formKiemKe.Show();
+            this.Hide();
         }
 
         private void buttonVanChuyenTB_Click(object sender, EventArgs e)
