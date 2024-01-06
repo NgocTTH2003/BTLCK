@@ -41,6 +41,9 @@
             this.buttonLuu = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxKhoaPhong = new System.Windows.Forms.GroupBox();
+            this.comboBoxKhoa = new System.Windows.Forms.ComboBox();
+            this.comboBoxVien = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -51,9 +54,6 @@
             this.Back = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxVien = new System.Windows.Forms.ComboBox();
-            this.comboBoxKhoa = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxKhoaPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -230,6 +230,68 @@
             this.groupBoxKhoaPhong.TabStop = false;
             this.groupBoxKhoaPhong.Text = "Thông tin";
             // 
+            // comboBoxKhoa
+            // 
+            this.comboBoxKhoa.FormattingEnabled = true;
+            this.comboBoxKhoa.Items.AddRange(new object[] {
+            "Khoa Hồi sức tích cực",
+            "Khoa Thận nhân tạo",
+            "Khoa Cấp cứu",
+            "Khoa Cơ xương khớp",
+            "Khoa Tiêu hóa",
+            "Khoa Thận - Tiết niệu",
+            "Khoa Ngoại Tổng hợp",
+            "Khoa Gây mê hồi sức",
+            "Khoa Nhi",
+            "Khoa Phụ sản",
+            "Khoa Nội tiết - Đái tháo đường",
+            "Khoa Thần Kinh",
+            "Khoa Tai mũi họng",
+            "Khoa Răng Hàm Mặt",
+            "Khoa Mắt",
+            "Khoa Khám chữa bệnh theo yêu cầu",
+            "Khoa Phẫu thuật Thần kinh",
+            "Khoa Chấn thương chỉnh hình và cột sống",
+            "Khoa Y học cổ truyền",
+            "Khoa Da liễu",
+            "Khoa Khám bệnh"});
+            this.comboBoxKhoa.Location = new System.Drawing.Point(180, 140);
+            this.comboBoxKhoa.Name = "comboBoxKhoa";
+            this.comboBoxKhoa.Size = new System.Drawing.Size(230, 28);
+            this.comboBoxKhoa.TabIndex = 31;
+            // 
+            // comboBoxVien
+            // 
+            this.comboBoxVien.FormattingEnabled = true;
+            this.comboBoxVien.Items.AddRange(new object[] {
+            "Viện Sức khỏe tâm thần",
+            "Viện Tim mạch",
+            "Viện Giám định Y khoa",
+            "Trung tâm Chống độc",
+            "Trung tâm Đào tạo - chỉ đạo tuyến",
+            "Trung tâm Giải phẫu bệnh - Tế bào học",
+            "Trung tâm Phục hồi chức năng ",
+            "Trung tâm Hô hấp",
+            "Trung tâm Dị ứng - Miễn dịch lâm sàng ",
+            "Trung tâm Y học hạt nhân và Ung bướu",
+            "Trung tâm Huyết học và Truyền máu",
+            "Trung tâm Điện quang",
+            "Trung tâm Bệnh viện đới"});
+            this.comboBoxVien.Location = new System.Drawing.Point(180, 51);
+            this.comboBoxVien.Name = "comboBoxVien";
+            this.comboBoxVien.Size = new System.Drawing.Size(230, 28);
+            this.comboBoxVien.TabIndex = 30;
+            this.comboBoxVien.SelectedIndexChanged += new System.EventHandler(this.comboBoxVien_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Tên khoa";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
@@ -352,68 +414,6 @@
             this.pictureBox5.TabIndex = 65;
             this.pictureBox5.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 143);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 20);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Tên khoa";
-            // 
-            // comboBoxVien
-            // 
-            this.comboBoxVien.FormattingEnabled = true;
-            this.comboBoxVien.Items.AddRange(new object[] {
-            "Viện Sức khỏe tâm thần",
-            "Viện Tim mạch",
-            "Viện Giám định Y khoa",
-            "Trung tâm Chống độc",
-            "Trung tâm Đào tạo - chỉ đạo tuyến",
-            "Trung tâm Giải phẫu bệnh - Tế bào học",
-            "Trung tâm Phục hồi chức năng ",
-            "Trung tâm Hô hấp",
-            "Trung tâm Dị ứng - Miễn dịch lâm sàng ",
-            "Trung tâm Y học hạt nhân và Ung bướu",
-            "Trung tâm Huyết học và Truyền máu",
-            "Trung tâm Điện quang",
-            "Trung tâm Bệnh viện đới"});
-            this.comboBoxVien.Location = new System.Drawing.Point(180, 51);
-            this.comboBoxVien.Name = "comboBoxVien";
-            this.comboBoxVien.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxVien.TabIndex = 30;
-            this.comboBoxVien.SelectedIndexChanged += new System.EventHandler(this.comboBoxVien_SelectedIndexChanged);
-            // 
-            // comboBoxKhoa
-            // 
-            this.comboBoxKhoa.FormattingEnabled = true;
-            this.comboBoxKhoa.Items.AddRange(new object[] {
-            "Khoa Hồi sức tích cực",
-            "Khoa Thận nhân tạo",
-            "Khoa Cấp cứu",
-            "Khoa Cơ xương khớp",
-            "Khoa Tiêu hóa",
-            "Khoa Thận - Tiết niệu",
-            "Khoa Ngoại Tổng hợp",
-            "Khoa Gây mê hồi sức",
-            "Khoa Nhi",
-            "Khoa Phụ sản",
-            "Khoa Nội tiết - Đái tháo đường",
-            "Khoa Thần Kinh",
-            "Khoa Tai mũi họng",
-            "Khoa Răng Hàm Mặt",
-            "Khoa Mắt",
-            "Khoa Khám chữa bệnh theo yêu cầu",
-            "Khoa Phẫu thuật Thần kinh",
-            "Khoa Chấn thương chỉnh hình và cột sống",
-            "Khoa Y học cổ truyền",
-            "Khoa Da liễu",
-            "Khoa Khám bệnh"});
-            this.comboBoxKhoa.Location = new System.Drawing.Point(180, 140);
-            this.comboBoxKhoa.Name = "comboBoxKhoa";
-            this.comboBoxKhoa.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxKhoa.TabIndex = 31;
-            // 
             // FormDanhMucVienKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -436,6 +436,7 @@
             this.Controls.Add(this.buttonSua);
             this.DoubleBuffered = true;
             this.Name = "FormDanhMucVienKhoa";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục viện/khoa";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

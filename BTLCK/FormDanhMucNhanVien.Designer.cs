@@ -448,6 +448,7 @@
             this.Controls.Add(this.pictureBox5);
             this.DoubleBuffered = true;
             this.Name = "FormDanhMucNhanVien";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục nhân viên";
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();

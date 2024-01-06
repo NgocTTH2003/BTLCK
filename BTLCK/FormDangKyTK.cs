@@ -154,11 +154,6 @@ namespace BTLCK
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.formDangNhap.Show();

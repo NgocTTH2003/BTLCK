@@ -433,6 +433,7 @@
             this.Controls.Add(this.textBoxTimKiem);
             this.DoubleBuffered = true;
             this.Name = "FormDanhMucKhoVatTu";
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDanhMucKhoVatTu";
