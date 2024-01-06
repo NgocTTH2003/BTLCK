@@ -12,9 +12,14 @@ namespace BTLCK
 {
     public partial class FormDangKyTK : Form
     {
-        public FormDangKyTK()
+        private FormDangNhap formDangNhap;
+        public FormDangKyTK(FormDangNhap formDangNhap)
         {
             InitializeComponent();
+            
+            this.formDangNhap = formDangNhap;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             InitializePlaceholder();
         }
         private void InitializePlaceholder()
@@ -132,8 +137,8 @@ namespace BTLCK
         {
             if (string.IsNullOrWhiteSpace(txtMK.Text))
             {
-                txtTK.Text = "Mật khẩu";
-                txtTK.ForeColor = Color.Black;
+                txtMK.Text = "Mật khẩu";
+                txtMK.ForeColor = Color.Black;
             }
         }
         private void txtXacNhanMK_Leave(object sender, EventArgs e)
@@ -153,5 +158,20 @@ namespace BTLCK
         {
 
         }
+
+        private void btnKhoiTao_Click(object sender, EventArgs e)
+        {
+            txtMaNV.ResetText();
+            txtMK.ResetText();
+            txtTK.ResetText();
+            txtXacNhanMK.ResetText();
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            this.formDangNhap.Show();
+            this.Close();
+        }
+
     }
 }

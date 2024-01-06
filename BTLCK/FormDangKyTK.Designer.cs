@@ -32,7 +32,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnQuayLai = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnKhoiTao = new System.Windows.Forms.Button();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtXacNhanMK = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnQuayLai);
-            this.groupBox1.Controls.Add(this.btnHuy);
+            this.groupBox1.Controls.Add(this.btnKhoiTao);
             this.groupBox1.Controls.Add(this.btnXacNhan);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel1);
@@ -82,17 +82,19 @@
             this.btnQuayLai.TabIndex = 7;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = false;
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
-            // btnHuy
+            // btnKhoiTao
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnHuy.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(405, 297);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(113, 45);
-            this.btnHuy.TabIndex = 6;
-            this.btnHuy.Text = "Hủy bỏ";
-            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnKhoiTao.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnKhoiTao.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhoiTao.Location = new System.Drawing.Point(405, 297);
+            this.btnKhoiTao.Name = "btnKhoiTao";
+            this.btnKhoiTao.Size = new System.Drawing.Size(113, 45);
+            this.btnKhoiTao.TabIndex = 6;
+            this.btnKhoiTao.Text = "Khởi tạo";
+            this.btnKhoiTao.UseVisualStyleBackColor = false;
+            this.btnKhoiTao.Click += new System.EventHandler(this.btnKhoiTao_Click);
             // 
             // btnXacNhan
             // 
@@ -280,6 +282,7 @@
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Name = "FormDangKyTK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormDangKyTK_Load);
             this.groupBox1.ResumeLayout(false);
@@ -296,7 +299,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnQuayLai;
-        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnKhoiTao;
         private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;

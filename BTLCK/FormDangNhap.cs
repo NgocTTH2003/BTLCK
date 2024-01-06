@@ -17,9 +17,7 @@ namespace BTLCK
         {
             InitializeComponent();
             InitializePlaceholder();
-            registerEvent();
         }
-
         private void InitializePlaceholder()
         {
             txtUser.Text = "Tài khoản";
@@ -87,27 +85,14 @@ namespace BTLCK
                 txtPass.ForeColor = Color.White;
             }
         }
-
-        #region Event
-
-        void registerEvent()
-        {
-            btnSignUp.Click += BtnSignUp_Click;
-            picEye.Click += PicEye_Click;
-        }
-
-
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            FormDangKyTK signUpForm = new FormDangKyTK();
-            signUpForm.FormClosed += SignUpForm_FormClosed;
-            signUpForm.Show();
+            FormDangKyTK formDangKyTK = new FormDangKyTK(this);
+            //formDangKyTK.FormClosed += SignUpForm_FormClosed;
+            formDangKyTK.Show();
             this.Hide();
         }
-        private void SignUpForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void PicEye_Click(object sender, EventArgs e)
         {
@@ -120,9 +105,6 @@ namespace BTLCK
                 txtPass.PasswordChar = '*';
             }
         }
-
-        #endregion
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -131,12 +113,6 @@ namespace BTLCK
         {
 
         }
-
-        private void btnSignup_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
@@ -158,5 +134,7 @@ namespace BTLCK
                 txtPass.PasswordChar = '*';
             }
         }
+
+
     }
 }

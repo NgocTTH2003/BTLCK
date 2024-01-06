@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picEye = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -43,13 +44,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picEye = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +75,17 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // picEye
+            // 
+            this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
+            this.picEye.Location = new System.Drawing.Point(255, 212);
+            this.picEye.Name = "picEye";
+            this.picEye.Size = new System.Drawing.Size(29, 32);
+            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEye.TabIndex = 15;
+            this.picEye.TabStop = false;
+            this.picEye.Click += new System.EventHandler(this.PicEye_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -96,7 +107,7 @@
             this.btnSignUp.TabIndex = 14;
             this.btnSignUp.Text = "Đăng ký";
             this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignup_Click);
+            this.btnSignUp.Click += new System.EventHandler(this.BtnSignUp_Click);
             // 
             // btnLogin
             // 
@@ -214,16 +225,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // picEye
-            // 
-            this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
-            this.picEye.Location = new System.Drawing.Point(255, 212);
-            this.picEye.Name = "picEye";
-            this.picEye.Size = new System.Drawing.Size(29, 32);
-            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEye.TabIndex = 15;
-            this.picEye.TabStop = false;
-            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -242,11 +243,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnhDangNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
             this.ResumeLayout(false);
 
         }
