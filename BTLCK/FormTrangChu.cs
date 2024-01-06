@@ -218,7 +218,9 @@ namespace BTLCK
 
         private void buttonDMNhaCungCap_Click(object sender, EventArgs e)
         {
-
+            FormDanhMucNhaCungCap formDanhMucNhaCungCap = new FormDanhMucNhaCungCap(this);
+            formDanhMucNhaCungCap.Show();
+            this.Hide();
         }
         //mở form danh mục nhân viên
         private void buttonDMNhanVien_Click(object sender, EventArgs e)
