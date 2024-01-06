@@ -129,6 +129,12 @@
     <EmbeddedResource Include="FormDanhMucThietBi.resx">
       <DependentUpon>FormDanhMucThietBi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormKiemKe.resx">
+      <DependentUpon>FormKiemKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyNhapKho.resx">
+      <DependentUpon>FormQuanLyNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </EmbeddedResource>
