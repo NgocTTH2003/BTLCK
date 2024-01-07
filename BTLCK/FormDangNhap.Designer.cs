@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -38,10 +39,9 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxAnhDangNhap = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,6 +70,17 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(48, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ĐĂNG NHẬP";
+            // 
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -92,6 +103,7 @@
             this.btnLogin.TabIndex = 13;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPass
             // 
@@ -156,17 +168,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
-            // pictureBoxAnhDangNhap
-            // 
-            this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
-            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(99, 63);
-            this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
-            this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
-            this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAnhDangNhap.TabIndex = 4;
-            this.pictureBoxAnhDangNhap.TabStop = false;
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
@@ -185,16 +186,16 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "label4";
             // 
-            // label1
+            // pictureBoxAnhDangNhap
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(48, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ĐĂNG NHẬP";
+            this.pictureBoxAnhDangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAnhDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAnhDangNhap.Image")));
+            this.pictureBoxAnhDangNhap.Location = new System.Drawing.Point(99, 63);
+            this.pictureBoxAnhDangNhap.Name = "pictureBoxAnhDangNhap";
+            this.pictureBoxAnhDangNhap.Size = new System.Drawing.Size(85, 83);
+            this.pictureBoxAnhDangNhap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAnhDangNhap.TabIndex = 4;
+            this.pictureBoxAnhDangNhap.TabStop = false;
             // 
             // FormDangNhap
             // 
