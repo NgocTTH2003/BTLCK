@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,20 @@ namespace BTLCK
 {
     public partial class FormDanhMucThietBi : Form
     {
+        SqlConnection connection;
+        SqlCommand command;
+        string str = "Data Source=HONGNGOC;Initial Catalog=QuanLyThietBi;Integrated Security=True";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
+        void LoadData()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from ThietBi";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
         public FormDanhMucThietBi(FormTrangChu formTrangChu)
         {
             InitializeComponent();
@@ -24,6 +39,8 @@ namespace BTLCK
 
         private void FormDanhMucThietBi_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThietBiDataSet1.ThietBi' table. You can move, or remove it, as needed.
+            this.thietBiTableAdapter.Fill(this.quanLyThietBiDataSet1.ThietBi);
             //khi hiển thị form thì ẩn groupboxThemThietBi
             groupBoxThemThietBi.Visible = false;
         }

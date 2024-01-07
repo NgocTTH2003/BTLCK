@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucKhoVatTu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -36,11 +37,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxKho = new System.Windows.Forms.GroupBox();
-            this.txtSoLuongTB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtTB = new System.Windows.Forms.TextBox();
             this.comboBoxKho = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
             this.comboBoxDV = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -56,6 +53,14 @@
             this.labelTimKiem = new System.Windows.Forms.Label();
             this.buttonThem = new System.Windows.Forms.Button();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
+            this.quanLyThietBiDataSet4 = new BTLCK.QuanLyThietBiDataSet4();
+            this.khoVatTuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoVatTuTableAdapter = new BTLCK.QuanLyThietBiDataSet4TableAdapters.KhoVatTuTableAdapter();
+            this.iDKhoVatTuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMaKVT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
@@ -66,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoVatTuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -150,11 +157,9 @@
             this.groupBoxKho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxKho.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxKho.Controls.Add(this.txtSoLuongTB);
+            this.groupBoxKho.Controls.Add(this.txtMaKVT);
             this.groupBoxKho.Controls.Add(this.label2);
-            this.groupBoxKho.Controls.Add(this.txtTB);
             this.groupBoxKho.Controls.Add(this.comboBoxKho);
-            this.groupBoxKho.Controls.Add(this.label1);
             this.groupBoxKho.Controls.Add(this.buttonKhoiTao);
             this.groupBoxKho.Controls.Add(this.comboBoxDV);
             this.groupBoxKho.Controls.Add(this.pictureBox7);
@@ -172,60 +177,18 @@
             this.groupBoxKho.TabStop = false;
             this.groupBoxKho.Text = "Thông tin";
             // 
-            // txtSoLuongTB
-            // 
-            this.txtSoLuongTB.Location = new System.Drawing.Point(180, 223);
-            this.txtSoLuongTB.Name = "txtSoLuongTB";
-            this.txtSoLuongTB.Size = new System.Drawing.Size(230, 26);
-            this.txtSoLuongTB.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 226);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Số lượng thiết bị";
-            // 
-            // txtTB
-            // 
-            this.txtTB.Location = new System.Drawing.Point(180, 140);
-            this.txtTB.Name = "txtTB";
-            this.txtTB.Size = new System.Drawing.Size(230, 26);
-            this.txtTB.TabIndex = 31;
-            this.txtTB.TextChanged += new System.EventHandler(this.txtTB_TextChanged);
-            // 
             // comboBoxKho
             // 
             this.comboBoxKho.FormattingEnabled = true;
             this.comboBoxKho.Items.AddRange(new object[] {
-            "Viện Sức khỏe tâm thần",
-            "Viện Tim mạch",
-            "Viện Giám định Y khoa",
-            "Trung tâm Chống độc",
-            "Trung tâm Đào tạo - chỉ đạo tuyến",
-            "Trung tâm Giải phẫu bệnh - Tế bào học",
-            "Trung tâm Phục hồi chức năng ",
-            "Trung tâm Hô hấp",
-            "Trung tâm Dị ứng - Miễn dịch lâm sàng ",
-            "Trung tâm Y học hạt nhân và Ung bướu",
-            "Trung tâm Huyết học và Truyền máu",
-            "Trung tâm Điện quang",
-            "Trung tâm Bệnh viện đới"});
-            this.comboBoxKho.Location = new System.Drawing.Point(180, 51);
+            "Kho thiết bị loại A",
+            "Kho thiết bị loại B",
+            "Kho thiết bị loại C",
+            "Kho thiết bị loại D"});
+            this.comboBoxKho.Location = new System.Drawing.Point(172, 163);
             this.comboBoxKho.Name = "comboBoxKho";
             this.comboBoxKho.Size = new System.Drawing.Size(230, 28);
             this.comboBoxKho.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 143);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Tên thiết bị";
             // 
             // buttonKhoiTao
             // 
@@ -243,21 +206,11 @@
             // 
             this.comboBoxDV.FormattingEnabled = true;
             this.comboBoxDV.Items.AddRange(new object[] {
-            "Tòa nhà T4,T5,T6",
-            "Khu C - Bệnh viện Bạch Mai",
-            "Tòa nhà 3 tầng, cạnh trường Trung cấp Y Bạch Mai",
-            "Tầng 2, nhà A9 - Bệnh viện Bạch Mai",
-            "Tòa nhà Trung tâm Đào tạo và Chỉ đạo tuyến - Bệnh viện Bạch Mai",
-            "Tầng 1- Đối diện khoa khám bệnh",
-            "Nhà tròn - Bệnh viện Bạch Mai",
-            "Tầng 6 nhà P - Bệnh viện Bạch Mai",
-            "Nhà A2, A4 tầng 2 khu A - Bệnh viện Bạch Mai",
-            "Tầng 4 Trung tâm hội nghị Quốc tế - Bệnh viện Bạch Mai",
-            "Tòa nhà Trung tâm Y học hạt nhân và Ung bướu",
-            "Tòa nhà Trung tâm Huyết học – Truyền máu và tầng 3 khu khám bệnh",
-            "Tầng 1 Khu nhà P - Bệnh viện Bạch Mai",
-            "Tòa nhà 3 tầng Trung tâm Bệnh nhiệt đới, Bệnh viện Bạch Mai"});
-            this.comboBoxDV.Location = new System.Drawing.Point(180, 314);
+            "Tòa A - Bệnh viện đa khoa huyện Mê Linh",
+            "Tòa B - Bệnh viện đa khoa huyện Mê Linh",
+            "Tòa C - Bệnh viện đa khoa huyện Mê Linh",
+            "Tòa D - Bệnh viện đa khoa huyện Mê Linh"});
+            this.comboBoxDV.Location = new System.Drawing.Point(172, 252);
             this.comboBoxDV.Name = "comboBoxDV";
             this.comboBoxDV.Size = new System.Drawing.Size(230, 28);
             this.comboBoxDV.TabIndex = 27;
@@ -276,7 +229,7 @@
             // labelVTDat
             // 
             this.labelVTDat.AutoSize = true;
-            this.labelVTDat.Location = new System.Drawing.Point(38, 317);
+            this.labelVTDat.Location = new System.Drawing.Point(30, 255);
             this.labelVTDat.Name = "labelVTDat";
             this.labelVTDat.Size = new System.Drawing.Size(57, 20);
             this.labelVTDat.TabIndex = 20;
@@ -285,7 +238,7 @@
             // labelTenNCC
             // 
             this.labelTenNCC.AutoSize = true;
-            this.labelTenNCC.Location = new System.Drawing.Point(38, 59);
+            this.labelTenNCC.Location = new System.Drawing.Point(30, 171);
             this.labelTenNCC.Name = "labelTenNCC";
             this.labelTenNCC.Size = new System.Drawing.Size(66, 20);
             this.labelTenNCC.TabIndex = 13;
@@ -365,8 +318,14 @@
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDKhoVatTuDataGridViewTextBoxColumn,
+            this.tenKhoDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.khoVatTuBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(503, 110);
             this.dataGridView1.Name = "dataGridView1";
@@ -411,6 +370,55 @@
             this.textBoxTimKiem.Size = new System.Drawing.Size(314, 34);
             this.textBoxTimKiem.TabIndex = 67;
             // 
+            // quanLyThietBiDataSet4
+            // 
+            this.quanLyThietBiDataSet4.DataSetName = "QuanLyThietBiDataSet4";
+            this.quanLyThietBiDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khoVatTuBindingSource
+            // 
+            this.khoVatTuBindingSource.DataMember = "KhoVatTu";
+            this.khoVatTuBindingSource.DataSource = this.quanLyThietBiDataSet4;
+            // 
+            // khoVatTuTableAdapter
+            // 
+            this.khoVatTuTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDKhoVatTuDataGridViewTextBoxColumn
+            // 
+            this.iDKhoVatTuDataGridViewTextBoxColumn.DataPropertyName = "IDKhoVatTu";
+            this.iDKhoVatTuDataGridViewTextBoxColumn.HeaderText = "Mã kho vật tư";
+            this.iDKhoVatTuDataGridViewTextBoxColumn.Name = "iDKhoVatTuDataGridViewTextBoxColumn";
+            this.iDKhoVatTuDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenKhoDataGridViewTextBoxColumn
+            // 
+            this.tenKhoDataGridViewTextBoxColumn.DataPropertyName = "TenKho";
+            this.tenKhoDataGridViewTextBoxColumn.HeaderText = "Tên kho";
+            this.tenKhoDataGridViewTextBoxColumn.Name = "tenKhoDataGridViewTextBoxColumn";
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Mã kho vật tư";
+            // 
+            // txtMaKVT
+            // 
+            this.txtMaKVT.Location = new System.Drawing.Point(172, 81);
+            this.txtMaKVT.Name = "txtMaKVT";
+            this.txtMaKVT.Size = new System.Drawing.Size(230, 26);
+            this.txtMaKVT.TabIndex = 33;
+            // 
             // FormDanhMucKhoVatTu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,6 +445,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDanhMucKhoVatTu";
+            this.Load += new System.EventHandler(this.FormDanhMucKhoVatTu_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
@@ -448,6 +457,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoVatTuBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,9 +473,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.GroupBox groupBoxKho;
-        private System.Windows.Forms.TextBox txtTB;
         private System.Windows.Forms.ComboBox comboBoxKho;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonKhoiTao;
         private System.Windows.Forms.ComboBox comboBoxDV;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -480,7 +489,13 @@
         private System.Windows.Forms.Label labelTimKiem;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.TextBox textBoxTimKiem;
-        private System.Windows.Forms.TextBox txtSoLuongTB;
+        private QuanLyThietBiDataSet4 quanLyThietBiDataSet4;
+        private System.Windows.Forms.BindingSource khoVatTuBindingSource;
+        private QuanLyThietBiDataSet4TableAdapters.KhoVatTuTableAdapter khoVatTuTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDKhoVatTuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtMaKVT;
         private System.Windows.Forms.Label label2;
     }
 }

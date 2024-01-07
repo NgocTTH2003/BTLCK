@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucNhaCungCap));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxTTNCC = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBoxDC = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.labelVTDat = new System.Windows.Forms.Label();
+            this.labelMaNV = new System.Windows.Forms.Label();
             this.labelTenNCC = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.buttonHuy = new System.Windows.Forms.Button();
@@ -52,10 +57,16 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonSua = new System.Windows.Forms.Button();
             this.labelTimKiem = new System.Windows.Forms.Label();
-            this.labelMaNV = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.quanLyThietBiDataSet2 = new BTLCK.QuanLyThietBiDataSet2();
+            this.nhaCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nhaCungCapTableAdapter = new BTLCK.QuanLyThietBiDataSet2TableAdapters.NhaCungCapTableAdapter();
+            this.iDNhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenNhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBoxTTNCC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -66,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox5
@@ -111,6 +124,8 @@
             this.groupBoxTTNCC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxTTNCC.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxTTNCC.Controls.Add(this.txtMaNCC);
+            this.groupBoxTTNCC.Controls.Add(this.label2);
             this.groupBoxTTNCC.Controls.Add(this.txtEmail);
             this.groupBoxTTNCC.Controls.Add(this.label1);
             this.groupBoxTTNCC.Controls.Add(this.buttonKhoiTao);
@@ -132,6 +147,23 @@
             this.groupBoxTTNCC.TabIndex = 51;
             this.groupBoxTTNCC.TabStop = false;
             this.groupBoxTTNCC.Text = "Thông tin";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(172, 284);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(230, 28);
+            this.txtEmail.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Email";
             // 
             // comboBoxDC
             // 
@@ -200,7 +232,7 @@
             "Vĩnh Long",
             "Vĩnh Phúc",
             "Yên Bái"});
-            this.comboBoxDC.Location = new System.Drawing.Point(180, 317);
+            this.comboBoxDC.Location = new System.Drawing.Point(172, 374);
             this.comboBoxDC.Name = "comboBoxDC";
             this.comboBoxDC.Size = new System.Drawing.Size(230, 28);
             this.comboBoxDC.TabIndex = 27;
@@ -216,9 +248,17 @@
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(172, 200);
+            this.txtSDT.Multiline = true;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(230, 28);
+            this.txtSDT.TabIndex = 26;
+            // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(180, 56);
+            this.txtTenNCC.Location = new System.Drawing.Point(172, 113);
             this.txtTenNCC.Multiline = true;
             this.txtTenNCC.Name = "txtTenNCC";
             this.txtTenNCC.Size = new System.Drawing.Size(230, 28);
@@ -227,16 +267,25 @@
             // labelVTDat
             // 
             this.labelVTDat.AutoSize = true;
-            this.labelVTDat.Location = new System.Drawing.Point(38, 320);
+            this.labelVTDat.Location = new System.Drawing.Point(30, 377);
             this.labelVTDat.Name = "labelVTDat";
             this.labelVTDat.Size = new System.Drawing.Size(57, 20);
             this.labelVTDat.TabIndex = 20;
             this.labelVTDat.Text = "Địa chỉ";
             // 
+            // labelMaNV
+            // 
+            this.labelMaNV.AutoSize = true;
+            this.labelMaNV.Location = new System.Drawing.Point(30, 203);
+            this.labelMaNV.Name = "labelMaNV";
+            this.labelMaNV.Size = new System.Drawing.Size(41, 20);
+            this.labelMaNV.TabIndex = 18;
+            this.labelMaNV.Text = "SDT";
+            // 
             // labelTenNCC
             // 
             this.labelTenNCC.AutoSize = true;
-            this.labelTenNCC.Location = new System.Drawing.Point(38, 59);
+            this.labelTenNCC.Location = new System.Drawing.Point(30, 116);
             this.labelTenNCC.Name = "labelTenNCC";
             this.labelTenNCC.Size = new System.Drawing.Size(136, 20);
             this.labelTenNCC.TabIndex = 13;
@@ -379,8 +428,16 @@
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDNhaCungCapDataGridViewTextBoxColumn,
+            this.tenNhaCungCapDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn,
+            this.sDTDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.nhaCungCapBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(503, 110);
             this.dataGridView1.Name = "dataGridView1";
@@ -413,39 +470,69 @@
             this.labelTimKiem.TabIndex = 44;
             this.labelTimKiem.Text = "Tìm kiếm";
             // 
-            // labelMaNV
+            // quanLyThietBiDataSet2
             // 
-            this.labelMaNV.AutoSize = true;
-            this.labelMaNV.Location = new System.Drawing.Point(38, 146);
-            this.labelMaNV.Name = "labelMaNV";
-            this.labelMaNV.Size = new System.Drawing.Size(41, 20);
-            this.labelMaNV.TabIndex = 18;
-            this.labelMaNV.Text = "SDT";
+            this.quanLyThietBiDataSet2.DataSetName = "QuanLyThietBiDataSet2";
+            this.quanLyThietBiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txtSDT
+            // nhaCungCapBindingSource
             // 
-            this.txtSDT.Location = new System.Drawing.Point(180, 143);
-            this.txtSDT.Multiline = true;
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(230, 28);
-            this.txtSDT.TabIndex = 26;
+            this.nhaCungCapBindingSource.DataMember = "NhaCungCap";
+            this.nhaCungCapBindingSource.DataSource = this.quanLyThietBiDataSet2;
             // 
-            // label1
+            // nhaCungCapTableAdapter
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Email";
+            this.nhaCungCapTableAdapter.ClearBeforeFill = true;
             // 
-            // txtEmail
+            // iDNhaCungCapDataGridViewTextBoxColumn
             // 
-            this.txtEmail.Location = new System.Drawing.Point(180, 227);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(230, 28);
-            this.txtEmail.TabIndex = 30;
+            this.iDNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "IDNhaCungCap";
+            this.iDNhaCungCapDataGridViewTextBoxColumn.HeaderText = "Mã nhà cung cấp";
+            this.iDNhaCungCapDataGridViewTextBoxColumn.Name = "iDNhaCungCapDataGridViewTextBoxColumn";
+            this.iDNhaCungCapDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDNhaCungCapDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // tenNhaCungCapDataGridViewTextBoxColumn
+            // 
+            this.tenNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "TenNhaCungCap";
+            this.tenNhaCungCapDataGridViewTextBoxColumn.HeaderText = "Tên nhà cung cấp";
+            this.tenNhaCungCapDataGridViewTextBoxColumn.Name = "tenNhaCungCapDataGridViewTextBoxColumn";
+            this.tenNhaCungCapDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // sDTDataGridViewTextBoxColumn
+            // 
+            this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
+            this.sDTDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
+            this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.Location = new System.Drawing.Point(172, 41);
+            this.txtMaNCC.Multiline = true;
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(230, 28);
+            this.txtMaNCC.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 20);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Mã nhà cung cấp";
             // 
             // FormDanhMucNhaCungCap
             // 
@@ -472,6 +559,7 @@
             this.Name = "FormDanhMucNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục nhà cung cấp";
+            this.Load += new System.EventHandler(this.FormDanhMucNhaCungCap_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBoxTTNCC.ResumeLayout(false);
             this.groupBoxTTNCC.PerformLayout();
@@ -483,6 +571,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,5 +607,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label labelMaNV;
+        private QuanLyThietBiDataSet2 quanLyThietBiDataSet2;
+        private System.Windows.Forms.BindingSource nhaCungCapBindingSource;
+        private QuanLyThietBiDataSet2TableAdapters.NhaCungCapTableAdapter nhaCungCapTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDNhaCungCapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenNhaCungCapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtMaNCC;
+        private System.Windows.Forms.Label label2;
     }
 }

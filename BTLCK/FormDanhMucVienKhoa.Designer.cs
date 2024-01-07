@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucVienKhoa));
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxKhoaPhong = new System.Windows.Forms.GroupBox();
             this.comboBoxKhoa = new System.Windows.Forms.ComboBox();
-            this.comboBoxVien = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -54,6 +54,15 @@
             this.Back = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.quanLyThietBiDataSet2 = new BTLCK.QuanLyThietBiDataSet2();
+            this.quanLyThietBiDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThietBiDataSet3 = new BTLCK.QuanLyThietBiDataSet3();
+            this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoaTableAdapter = new BTLCK.QuanLyThietBiDataSet3TableAdapters.KhoaTableAdapter();
+            this.iDVienKhoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKhoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMaKhoa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxKhoaPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -64,6 +73,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxTimKiem
@@ -93,24 +106,21 @@
             // 
             this.comboBoxDV.FormattingEnabled = true;
             this.comboBoxDV.Items.AddRange(new object[] {
-            "Tòa nhà T4,T5,T6",
-            "Khu C - Bệnh viện Bạch Mai",
-            "Tòa nhà 3 tầng, cạnh trường Trung cấp Y Bạch Mai",
-            "Tầng 2, nhà A9 - Bệnh viện Bạch Mai",
-            "Tòa nhà Trung tâm Đào tạo và Chỉ đạo tuyến - Bệnh viện Bạch Mai",
-            "Tầng 1- Đối diện khoa khám bệnh",
-            "Nhà tròn - Bệnh viện Bạch Mai",
-            "Tầng 6 nhà P - Bệnh viện Bạch Mai",
-            "Nhà A2, A4 tầng 2 khu A - Bệnh viện Bạch Mai",
-            "Tầng 4 Trung tâm hội nghị Quốc tế - Bệnh viện Bạch Mai",
-            "Tòa nhà Trung tâm Y học hạt nhân và Ung bướu",
-            "Tòa nhà Trung tâm Huyết học – Truyền máu và tầng 3 khu khám bệnh",
-            "Tầng 1 Khu nhà P - Bệnh viện Bạch Mai",
-            "Tòa nhà 3 tầng Trung tâm Bệnh nhiệt đới, Bệnh viện Bạch Mai"});
+            "Tầng 1-Khu A",
+            "Tầng 2-Khu A",
+            "Tầng 2-Khu A",
+            "Tầng 3-Khu A",
+            "Tầng 4-Khu A",
+            "Tầng 1-Khu A",
+            "Tầng 4-Khu A",
+            "Tầng 1-Khu B",
+            "Tầng 2,3-Khu B",
+            "Khu C"});
             this.comboBoxDV.Location = new System.Drawing.Point(180, 224);
             this.comboBoxDV.Name = "comboBoxDV";
             this.comboBoxDV.Size = new System.Drawing.Size(230, 28);
             this.comboBoxDV.TabIndex = 27;
+            this.comboBoxDV.SelectedIndexChanged += new System.EventHandler(this.comboBoxDV_SelectedIndexChanged);
             // 
             // buttonThem
             // 
@@ -140,16 +150,22 @@
             this.labelTenNCC.AutoSize = true;
             this.labelTenNCC.Location = new System.Drawing.Point(38, 59);
             this.labelTenNCC.Name = "labelTenNCC";
-            this.labelTenNCC.Size = new System.Drawing.Size(140, 20);
+            this.labelTenNCC.Size = new System.Drawing.Size(70, 20);
             this.labelTenNCC.TabIndex = 13;
-            this.labelTenNCC.Text = "Tên viện/trung tâm";
+            this.labelTenNCC.Text = "Mã khoa";
             // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDVienKhoaDataGridViewTextBoxColumn,
+            this.tenKhoaDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.khoaBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(503, 110);
             this.dataGridView1.Name = "dataGridView1";
@@ -210,8 +226,8 @@
             this.groupBoxKhoaPhong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxKhoaPhong.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxKhoaPhong.Controls.Add(this.txtMaKhoa);
             this.groupBoxKhoaPhong.Controls.Add(this.comboBoxKhoa);
-            this.groupBoxKhoaPhong.Controls.Add(this.comboBoxVien);
             this.groupBoxKhoaPhong.Controls.Add(this.label1);
             this.groupBoxKhoaPhong.Controls.Add(this.buttonKhoiTao);
             this.groupBoxKhoaPhong.Controls.Add(this.comboBoxDV);
@@ -234,54 +250,20 @@
             // 
             this.comboBoxKhoa.FormattingEnabled = true;
             this.comboBoxKhoa.Items.AddRange(new object[] {
-            "Khoa Hồi sức tích cực",
-            "Khoa Thận nhân tạo",
-            "Khoa Cấp cứu",
-            "Khoa Cơ xương khớp",
-            "Khoa Tiêu hóa",
-            "Khoa Thận - Tiết niệu",
-            "Khoa Ngoại Tổng hợp",
-            "Khoa Gây mê hồi sức",
-            "Khoa Nhi",
-            "Khoa Phụ sản",
-            "Khoa Nội tiết - Đái tháo đường",
-            "Khoa Thần Kinh",
-            "Khoa Tai mũi họng",
-            "Khoa Răng Hàm Mặt",
-            "Khoa Mắt",
-            "Khoa Khám chữa bệnh theo yêu cầu",
-            "Khoa Phẫu thuật Thần kinh",
-            "Khoa Chấn thương chỉnh hình và cột sống",
-            "Khoa Y học cổ truyền",
+            "Khoa sơ chẩn và phân loại",
+            "Khoa thần kinh",
+            "Khoa Tim mạch",
+            "Khoa Răng-hàm-mặt",
+            "Khoa Tai-mũi-họng",
+            "Khoa Xương khớp",
             "Khoa Da liễu",
-            "Khoa Khám bệnh"});
+            "Khoa cấp cứu",
+            "Khoa phẫu thuật & Gây mê hồi sức",
+            "Khoa Hồi sức tích cực & Chống độc"});
             this.comboBoxKhoa.Location = new System.Drawing.Point(180, 140);
             this.comboBoxKhoa.Name = "comboBoxKhoa";
             this.comboBoxKhoa.Size = new System.Drawing.Size(230, 28);
             this.comboBoxKhoa.TabIndex = 31;
-            // 
-            // comboBoxVien
-            // 
-            this.comboBoxVien.FormattingEnabled = true;
-            this.comboBoxVien.Items.AddRange(new object[] {
-            "Viện Sức khỏe tâm thần",
-            "Viện Tim mạch",
-            "Viện Giám định Y khoa",
-            "Trung tâm Chống độc",
-            "Trung tâm Đào tạo - chỉ đạo tuyến",
-            "Trung tâm Giải phẫu bệnh - Tế bào học",
-            "Trung tâm Phục hồi chức năng ",
-            "Trung tâm Hô hấp",
-            "Trung tâm Dị ứng - Miễn dịch lâm sàng ",
-            "Trung tâm Y học hạt nhân và Ung bướu",
-            "Trung tâm Huyết học và Truyền máu",
-            "Trung tâm Điện quang",
-            "Trung tâm Bệnh viện đới"});
-            this.comboBoxVien.Location = new System.Drawing.Point(180, 51);
-            this.comboBoxVien.Name = "comboBoxVien";
-            this.comboBoxVien.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxVien.TabIndex = 30;
-            this.comboBoxVien.SelectedIndexChanged += new System.EventHandler(this.comboBoxVien_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -414,6 +396,56 @@
             this.pictureBox5.TabIndex = 65;
             this.pictureBox5.TabStop = false;
             // 
+            // quanLyThietBiDataSet2
+            // 
+            this.quanLyThietBiDataSet2.DataSetName = "QuanLyThietBiDataSet2";
+            this.quanLyThietBiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // quanLyThietBiDataSet2BindingSource
+            // 
+            this.quanLyThietBiDataSet2BindingSource.DataSource = this.quanLyThietBiDataSet2;
+            this.quanLyThietBiDataSet2BindingSource.Position = 0;
+            // 
+            // quanLyThietBiDataSet3
+            // 
+            this.quanLyThietBiDataSet3.DataSetName = "QuanLyThietBiDataSet3";
+            this.quanLyThietBiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khoaBindingSource
+            // 
+            this.khoaBindingSource.DataMember = "Khoa";
+            this.khoaBindingSource.DataSource = this.quanLyThietBiDataSet3;
+            // 
+            // khoaTableAdapter
+            // 
+            this.khoaTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDVienKhoaDataGridViewTextBoxColumn
+            // 
+            this.iDVienKhoaDataGridViewTextBoxColumn.DataPropertyName = "IDVienKhoa";
+            this.iDVienKhoaDataGridViewTextBoxColumn.HeaderText = "Mã khoa";
+            this.iDVienKhoaDataGridViewTextBoxColumn.Name = "iDVienKhoaDataGridViewTextBoxColumn";
+            this.iDVienKhoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenKhoaDataGridViewTextBoxColumn
+            // 
+            this.tenKhoaDataGridViewTextBoxColumn.DataPropertyName = "TenKhoa";
+            this.tenKhoaDataGridViewTextBoxColumn.HeaderText = "Tên khoa";
+            this.tenKhoaDataGridViewTextBoxColumn.Name = "tenKhoaDataGridViewTextBoxColumn";
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // txtMaKhoa
+            // 
+            this.txtMaKhoa.Location = new System.Drawing.Point(180, 56);
+            this.txtMaKhoa.Name = "txtMaKhoa";
+            this.txtMaKhoa.Size = new System.Drawing.Size(230, 26);
+            this.txtMaKhoa.TabIndex = 32;
+            // 
             // FormDanhMucVienKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,6 +471,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục viện/khoa";
+            this.Load += new System.EventHandler(this.FormDanhMucVienKhoa_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxKhoaPhong.ResumeLayout(false);
             this.groupBoxKhoaPhong.PerformLayout();
@@ -450,6 +483,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,6 +518,14 @@
         private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxKhoa;
-        private System.Windows.Forms.ComboBox comboBoxVien;
+        private System.Windows.Forms.BindingSource quanLyThietBiDataSet2BindingSource;
+        private QuanLyThietBiDataSet2 quanLyThietBiDataSet2;
+        private QuanLyThietBiDataSet3 quanLyThietBiDataSet3;
+        private System.Windows.Forms.BindingSource khoaBindingSource;
+        private QuanLyThietBiDataSet3TableAdapters.KhoaTableAdapter khoaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDVienKhoaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhoaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtMaKhoa;
     }
 }

@@ -53,12 +53,24 @@ namespace BTLCK
 
         private void buttonKhoiTao_Click(object sender, EventArgs e)
         {
-            comboBoxVien.Text = string.Empty;
+            txtMaKhoa.ResetText();
             comboBoxKhoa.Text = string.Empty;
             comboBoxDV.Text = string.Empty;
         }
 
         private void comboBoxVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormDanhMucVienKhoa_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThietBiDataSet3.Khoa' table. You can move, or remove it, as needed.
+            this.khoaTableAdapter.Fill(this.quanLyThietBiDataSet3.Khoa);
+
+        }
+
+        private void comboBoxDV_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

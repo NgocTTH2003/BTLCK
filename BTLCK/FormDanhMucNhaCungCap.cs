@@ -58,5 +58,12 @@ namespace BTLCK
             txtSDT.ResetText();
             comboBoxDC.Text = string.Empty;
         }
+
+        private void FormDanhMucNhaCungCap_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThietBiDataSet2.NhaCungCap' table. You can move, or remove it, as needed.
+            this.nhaCungCapTableAdapter.Fill(this.quanLyThietBiDataSet2.NhaCungCap);
+
+        }
     }
 }

@@ -260,12 +260,16 @@ namespace BTLCK
 
         private void buttonVanChuyenTB_Click(object sender, EventArgs e)
         {
-
+            FormVanChuyen formVanChuyen = new FormVanChuyen(this); 
+            formVanChuyen.Show();
+            this.Hide();
         }
 
         private void buttonSuaChuaTB_Click(object sender, EventArgs e)
         {
-
+            FormSuaChua formSuaChua = new FormSuaChua(this);
+            formSuaChua.Show();
+            this.Hide();
         }
 
         private void buttonBaoTriTB_Click(object sender, EventArgs e)

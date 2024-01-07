@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,20 @@ namespace BTLCK
 {
     public partial class FormDanhMucKhoVatTu : Form
     {
+        SqlConnection connection;
+        SqlCommand command;
+        string str = "Data Source=HONGNGOC;Initial Catalog=QuanLyThietBi;Integrated Security=True";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
+        void LoadData()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from KhoVatTu";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
         private FormTrangChu formTrangChu;
 
         public FormDanhMucKhoVatTu(FormTrangChu formTrangChu)
@@ -56,10 +71,16 @@ namespace BTLCK
 
         private void buttonKhoiTao_Click(object sender, EventArgs e)
         {
-            comboBoxDV.Text = string.Empty;
+            txtMaKVT.ResetText();  
             comboBoxKho.Text = string.Empty;
-            txtSoLuongTB.ResetText();
-            txtTB.ResetText();
+            comboBoxDV.Text = string.Empty;
+        }
+
+        private void FormDanhMucKhoVatTu_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThietBiDataSet4.KhoVatTu' table. You can move, or remove it, as needed.
+            this.khoVatTuTableAdapter.Fill(this.quanLyThietBiDataSet4.KhoVatTu);
+
         }
     }
 }
