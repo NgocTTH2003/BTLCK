@@ -52,5 +52,15 @@ namespace BTLCK
         {
 
         }
+
+        private void dateTimePickerNN_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTTTBYT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

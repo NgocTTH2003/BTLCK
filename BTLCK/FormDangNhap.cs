@@ -146,7 +146,7 @@ namespace BTLCK
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
             using (SqlConnection scn = new SqlConnection(@"Data Source=HONGNGOC;Initial Catalog=QuanLyThietBi;Integrated Security=True"))
             {
@@ -185,6 +185,12 @@ namespace BTLCK
                     MessageBox.Show("Lỗi: " + ex.Message);
                 }
             }
+        }
+
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
