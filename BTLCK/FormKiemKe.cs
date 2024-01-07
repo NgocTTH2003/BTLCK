@@ -25,7 +25,7 @@ namespace BTLCK
         private void FormKiemKe_Load(object sender, EventArgs e)
         {
             //khi hiển thị form thì ẩn groupbox
-            groupBox.Visible = false;
+            groupBox.Visible = true;
         }
         //nhấn back để trở về trang chủ 
         private void Back_Click(object sender, EventArgs e)
@@ -33,20 +33,7 @@ namespace BTLCK
             this.formTrangChu.Show();
             this.Close();
         }
-        private void buttonThem_Click(object sender, EventArgs e)
-        {
-            //gọi hàm để hiển thị/ẩn groupbox
-            ShowGroupBox();
-        }
-        private void ShowGroupBox()
-        {
-            groupBox.Visible = true;
-        }
 
-        private void buttonHuy_Click(object sender, EventArgs e)
-        {
-            groupBox.Visible = false;
-        }
 
         private void buttonKhoiTao_Click(object sender, EventArgs e)
         {
@@ -59,6 +46,11 @@ namespace BTLCK
         }
 
         private void labelTTTBYT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_Enter(object sender, EventArgs e)
         {
 
         }

@@ -50,13 +50,7 @@ namespace BTLCK
 
         private void buttonKhoiTao_Click(object sender, EventArgs e)
         {
-            txtMaNhap.ResetText();
-            txtTenTB.ResetText();
-            txtSoLuong.ResetText();
-            txtDonGia.ResetText();
-            txtThanhTien.ResetText();
-            txtNV.ResetText();
-            dateTimePickerNN.Text = string.Empty;
+            
         }
 
         private void labelMaTB_Click(object sender, EventArgs e)
