@@ -44,6 +44,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IDSuaChua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonViSua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiPhiSua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHoanThanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiTietVanChuyenBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThietBiDataSet5 = new BTLCK.QuanLyThietBiDataSet5();
             this.txtMaTB = new System.Windows.Forms.TextBox();
@@ -73,15 +82,6 @@
             this.quanLyThietBiDataSet4 = new BTLCK.QuanLyThietBiDataSet4();
             this.chiTietSuaChuaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.chiTietSuaChuaTableAdapter = new BTLCK.QuanLyThietBiDataSet4TableAdapters.ChiTietSuaChuaTableAdapter();
-            this.IDSuaChua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViSua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiPhiSua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayHoanThanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quanLyThietBiDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -235,6 +235,53 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(652, 600);
             this.dataGridView1.TabIndex = 58;
+            // 
+            // IDSuaChua
+            // 
+            this.IDSuaChua.HeaderText = "Mã sửa chữa";
+            this.IDSuaChua.Name = "IDSuaChua";
+            // 
+            // IDThietBi
+            // 
+            this.IDThietBi.HeaderText = "Mã thiết bị";
+            this.IDThietBi.Name = "IDThietBi";
+            // 
+            // TenThietBi
+            // 
+            this.TenThietBi.DataPropertyName = "TenThietBi";
+            this.TenThietBi.HeaderText = "Tên thiết bị";
+            this.TenThietBi.Name = "TenThietBi";
+            this.TenThietBi.ReadOnly = true;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // DonViSua
+            // 
+            this.DonViSua.HeaderText = "Đơn vị sửa";
+            this.DonViSua.Name = "DonViSua";
+            // 
+            // ChiPhiSua
+            // 
+            this.ChiPhiSua.HeaderText = "Chi phí sửa";
+            this.ChiPhiSua.Name = "ChiPhiSua";
+            // 
+            // NgaySua
+            // 
+            this.NgaySua.HeaderText = "Ngày sửa";
+            this.NgaySua.Name = "NgaySua";
+            // 
+            // NgayHoanThanh
+            // 
+            this.NgayHoanThanh.HeaderText = "Ngày hoàn thành";
+            this.NgayHoanThanh.Name = "NgayHoanThanh";
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.HeaderText = "Tình trạng";
+            this.TinhTrang.Name = "TinhTrang";
             // 
             // chiTietVanChuyenBindingSource
             // 
@@ -547,53 +594,6 @@
             // chiTietSuaChuaTableAdapter
             // 
             this.chiTietSuaChuaTableAdapter.ClearBeforeFill = true;
-            // 
-            // IDSuaChua
-            // 
-            this.IDSuaChua.HeaderText = "Mã sửa chữa";
-            this.IDSuaChua.Name = "IDSuaChua";
-            // 
-            // IDThietBi
-            // 
-            this.IDThietBi.HeaderText = "Mã thiết bị";
-            this.IDThietBi.Name = "IDThietBi";
-            // 
-            // TenThietBi
-            // 
-            this.TenThietBi.DataPropertyName = "TenThietBi";
-            this.TenThietBi.HeaderText = "Tên thiết bị";
-            this.TenThietBi.Name = "TenThietBi";
-            this.TenThietBi.ReadOnly = true;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // DonViSua
-            // 
-            this.DonViSua.HeaderText = "Đơn vị sửa";
-            this.DonViSua.Name = "DonViSua";
-            // 
-            // ChiPhiSua
-            // 
-            this.ChiPhiSua.HeaderText = "Chi phí sửa";
-            this.ChiPhiSua.Name = "ChiPhiSua";
-            // 
-            // NgaySua
-            // 
-            this.NgaySua.HeaderText = "Ngày sửa";
-            this.NgaySua.Name = "NgaySua";
-            // 
-            // NgayHoanThanh
-            // 
-            this.NgayHoanThanh.HeaderText = "Ngày hoàn thành";
-            this.NgayHoanThanh.Name = "NgayHoanThanh";
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.HeaderText = "Tình trạng";
-            this.TinhTrang.Name = "TinhTrang";
             // 
             // quanLyThietBiDataSet4BindingSource
             // 

@@ -274,12 +274,16 @@ namespace BTLCK
 
         private void buttonBaoTriTB_Click(object sender, EventArgs e)
         {
-
+            FormBaoTri formBaoTri = new FormBaoTri(this);
+            formBaoTri.Show();
+            this.Hide();
         }
 
         private void buttonThanhLyTB_Click(object sender, EventArgs e)
         {
-
+            FormThanhLy formThanhLy = new FormThanhLy(this);
+            formThanhLy.Show();
+            this.Hide();
         }
 
         private void buttonBaoCaoBaoTri_Click(object sender, EventArgs e)

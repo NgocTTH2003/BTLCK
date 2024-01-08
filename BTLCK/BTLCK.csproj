@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoTri.Designer.cs">
+      <DependentUpon>FormBaoTri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangKyTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     <Compile Include="FormSuaChua.Designer.cs">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThanhLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThanhLy.Designer.cs">
+      <DependentUpon>FormThanhLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +162,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThietBiDataSet5.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormBaoTri.resx">
+      <DependentUpon>FormBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDangKyTK.resx">
       <DependentUpon>FormDangKyTK.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuaChua.resx">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThanhLy.resx">
+      <DependentUpon>FormThanhLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
