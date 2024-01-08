@@ -112,6 +112,12 @@
     <Compile Include="FormSuaChua.Designer.cs">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaiKhoan.Designer.cs">
+      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThanhLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThietBiDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyThietBiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThietBiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyThietBiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThietBiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyThietBiDataSetViewDanhMucNhanVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThietBiDataSetViewDanhMucNhanVien.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormBaoTri.resx">
       <DependentUpon>FormBaoTri.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuaChua.resx">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaiKhoan.resx">
+      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThanhLy.resx">
       <DependentUpon>FormThanhLy.cs</DependentUpon>
@@ -297,6 +321,39 @@
     </None>
     <None Include="QuanLyThietBiDataSet5.xss">
       <DependentUpon>QuanLyThietBiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSet6.xsc">
+      <DependentUpon>QuanLyThietBiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyThietBiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyThietBiDataSet6.xss">
+      <DependentUpon>QuanLyThietBiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSet7.xsc">
+      <DependentUpon>QuanLyThietBiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyThietBiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyThietBiDataSet7.xss">
+      <DependentUpon>QuanLyThietBiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSetViewDanhMucNhanVien.xsc">
+      <DependentUpon>QuanLyThietBiDataSetViewDanhMucNhanVien.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThietBiDataSetViewDanhMucNhanVien.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyThietBiDataSetViewDanhMucNhanVien.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyThietBiDataSetViewDanhMucNhanVien.xss">
+      <DependentUpon>QuanLyThietBiDataSetViewDanhMucNhanVien.xsd</DependentUpon>
     </None>
     <None Include="Resources\Thiết kế chưa có tên.png" />
   </ItemGroup>

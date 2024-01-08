@@ -43,6 +43,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,8 +72,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.quanLyThietBiDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.MaThanhLy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThietBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -250,6 +250,22 @@
             this.groupBox.TabIndex = 77;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Thông tin";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(186, 243);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(230, 28);
+            this.textBox3.TabIndex = 37;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(186, 341);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(230, 28);
+            this.textBox2.TabIndex = 36;
             // 
             // dateTimePicker1
             // 
@@ -513,22 +529,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(652, 600);
             this.dataGridView1.TabIndex = 71;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(186, 341);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 28);
-            this.textBox2.TabIndex = 36;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(186, 243);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(230, 28);
-            this.textBox3.TabIndex = 37;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MaThanhLy
             // 

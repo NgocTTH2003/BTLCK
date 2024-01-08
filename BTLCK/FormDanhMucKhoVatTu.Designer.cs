@@ -28,51 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucKhoVatTu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Back = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxKho = new System.Windows.Forms.GroupBox();
-            this.comboBoxKho = new System.Windows.Forms.ComboBox();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
-            this.comboBoxDV = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.txtMaKVT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxKho = new System.Windows.Forms.ComboBox();
+            this.comboBoxDC = new System.Windows.Forms.ComboBox();
             this.labelVTDat = new System.Windows.Forms.Label();
             this.labelTenNCC = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.buttonHuy = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.buttonLuu = new System.Windows.Forms.Button();
             this.labelTTTBYT = new System.Windows.Forms.Label();
             this.buttonSua = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelTimKiem = new System.Windows.Forms.Label();
             this.buttonThem = new System.Windows.Forms.Button();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
-            this.quanLyThietBiDataSet4 = new BTLCK.QuanLyThietBiDataSet4();
-            this.khoVatTuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khoVatTuTableAdapter = new BTLCK.QuanLyThietBiDataSet4TableAdapters.KhoVatTuTableAdapter();
-            this.iDKhoVatTuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMaKVT = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.buttonXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBoxKho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoVatTuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -126,56 +111,65 @@
             this.pictureBox2.TabIndex = 72;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(335, 164);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox5.TabIndex = 78;
-            this.pictureBox5.TabStop = false;
-            // 
-            // buttonXoa
-            // 
-            this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonXoa.Location = new System.Drawing.Point(377, 164);
-            this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(101, 36);
-            this.buttonXoa.TabIndex = 79;
-            this.buttonXoa.Text = "Xóa";
-            this.buttonXoa.UseVisualStyleBackColor = false;
-            // 
             // groupBoxKho
             // 
             this.groupBoxKho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxKho.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxKho.Controls.Add(this.buttonKhoiTao);
+            this.groupBoxKho.Controls.Add(this.pictureBox7);
             this.groupBoxKho.Controls.Add(this.txtMaKVT);
             this.groupBoxKho.Controls.Add(this.label2);
             this.groupBoxKho.Controls.Add(this.comboBoxKho);
-            this.groupBoxKho.Controls.Add(this.buttonKhoiTao);
-            this.groupBoxKho.Controls.Add(this.comboBoxDV);
-            this.groupBoxKho.Controls.Add(this.pictureBox7);
+            this.groupBoxKho.Controls.Add(this.comboBoxDC);
             this.groupBoxKho.Controls.Add(this.labelVTDat);
             this.groupBoxKho.Controls.Add(this.labelTenNCC);
-            this.groupBoxKho.Controls.Add(this.pictureBox6);
-            this.groupBoxKho.Controls.Add(this.buttonHuy);
-            this.groupBoxKho.Controls.Add(this.pictureBox4);
-            this.groupBoxKho.Controls.Add(this.buttonLuu);
             this.groupBoxKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxKho.Location = new System.Drawing.Point(20, 231);
             this.groupBoxKho.Name = "groupBoxKho";
-            this.groupBoxKho.Size = new System.Drawing.Size(458, 479);
+            this.groupBoxKho.Size = new System.Drawing.Size(458, 307);
             this.groupBoxKho.TabIndex = 77;
             this.groupBoxKho.TabStop = false;
             this.groupBoxKho.Text = "Thông tin";
+            // 
+            // buttonKhoiTao
+            // 
+            this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonKhoiTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKhoiTao.Location = new System.Drawing.Point(301, 25);
+            this.buttonKhoiTao.Name = "buttonKhoiTao";
+            this.buttonKhoiTao.Size = new System.Drawing.Size(101, 36);
+            this.buttonKhoiTao.TabIndex = 35;
+            this.buttonKhoiTao.Text = "Khởi tạo";
+            this.buttonKhoiTao.UseVisualStyleBackColor = false;
+            this.buttonKhoiTao.Click += new System.EventHandler(this.buttonKhoiTao_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(412, 25);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox7.TabIndex = 34;
+            this.pictureBox7.TabStop = false;
+            // 
+            // txtMaKVT
+            // 
+            this.txtMaKVT.Location = new System.Drawing.Point(172, 81);
+            this.txtMaKVT.Name = "txtMaKVT";
+            this.txtMaKVT.Size = new System.Drawing.Size(230, 26);
+            this.txtMaKVT.TabIndex = 33;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Mã kho vật tư";
             // 
             // comboBoxKho
             // 
@@ -184,47 +178,26 @@
             "Kho thiết bị loại A",
             "Kho thiết bị loại B",
             "Kho thiết bị loại C",
-            "Kho thiết bị loại D"});
+            "Kho thiết bị loại D",
+            "Kho thiết bị loại E"});
             this.comboBoxKho.Location = new System.Drawing.Point(172, 163);
             this.comboBoxKho.Name = "comboBoxKho";
             this.comboBoxKho.Size = new System.Drawing.Size(230, 28);
             this.comboBoxKho.TabIndex = 30;
             // 
-            // buttonKhoiTao
+            // comboBoxDC
             // 
-            this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonKhoiTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKhoiTao.Location = new System.Drawing.Point(349, 427);
-            this.buttonKhoiTao.Name = "buttonKhoiTao";
-            this.buttonKhoiTao.Size = new System.Drawing.Size(101, 36);
-            this.buttonKhoiTao.TabIndex = 16;
-            this.buttonKhoiTao.Text = "Khởi tạo";
-            this.buttonKhoiTao.UseVisualStyleBackColor = false;
-            this.buttonKhoiTao.Click += new System.EventHandler(this.buttonKhoiTao_Click);
-            // 
-            // comboBoxDV
-            // 
-            this.comboBoxDV.FormattingEnabled = true;
-            this.comboBoxDV.Items.AddRange(new object[] {
+            this.comboBoxDC.FormattingEnabled = true;
+            this.comboBoxDC.Items.AddRange(new object[] {
             "Tòa A - Bệnh viện đa khoa huyện Mê Linh",
             "Tòa B - Bệnh viện đa khoa huyện Mê Linh",
             "Tòa C - Bệnh viện đa khoa huyện Mê Linh",
-            "Tòa D - Bệnh viện đa khoa huyện Mê Linh"});
-            this.comboBoxDV.Location = new System.Drawing.Point(172, 252);
-            this.comboBoxDV.Name = "comboBoxDV";
-            this.comboBoxDV.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxDV.TabIndex = 27;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(307, 427);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
+            "Tòa D - Bệnh viện đa khoa huyện Mê Linh",
+            "Tòa E - Bệnh viện đa khoa huyện Mê Linh"});
+            this.comboBoxDC.Location = new System.Drawing.Point(172, 252);
+            this.comboBoxDC.Name = "comboBoxDC";
+            this.comboBoxDC.Size = new System.Drawing.Size(230, 28);
+            this.comboBoxDC.TabIndex = 27;
             // 
             // labelVTDat
             // 
@@ -243,51 +216,6 @@
             this.labelTenNCC.Size = new System.Drawing.Size(66, 20);
             this.labelTenNCC.TabIndex = 13;
             this.labelTenNCC.Text = "Tên kho";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(158, 427);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
-            // buttonHuy
-            // 
-            this.buttonHuy.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHuy.Location = new System.Drawing.Point(200, 427);
-            this.buttonHuy.Name = "buttonHuy";
-            this.buttonHuy.Size = new System.Drawing.Size(101, 36);
-            this.buttonHuy.TabIndex = 12;
-            this.buttonHuy.Text = "Hủy";
-            this.buttonHuy.UseVisualStyleBackColor = false;
-            this.buttonHuy.Click += new System.EventHandler(this.buttonHuy_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(10, 427);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // buttonLuu
-            // 
-            this.buttonLuu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLuu.Location = new System.Drawing.Point(52, 427);
-            this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(101, 36);
-            this.buttonLuu.TabIndex = 10;
-            this.buttonLuu.Text = "Lưu";
-            this.buttonLuu.UseVisualStyleBackColor = false;
             // 
             // labelTTTBYT
             // 
@@ -313,24 +241,7 @@
             this.buttonSua.TabIndex = 75;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDKhoVatTuDataGridViewTextBoxColumn,
-            this.tenKhoDataGridViewTextBoxColumn,
-            this.diaChiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.khoVatTuBindingSource;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(503, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(652, 600);
-            this.dataGridView1.TabIndex = 71;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // labelTimKiem
             // 
@@ -369,55 +280,48 @@
             this.textBoxTimKiem.Name = "textBoxTimKiem";
             this.textBoxTimKiem.Size = new System.Drawing.Size(314, 34);
             this.textBoxTimKiem.TabIndex = 67;
+            this.textBoxTimKiem.TextChanged += new System.EventHandler(this.textBoxTimKiem_TextChanged);
+            this.textBoxTimKiem.Enter += new System.EventHandler(this.textBoxTimKiem_Enter);
+            this.textBoxTimKiem.Leave += new System.EventHandler(this.textBoxTimKiem_Leave);
             // 
-            // quanLyThietBiDataSet4
+            // dataGridView1
             // 
-            this.quanLyThietBiDataSet4.DataSetName = "QuanLyThietBiDataSet4";
-            this.quanLyThietBiDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(502, 110);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(642, 591);
+            this.dataGridView1.TabIndex = 80;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // khoVatTuBindingSource
+            // pictureBox5
             // 
-            this.khoVatTuBindingSource.DataMember = "KhoVatTu";
-            this.khoVatTuBindingSource.DataSource = this.quanLyThietBiDataSet4;
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(335, 164);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox5.TabIndex = 78;
+            this.pictureBox5.TabStop = false;
             // 
-            // khoVatTuTableAdapter
+            // buttonXoa
             // 
-            this.khoVatTuTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDKhoVatTuDataGridViewTextBoxColumn
-            // 
-            this.iDKhoVatTuDataGridViewTextBoxColumn.DataPropertyName = "IDKhoVatTu";
-            this.iDKhoVatTuDataGridViewTextBoxColumn.HeaderText = "Mã kho vật tư";
-            this.iDKhoVatTuDataGridViewTextBoxColumn.Name = "iDKhoVatTuDataGridViewTextBoxColumn";
-            this.iDKhoVatTuDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tenKhoDataGridViewTextBoxColumn
-            // 
-            this.tenKhoDataGridViewTextBoxColumn.DataPropertyName = "TenKho";
-            this.tenKhoDataGridViewTextBoxColumn.HeaderText = "Tên kho";
-            this.tenKhoDataGridViewTextBoxColumn.Name = "tenKhoDataGridViewTextBoxColumn";
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Mã kho vật tư";
-            // 
-            // txtMaKVT
-            // 
-            this.txtMaKVT.Location = new System.Drawing.Point(172, 81);
-            this.txtMaKVT.Name = "txtMaKVT";
-            this.txtMaKVT.Size = new System.Drawing.Size(230, 26);
-            this.txtMaKVT.TabIndex = 33;
+            this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoa.Location = new System.Drawing.Point(377, 164);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.Size = new System.Drawing.Size(101, 36);
+            this.buttonXoa.TabIndex = 79;
+            this.buttonXoa.Text = "Xóa";
+            this.buttonXoa.UseVisualStyleBackColor = false;
             // 
             // FormDanhMucKhoVatTu
             // 
@@ -426,6 +330,8 @@
             this.BackgroundImage = global::BTLCK.Properties.Resources.Thiết_kế_chưa_có_tên__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1170, 728);
+            this.ControlBox = false;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.Back);
@@ -435,30 +341,26 @@
             this.Controls.Add(this.groupBoxKho);
             this.Controls.Add(this.labelTTTBYT);
             this.Controls.Add(this.buttonSua);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelTimKiem);
             this.Controls.Add(this.buttonThem);
             this.Controls.Add(this.textBoxTimKiem);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDanhMucKhoVatTu";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDanhMucKhoVatTu";
-            this.Load += new System.EventHandler(this.FormDanhMucKhoVatTu_Load_1);
+            this.Load += new System.EventHandler(this.FormDanhMucKhoVatTu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBoxKho.ResumeLayout(false);
             this.groupBoxKho.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoVatTuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,32 +372,22 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox Back;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.GroupBox groupBoxKho;
         private System.Windows.Forms.ComboBox comboBoxKho;
-        private System.Windows.Forms.Button buttonKhoiTao;
-        private System.Windows.Forms.ComboBox comboBoxDV;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ComboBox comboBoxDC;
         private System.Windows.Forms.Label labelVTDat;
         private System.Windows.Forms.Label labelTenNCC;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button buttonHuy;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button buttonLuu;
         private System.Windows.Forms.Label labelTTTBYT;
         private System.Windows.Forms.Button buttonSua;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label labelTimKiem;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.TextBox textBoxTimKiem;
-        private QuanLyThietBiDataSet4 quanLyThietBiDataSet4;
-        private System.Windows.Forms.BindingSource khoVatTuBindingSource;
-        private QuanLyThietBiDataSet4TableAdapters.KhoVatTuTableAdapter khoVatTuTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDKhoVatTuDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenKhoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtMaKVT;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonKhoiTao;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button buttonXoa;
     }
 }

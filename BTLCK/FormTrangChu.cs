@@ -308,7 +308,9 @@ namespace BTLCK
 
         private void buttonTKDoiMK_Click(object sender, EventArgs e)
         {
-
+            FormTaiKhoan formTaiKhoan = new FormTaiKhoan(this);
+            formTaiKhoan.Show();
+            this.Hide();
         }
 
         private void buttonTKDangXuat_Click(object sender, EventArgs e)

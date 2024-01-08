@@ -146,7 +146,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 213);
+            this.panel1.Size = new System.Drawing.Size(307, 215);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -154,7 +154,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 201);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 208);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -168,7 +168,7 @@
             this.DanhMucContainer.Controls.Add(this.panel9);
             this.DanhMucContainer.Controls.Add(this.panel8);
             this.DanhMucContainer.Controls.Add(this.panel3);
-            this.DanhMucContainer.Location = new System.Drawing.Point(3, 222);
+            this.DanhMucContainer.Location = new System.Drawing.Point(3, 224);
             this.DanhMucContainer.Name = "DanhMucContainer";
             this.DanhMucContainer.Size = new System.Drawing.Size(290, 58);
             this.DanhMucContainer.TabIndex = 1;
@@ -330,7 +330,7 @@
             this.NhapVaKiemKeContainer.Controls.Add(this.panel4);
             this.NhapVaKiemKeContainer.Controls.Add(this.panel16);
             this.NhapVaKiemKeContainer.Controls.Add(this.panel17);
-            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 286);
+            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 288);
             this.NhapVaKiemKeContainer.Name = "NhapVaKiemKeContainer";
             this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(290, 58);
             this.NhapVaKiemKeContainer.TabIndex = 7;
@@ -418,7 +418,7 @@
             this.TheoDoiContainer.Controls.Add(this.panel2);
             this.TheoDoiContainer.Controls.Add(this.panel14);
             this.TheoDoiContainer.Controls.Add(this.panelThanhLy);
-            this.TheoDoiContainer.Location = new System.Drawing.Point(3, 350);
+            this.TheoDoiContainer.Location = new System.Drawing.Point(3, 352);
             this.TheoDoiContainer.Name = "TheoDoiContainer";
             this.TheoDoiContainer.Size = new System.Drawing.Size(290, 58);
             this.TheoDoiContainer.TabIndex = 2;
@@ -557,7 +557,7 @@
             this.BaoCaoContainer.Controls.Add(this.panel19);
             this.BaoCaoContainer.Controls.Add(this.panel20);
             this.BaoCaoContainer.Controls.Add(this.panel21);
-            this.BaoCaoContainer.Location = new System.Drawing.Point(3, 414);
+            this.BaoCaoContainer.Location = new System.Drawing.Point(3, 416);
             this.BaoCaoContainer.Name = "BaoCaoContainer";
             this.BaoCaoContainer.Size = new System.Drawing.Size(290, 58);
             this.BaoCaoContainer.TabIndex = 7;
@@ -695,7 +695,7 @@
             this.TaiKhoanContainer.Controls.Add(this.panel23);
             this.TaiKhoanContainer.Controls.Add(this.panel24);
             this.TaiKhoanContainer.Controls.Add(this.panel22);
-            this.TaiKhoanContainer.Location = new System.Drawing.Point(3, 478);
+            this.TaiKhoanContainer.Location = new System.Drawing.Point(3, 480);
             this.TaiKhoanContainer.Name = "TaiKhoanContainer";
             this.TaiKhoanContainer.Size = new System.Drawing.Size(290, 58);
             this.TaiKhoanContainer.TabIndex = 8;
