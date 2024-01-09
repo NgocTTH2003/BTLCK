@@ -138,15 +138,15 @@ namespace BTLCK
         {
             int i;
             i = dataGridView1.CurrentRow.Index;
-            comboBox2.Text = dataGridView1.Rows[i].Cells[8].Value.ToString();
-            dateTimePickerNN.Text = dataGridView1.Rows[i].Cells[9].Value.ToString();
-            textBoxKho.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
-            comboBox4.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             textBox5.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            textBox2.Text = dataGridView1.Rows[i].Cells[7].Value.ToString();
+            comboBox4.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             textBox1.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
             numericUpDown1.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             textBox3.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            textBoxKho.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[i].Cells[7].Value.ToString();
+            comboBox2.Text = dataGridView1.Rows[i].Cells[8].Value.ToString();
+            dateTimePickerNN.Text = dataGridView1.Rows[i].Cells[9].Value.ToString(); 
         }
         //xuất file
         private void ExportDataGridViewToExcel()
@@ -213,43 +213,7 @@ namespace BTLCK
                 }
             }
         }
-        private void buttonThem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (SqlConnection insertConnection = new SqlConnection(str))
-                {
-                    insertConnection.Open();
-
-                    // Tạo và cấu hình SqlCommand để thêm dữ liệu
-                    SqlCommand insertCommand = new SqlCommand("INSERT INTO ChiTietNhap (IDThietBi, SoLuong, DonGia, ThanhTien, IDNhanVien, NgayNhap) " +
-                                                               "VALUES (@IDThietBi, @SoLuong, @DonGia, @ThanhTien, @IDNhanVien, @NgayNhap)",
-                                                               insertConnection);
-
-                    //insertCommand.Parameters.AddWithValue("@IDThietBi", comboBox3.Text);
-                    insertCommand.Parameters.AddWithValue("@SoLuong", numericUpDown1.Value);
-                    insertCommand.Parameters.AddWithValue("@DonGia", textBox1.Text);
-                    insertCommand.Parameters.AddWithValue("@ThanhTien", textBox3.Text);
-                    insertCommand.Parameters.AddWithValue("@NgayNhap", dateTimePickerNN.Value);
-
-                    int rowsAffected = insertCommand.ExecuteNonQuery();
-
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Thêm dữ liệu thành công!");
-                        LoadData(); // Sau khi thêm dữ liệu thành công, tải lại dữ liệu trong DataGridView
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm dữ liệu không thành công.");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Có lỗi xảy ra khi thêm dữ liệu: " + ex.Message);
-            }
-        }
+        
 
         private void LoadTenNhanVienData()
         {
@@ -259,14 +223,13 @@ namespace BTLCK
                 {
                     connection.Open();
 
-                    // Tạo một SqlCommand để truy vấn danh sách TenKhoVatTu từ bảng KhoVatTu
                     SqlCommand command = new SqlCommand("SELECT NhanVien.HoTen, KhoVatTu.TenKho FROM NhanVien inner join KhoVatTu on NhanVien.IDKho = KhoVatTu.IDKhoVatTu", connection);
                     SqlDataReader reader = command.ExecuteReader();
 
-                    // Xóa tất cả các mục hiện có trong comboBox6
+                    // Xóa tất cả các mục hiện có trong comboBox2
                     comboBox2.Items.Clear();
 
-                    // Đọc dữ liệu từ SqlDataReader và thêm nó vào comboBox6
+                    // Đọc dữ liệu từ SqlDataReader và thêm nó vào comboBox2
                     while (reader.Read())
                     {
                         comboBox2.Items.Add(reader["HoTen"].ToString());
@@ -278,7 +241,7 @@ namespace BTLCK
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Có lỗi xảy ra khi tải danh sách KhoVatTu: " + ex.Message);
+                MessageBox.Show("Có lỗi xảy ra khi tải danh sách nhân viên: " + ex.Message);
             }
         }
 
@@ -295,11 +258,6 @@ namespace BTLCK
             numericUpDown1.Text = string.Empty;
             textBoxTimKiem.Text = string.Empty;
             textBoxTongTien.Text = string.Empty;
-        }
-
-        private void labelMaTB_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -362,11 +320,6 @@ namespace BTLCK
             }
         }
 
-        private void labelMaNCC_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Lấy tên thiết bị được chọn từ comboBox4
@@ -399,23 +352,6 @@ namespace BTLCK
             {
                 MessageBox.Show("Có lỗi xảy ra khi tải thông tin thiết bị và nhà cung cấp: " + ex.Message);
             }
-        }
-
-
-
-        private void labelMaNCC_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxKho_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void buttonThem_Click_1(object sender, EventArgs e)
@@ -517,12 +453,6 @@ namespace BTLCK
             }
         }
 
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonTongTien_Click(object sender, EventArgs e)
         {
             decimal tongTien = 0m; // 'm' indicates a decimal literal
@@ -533,7 +463,7 @@ namespace BTLCK
                 // Kiểm tra xem dòng có dữ liệu không (không phải dòng mới)
                 if (!row.IsNewRow)
                 {
-                    // Cố gắng lấy giá trị từ cột thứ 6 (cột có index là 5)
+                    // Lấy giá trị từ cột thứ 6 (cột có index là 5)
                     if (row.Cells[5].Value != DBNull.Value && row.Cells[5].Value != null)
                     {
                         // Cộng dồn vào tổng tiền

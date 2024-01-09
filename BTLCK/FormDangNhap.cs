@@ -18,7 +18,6 @@ namespace BTLCK
         {
             InitializeComponent();
             InitializePlaceholder();
-            
         }
 
         private void InitializePlaceholder()

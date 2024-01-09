@@ -22,35 +22,6 @@ namespace BTLCK
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DanhMucPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void DanhMucTimer_Tick(object sender, EventArgs e)
         {
@@ -77,11 +48,6 @@ namespace BTLCK
         private void DanhMuc_Click(object sender, EventArgs e)
         {
             DanhMucTimer.Start();
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void NhapVaKiemKeTimer_Tick(object sender, EventArgs e)
@@ -198,11 +164,6 @@ namespace BTLCK
         {
 
         }
-
-        private void BaoCaoContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         //mở form danh mục thiết bị
         private void buttonDMThietBi_Click(object sender, EventArgs e)
         {
@@ -211,10 +172,7 @@ namespace BTLCK
             this.Hide();
         }
 
-        private void panel25_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
         private void buttonDMNhaCungCap_Click(object sender, EventArgs e)
         {
@@ -251,26 +209,24 @@ namespace BTLCK
             this.Hide();
         }
         
-        
-
         private void buttonVanChuyenTB_Click(object sender, EventArgs e)
         {
-            FormVanChuyen formVanChuyen = new FormVanChuyen(this); 
-            formVanChuyen.Show();
+            FormVC formVC = new FormVC(this); 
+            formVC.Show();
             this.Hide();
         }
 
         private void buttonSuaChuaTB_Click(object sender, EventArgs e)
         {
-            FormSuaChua formSuaChua = new FormSuaChua(this);
+            FormSC formSuaChua = new FormSC(this);
             formSuaChua.Show();
             this.Hide();
         }
 
         private void buttonBaoTriTB_Click(object sender, EventArgs e)
         {
-            FormBaoTri formBaoTri = new FormBaoTri(this);
-            formBaoTri.Show();
+            FormBT formBT = new FormBT(this);
+            formBT.Show();
             this.Hide();
         }
 
@@ -286,7 +242,7 @@ namespace BTLCK
 
         }
 
-        private void buttonBaoCaoKiemKe_Click(object sender, EventArgs e)
+        private void buttonBaoCaoSuCo_Click(object sender, EventArgs e)
         {
 
         }
@@ -310,7 +266,10 @@ namespace BTLCK
 
         private void buttonTKDangXuat_Click(object sender, EventArgs e)
         {
-
+            // Tạo một instance của FormDangNhap
+            FormDangNhap formDN = new FormDangNhap();
+            formDN.Show(); 
+            this.Hide();
         }
 
         private void FormTrangChu_FormClosing(object sender, FormClosingEventArgs e)
@@ -325,5 +284,7 @@ namespace BTLCK
                 }
             }
         }
+
+        
     }
 }

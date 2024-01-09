@@ -97,7 +97,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(636, 404);
             this.dataGridView1.TabIndex = 32;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // labelTimKiem
             // 
@@ -171,7 +170,6 @@
             this.textBoxKho.Name = "textBoxKho";
             this.textBoxKho.Size = new System.Drawing.Size(239, 28);
             this.textBoxKho.TabIndex = 49;
-            this.textBoxKho.TextChanged += new System.EventHandler(this.textBoxKho_TextChanged);
             // 
             // comboBox2
             // 
@@ -216,7 +214,6 @@
             this.labelMaTB.Size = new System.Drawing.Size(106, 20);
             this.labelMaTB.TabIndex = 13;
             this.labelMaTB.Text = "Tên kho nhập";
-            this.labelMaTB.Click += new System.EventHandler(this.labelMaTB_Click);
             // 
             // buttonKhoiTao
             // 
@@ -288,7 +285,6 @@
             this.labelMaNCC.Size = new System.Drawing.Size(107, 20);
             this.labelMaNCC.TabIndex = 49;
             this.labelMaNCC.Text = "Nhà cung cấp";
-            this.labelMaNCC.Click += new System.EventHandler(this.labelMaNCC_Click_1);
             // 
             // textBox3
             // 
@@ -297,7 +293,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(239, 28);
             this.textBox3.TabIndex = 48;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
