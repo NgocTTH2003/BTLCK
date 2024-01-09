@@ -42,7 +42,7 @@
             this.groupBoxThemNV = new System.Windows.Forms.GroupBox();
             this.txtTTHD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtKho = new System.Windows.Forms.ComboBox();
+            this.comboBoxKho = new System.Windows.Forms.ComboBox();
             this.comboBoxGT = new System.Windows.Forms.ComboBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -209,7 +209,7 @@
             this.groupBoxThemNV.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxThemNV.Controls.Add(this.txtTTHD);
             this.groupBoxThemNV.Controls.Add(this.label3);
-            this.groupBoxThemNV.Controls.Add(this.txtKho);
+            this.groupBoxThemNV.Controls.Add(this.comboBoxKho);
             this.groupBoxThemNV.Controls.Add(this.comboBoxGT);
             this.groupBoxThemNV.Controls.Add(this.txtMaNV);
             this.groupBoxThemNV.Controls.Add(this.label2);
@@ -240,6 +240,7 @@
             this.txtTTHD.Name = "txtTTHD";
             this.txtTTHD.Size = new System.Drawing.Size(230, 28);
             this.txtTTHD.TabIndex = 38;
+            this.txtTTHD.TextChanged += new System.EventHandler(this.txtTTHD_TextChanged);
             // 
             // label3
             // 
@@ -250,18 +251,13 @@
             this.label3.TabIndex = 37;
             this.label3.Text = "Trạng thái hoạt động";
             // 
-            // txtKho
+            // comboBoxKho
             // 
-            this.txtKho.FormattingEnabled = true;
-            this.txtKho.Items.AddRange(new object[] {
-            "Quản lý",
-            "Thủ kho",
-            "Kế toán",
-            "Nhân viên"});
-            this.txtKho.Location = new System.Drawing.Point(192, 275);
-            this.txtKho.Name = "txtKho";
-            this.txtKho.Size = new System.Drawing.Size(230, 28);
-            this.txtKho.TabIndex = 36;
+            this.comboBoxKho.FormattingEnabled = true;
+            this.comboBoxKho.Location = new System.Drawing.Point(192, 275);
+            this.comboBoxKho.Name = "comboBoxKho";
+            this.comboBoxKho.Size = new System.Drawing.Size(230, 28);
+            this.comboBoxKho.TabIndex = 36;
             // 
             // comboBoxGT
             // 
@@ -503,7 +499,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxGT;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox txtKho;
+        private System.Windows.Forms.ComboBox comboBoxKho;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTTHD;
     }

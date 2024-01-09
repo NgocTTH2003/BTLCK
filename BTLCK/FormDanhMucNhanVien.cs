@@ -43,7 +43,8 @@ namespace BTLCK
         {
             connection = new SqlConnection(str);
             connection.Open();
-            LoadData(); 
+            LoadData();
+            LoadComboBoxKhoData();
         }
         public FormDanhMucNhanVien(FormTrangChu formTrangChu)
         {
@@ -124,7 +125,7 @@ namespace BTLCK
                 // Truy vấn để lấy IDKho tương ứng với TenKhoVatTu
                 string getIDKhoQuery = "SELECT IDKhoVatTu FROM KhoVatTu WHERE TenKho = @TenKho";
                 SqlCommand getIDKhoCommand = new SqlCommand(getIDKhoQuery, connection);
-                getIDKhoCommand.Parameters.AddWithValue("@TenKho", txtKho.Text); // txtKho chứa tên kho do người dùng nhập vào
+                getIDKhoCommand.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); 
 
                 object idKho = getIDKhoCommand.ExecuteScalar();
 
@@ -166,7 +167,7 @@ namespace BTLCK
             txtMaNV.ResetText();
             comboBoxGT.Text = string.Empty;
             txtHoTen.ResetText();
-            txtKho.Text = string.Empty;
+            comboBoxKho.Text = string.Empty;
             txtSDT.ResetText();
             comboBoxCV.Text = string.Empty;
             dateTimePickerNS.Text = string.Empty;
@@ -187,7 +188,7 @@ namespace BTLCK
             txtHoTen.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
             dateTimePickerNS.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             comboBoxGT.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            txtKho.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            comboBoxKho.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             comboBoxCV.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
             txtSDT.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
             txtTTHD.Text = dataGridView1.Rows[i].Cells[7].Value.ToString();
@@ -296,7 +297,7 @@ namespace BTLCK
                 // Truy vấn để lấy IDKho tương ứng với TenKhoVatTu
                 string getIDKhoQuery = "SELECT IDKhoVatTu FROM KhoVatTu WHERE TenKho = @TenKho";
                 SqlCommand getIDKhoCommand = new SqlCommand(getIDKhoQuery, connection);
-                getIDKhoCommand.Parameters.AddWithValue("@TenKho", txtKho.Text); // txtKho chứa tên kho do người dùng nhập vào
+                getIDKhoCommand.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); // txtKho chứa tên kho do người dùng nhập vào
 
                 object idKho = getIDKhoCommand.ExecuteScalar();
 
@@ -356,6 +357,46 @@ namespace BTLCK
             }
         }
 
-        
+        private void LoadComboBoxKhoData()
+        {
+            try
+            {
+                // Mở kết nối nếu chưa mở
+                if (connection.State != ConnectionState.Open)
+                    connection.Open();
+
+                // Truy vấn lấy danh sách tên kho
+                string query = "SELECT TenKho FROM KhoVatTu";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                // Xóa dữ liệu cũ trong comboBoxKho
+                comboBoxKho.Items.Clear();
+
+                // Đọc và thêm dữ liệu vào comboBoxKho
+                while (reader.Read())
+                {
+                    comboBoxKho.Items.Add(reader["TenKho"].ToString());
+                }
+
+                // Đóng SqlDataReader
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra khi tải dữ liệu kho: " + ex.Message);
+            }
+            finally
+            {
+                // Đóng kết nối
+                if (connection.State == ConnectionState.Open)
+                    connection.Close();
+            }
+        }
+
+        private void txtTTHD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

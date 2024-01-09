@@ -118,7 +118,7 @@ namespace BTLCK
             if (TheoDoiExpand == false)
             {
                 TheoDoiContainer.Height += 5;
-                if (TheoDoiContainer.Height >= 337)
+                if (TheoDoiContainer.Height >= 271)
                 {
                     TheoDoiTimer.Stop();
                     TheoDoiExpand = true;
@@ -250,13 +250,8 @@ namespace BTLCK
             formQuanLyNhapKho.Show();
             this.Hide();
         }
-
-        private void buttonKiemKeTB_Click(object sender, EventArgs e)
-        {
-            FormKiemKe formKiemKe = new FormKiemKe(this);
-            formKiemKe.Show();
-            this.Hide();
-        }
+        
+        
 
         private void buttonVanChuyenTB_Click(object sender, EventArgs e)
         {
