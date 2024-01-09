@@ -54,5 +54,10 @@ namespace BTLCK
         {
 
         }
+
+        private void FormKiemKe_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

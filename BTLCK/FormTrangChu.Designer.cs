@@ -136,25 +136,28 @@
             this.flowLayoutPanel1.Controls.Add(this.BaoCaoContainer);
             this.flowLayoutPanel1.Controls.Add(this.TaiKhoanContainer);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(310, 813);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(413, 1001);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 213);
+            this.panel1.Size = new System.Drawing.Size(387, 262);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 201);
+            this.pictureBox1.Size = new System.Drawing.Size(379, 247);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -168,18 +171,20 @@
             this.DanhMucContainer.Controls.Add(this.panel9);
             this.DanhMucContainer.Controls.Add(this.panel8);
             this.DanhMucContainer.Controls.Add(this.panel3);
-            this.DanhMucContainer.Location = new System.Drawing.Point(3, 222);
+            this.DanhMucContainer.Location = new System.Drawing.Point(4, 274);
+            this.DanhMucContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DanhMucContainer.Name = "DanhMucContainer";
-            this.DanhMucContainer.Size = new System.Drawing.Size(290, 58);
+            this.DanhMucContainer.Size = new System.Drawing.Size(387, 71);
             this.DanhMucContainer.TabIndex = 1;
             this.DanhMucContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.DanhMucPanel_Paint);
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.buttonDMKhoVatTu);
-            this.panel12.Location = new System.Drawing.Point(0, 307);
+            this.panel12.Location = new System.Drawing.Point(0, 378);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(290, 58);
+            this.panel12.Size = new System.Drawing.Size(387, 71);
             this.panel12.TabIndex = 7;
             // 
             // buttonDMKhoVatTu
@@ -188,11 +193,12 @@
             this.buttonDMKhoVatTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDMKhoVatTu.Image = ((System.Drawing.Image)(resources.GetObject("buttonDMKhoVatTu.Image")));
             this.buttonDMKhoVatTu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDMKhoVatTu.Location = new System.Drawing.Point(-35, -14);
+            this.buttonDMKhoVatTu.Location = new System.Drawing.Point(-47, -17);
+            this.buttonDMKhoVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDMKhoVatTu.Name = "buttonDMKhoVatTu";
-            this.buttonDMKhoVatTu.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonDMKhoVatTu.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonDMKhoVatTu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonDMKhoVatTu.Size = new System.Drawing.Size(360, 86);
+            this.buttonDMKhoVatTu.Size = new System.Drawing.Size(480, 106);
             this.buttonDMKhoVatTu.TabIndex = 2;
             this.buttonDMKhoVatTu.Text = "             Kho vật tư";
             this.buttonDMKhoVatTu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,9 +208,10 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.buttonDMKhoaPhong);
-            this.panel11.Location = new System.Drawing.Point(0, 243);
+            this.panel11.Location = new System.Drawing.Point(0, 299);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(290, 58);
+            this.panel11.Size = new System.Drawing.Size(387, 71);
             this.panel11.TabIndex = 6;
             // 
             // buttonDMKhoaPhong
@@ -213,11 +220,12 @@
             this.buttonDMKhoaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDMKhoaPhong.Image = ((System.Drawing.Image)(resources.GetObject("buttonDMKhoaPhong.Image")));
             this.buttonDMKhoaPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDMKhoaPhong.Location = new System.Drawing.Point(-35, -14);
+            this.buttonDMKhoaPhong.Location = new System.Drawing.Point(-47, -17);
+            this.buttonDMKhoaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDMKhoaPhong.Name = "buttonDMKhoaPhong";
-            this.buttonDMKhoaPhong.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonDMKhoaPhong.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonDMKhoaPhong.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonDMKhoaPhong.Size = new System.Drawing.Size(360, 86);
+            this.buttonDMKhoaPhong.Size = new System.Drawing.Size(480, 106);
             this.buttonDMKhoaPhong.TabIndex = 2;
             this.buttonDMKhoaPhong.Text = "             Viện/Khoa";
             this.buttonDMKhoaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,9 +235,10 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.buttonDMNhanVien);
-            this.panel10.Location = new System.Drawing.Point(0, 179);
+            this.panel10.Location = new System.Drawing.Point(0, 220);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(290, 58);
+            this.panel10.Size = new System.Drawing.Size(387, 71);
             this.panel10.TabIndex = 5;
             // 
             // buttonDMNhanVien
@@ -238,11 +247,12 @@
             this.buttonDMNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDMNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("buttonDMNhanVien.Image")));
             this.buttonDMNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDMNhanVien.Location = new System.Drawing.Point(-35, -14);
+            this.buttonDMNhanVien.Location = new System.Drawing.Point(-47, -17);
+            this.buttonDMNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDMNhanVien.Name = "buttonDMNhanVien";
-            this.buttonDMNhanVien.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonDMNhanVien.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonDMNhanVien.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonDMNhanVien.Size = new System.Drawing.Size(360, 86);
+            this.buttonDMNhanVien.Size = new System.Drawing.Size(480, 106);
             this.buttonDMNhanVien.TabIndex = 2;
             this.buttonDMNhanVien.Text = "             Nhân viên";
             this.buttonDMNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -252,9 +262,10 @@
             // panel9
             // 
             this.panel9.Controls.Add(this.buttonDMNhaCungCap);
-            this.panel9.Location = new System.Drawing.Point(0, 122);
+            this.panel9.Location = new System.Drawing.Point(0, 150);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(290, 58);
+            this.panel9.Size = new System.Drawing.Size(387, 71);
             this.panel9.TabIndex = 4;
             // 
             // buttonDMNhaCungCap
@@ -263,11 +274,12 @@
             this.buttonDMNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDMNhaCungCap.Image = ((System.Drawing.Image)(resources.GetObject("buttonDMNhaCungCap.Image")));
             this.buttonDMNhaCungCap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDMNhaCungCap.Location = new System.Drawing.Point(-35, -14);
+            this.buttonDMNhaCungCap.Location = new System.Drawing.Point(-47, -17);
+            this.buttonDMNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDMNhaCungCap.Name = "buttonDMNhaCungCap";
-            this.buttonDMNhaCungCap.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonDMNhaCungCap.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonDMNhaCungCap.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonDMNhaCungCap.Size = new System.Drawing.Size(360, 86);
+            this.buttonDMNhaCungCap.Size = new System.Drawing.Size(480, 106);
             this.buttonDMNhaCungCap.TabIndex = 2;
             this.buttonDMNhaCungCap.Text = "             Nhà cung cấp";
             this.buttonDMNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -277,9 +289,10 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.buttonDMThietBi);
-            this.panel8.Location = new System.Drawing.Point(0, 58);
+            this.panel8.Location = new System.Drawing.Point(0, 71);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(290, 58);
+            this.panel8.Size = new System.Drawing.Size(387, 71);
             this.panel8.TabIndex = 3;
             // 
             // buttonDMThietBi
@@ -288,11 +301,12 @@
             this.buttonDMThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonDMThietBi.Image = ((System.Drawing.Image)(resources.GetObject("buttonDMThietBi.Image")));
             this.buttonDMThietBi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDMThietBi.Location = new System.Drawing.Point(-35, -14);
+            this.buttonDMThietBi.Location = new System.Drawing.Point(-47, -17);
+            this.buttonDMThietBi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDMThietBi.Name = "buttonDMThietBi";
-            this.buttonDMThietBi.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonDMThietBi.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonDMThietBi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonDMThietBi.Size = new System.Drawing.Size(360, 86);
+            this.buttonDMThietBi.Size = new System.Drawing.Size(480, 106);
             this.buttonDMThietBi.TabIndex = 2;
             this.buttonDMThietBi.Text = "             Thiết bị";
             this.buttonDMThietBi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,9 +316,10 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.DanhMuc);
-            this.panel3.Location = new System.Drawing.Point(3, 2);
+            this.panel3.Location = new System.Drawing.Point(4, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 58);
+            this.panel3.Size = new System.Drawing.Size(387, 71);
             this.panel3.TabIndex = 2;
             // 
             // DanhMuc
@@ -313,11 +328,12 @@
             this.DanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.DanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("DanhMuc.Image")));
             this.DanhMuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DanhMuc.Location = new System.Drawing.Point(-35, -14);
+            this.DanhMuc.Location = new System.Drawing.Point(-47, -17);
+            this.DanhMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DanhMuc.Name = "DanhMuc";
-            this.DanhMuc.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.DanhMuc.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
             this.DanhMuc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DanhMuc.Size = new System.Drawing.Size(360, 86);
+            this.DanhMuc.Size = new System.Drawing.Size(480, 106);
             this.DanhMuc.TabIndex = 2;
             this.DanhMuc.Text = "             Danh mục";
             this.DanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -330,17 +346,19 @@
             this.NhapVaKiemKeContainer.Controls.Add(this.panel4);
             this.NhapVaKiemKeContainer.Controls.Add(this.panel16);
             this.NhapVaKiemKeContainer.Controls.Add(this.panel17);
-            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 286);
+            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(4, 353);
+            this.NhapVaKiemKeContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NhapVaKiemKeContainer.Name = "NhapVaKiemKeContainer";
-            this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(290, 58);
+            this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(387, 71);
             this.NhapVaKiemKeContainer.TabIndex = 7;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.NhapVaKiemKe);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Location = new System.Drawing.Point(4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 58);
+            this.panel4.Size = new System.Drawing.Size(387, 71);
             this.panel4.TabIndex = 3;
             // 
             // NhapVaKiemKe
@@ -349,11 +367,12 @@
             this.NhapVaKiemKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.NhapVaKiemKe.Image = ((System.Drawing.Image)(resources.GetObject("NhapVaKiemKe.Image")));
             this.NhapVaKiemKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NhapVaKiemKe.Location = new System.Drawing.Point(-35, -17);
+            this.NhapVaKiemKe.Location = new System.Drawing.Point(-47, -21);
+            this.NhapVaKiemKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NhapVaKiemKe.Name = "NhapVaKiemKe";
-            this.NhapVaKiemKe.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.NhapVaKiemKe.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
             this.NhapVaKiemKe.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NhapVaKiemKe.Size = new System.Drawing.Size(340, 86);
+            this.NhapVaKiemKe.Size = new System.Drawing.Size(453, 106);
             this.NhapVaKiemKe.TabIndex = 2;
             this.NhapVaKiemKe.Text = "             Quản lý thiết bị";
             this.NhapVaKiemKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,9 +382,10 @@
             // panel16
             // 
             this.panel16.Controls.Add(this.buttonNhapKhoTB);
-            this.panel16.Location = new System.Drawing.Point(3, 67);
+            this.panel16.Location = new System.Drawing.Point(4, 83);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(290, 58);
+            this.panel16.Size = new System.Drawing.Size(387, 71);
             this.panel16.TabIndex = 8;
             // 
             // buttonNhapKhoTB
@@ -374,11 +394,12 @@
             this.buttonNhapKhoTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonNhapKhoTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonNhapKhoTB.Image")));
             this.buttonNhapKhoTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhapKhoTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonNhapKhoTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonNhapKhoTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonNhapKhoTB.Name = "buttonNhapKhoTB";
-            this.buttonNhapKhoTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonNhapKhoTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonNhapKhoTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonNhapKhoTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonNhapKhoTB.Size = new System.Drawing.Size(453, 106);
             this.buttonNhapKhoTB.TabIndex = 2;
             this.buttonNhapKhoTB.Text = "           Quản lý nhập kho";
             this.buttonNhapKhoTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -388,9 +409,10 @@
             // panel17
             // 
             this.panel17.Controls.Add(this.buttonKiemKeTB);
-            this.panel17.Location = new System.Drawing.Point(3, 131);
+            this.panel17.Location = new System.Drawing.Point(4, 162);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(290, 58);
+            this.panel17.Size = new System.Drawing.Size(387, 71);
             this.panel17.TabIndex = 9;
             // 
             // buttonKiemKeTB
@@ -399,11 +421,12 @@
             this.buttonKiemKeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonKiemKeTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonKiemKeTB.Image")));
             this.buttonKiemKeTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonKiemKeTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonKiemKeTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonKiemKeTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonKiemKeTB.Name = "buttonKiemKeTB";
-            this.buttonKiemKeTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonKiemKeTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonKiemKeTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonKiemKeTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonKiemKeTB.Size = new System.Drawing.Size(453, 106);
             this.buttonKiemKeTB.TabIndex = 2;
             this.buttonKiemKeTB.Text = "           Kiểm kê thiết bị";
             this.buttonKiemKeTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -418,18 +441,20 @@
             this.TheoDoiContainer.Controls.Add(this.panel2);
             this.TheoDoiContainer.Controls.Add(this.panel14);
             this.TheoDoiContainer.Controls.Add(this.panelThanhLy);
-            this.TheoDoiContainer.Location = new System.Drawing.Point(3, 350);
+            this.TheoDoiContainer.Location = new System.Drawing.Point(4, 432);
+            this.TheoDoiContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TheoDoiContainer.Name = "TheoDoiContainer";
-            this.TheoDoiContainer.Size = new System.Drawing.Size(290, 58);
+            this.TheoDoiContainer.Size = new System.Drawing.Size(387, 71);
             this.TheoDoiContainer.TabIndex = 2;
             this.TheoDoiContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.button4);
-            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Location = new System.Drawing.Point(4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(290, 58);
+            this.panel5.Size = new System.Drawing.Size(387, 71);
             this.panel5.TabIndex = 4;
             // 
             // button4
@@ -438,11 +463,12 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-35, -19);
+            this.button4.Location = new System.Drawing.Point(-47, -23);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button4.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(340, 91);
+            this.button4.Size = new System.Drawing.Size(453, 112);
             this.button4.TabIndex = 2;
             this.button4.Text = "             Theo dõi thiết bị";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -452,9 +478,10 @@
             // panel15
             // 
             this.panel15.Controls.Add(this.buttonVanChuyenTB);
-            this.panel15.Location = new System.Drawing.Point(3, 67);
+            this.panel15.Location = new System.Drawing.Point(4, 83);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(290, 58);
+            this.panel15.Size = new System.Drawing.Size(387, 71);
             this.panel15.TabIndex = 4;
             // 
             // buttonVanChuyenTB
@@ -463,11 +490,12 @@
             this.buttonVanChuyenTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonVanChuyenTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonVanChuyenTB.Image")));
             this.buttonVanChuyenTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonVanChuyenTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonVanChuyenTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonVanChuyenTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonVanChuyenTB.Name = "buttonVanChuyenTB";
-            this.buttonVanChuyenTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonVanChuyenTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonVanChuyenTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonVanChuyenTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonVanChuyenTB.Size = new System.Drawing.Size(453, 106);
             this.buttonVanChuyenTB.TabIndex = 2;
             this.buttonVanChuyenTB.Text = "           Vận chuyển thiết bị";
             this.buttonVanChuyenTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -477,9 +505,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.buttonSuaChuaTB);
-            this.panel2.Location = new System.Drawing.Point(3, 131);
+            this.panel2.Location = new System.Drawing.Point(4, 162);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 58);
+            this.panel2.Size = new System.Drawing.Size(387, 71);
             this.panel2.TabIndex = 1;
             // 
             // buttonSuaChuaTB
@@ -488,11 +517,12 @@
             this.buttonSuaChuaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonSuaChuaTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonSuaChuaTB.Image")));
             this.buttonSuaChuaTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSuaChuaTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonSuaChuaTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonSuaChuaTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSuaChuaTB.Name = "buttonSuaChuaTB";
-            this.buttonSuaChuaTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonSuaChuaTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonSuaChuaTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonSuaChuaTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonSuaChuaTB.Size = new System.Drawing.Size(453, 106);
             this.buttonSuaChuaTB.TabIndex = 2;
             this.buttonSuaChuaTB.Text = "           Sửa chữa thiết bị";
             this.buttonSuaChuaTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -502,9 +532,10 @@
             // panel14
             // 
             this.panel14.Controls.Add(this.buttonBaoTriTB);
-            this.panel14.Location = new System.Drawing.Point(3, 195);
+            this.panel14.Location = new System.Drawing.Point(4, 241);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(290, 58);
+            this.panel14.Size = new System.Drawing.Size(387, 71);
             this.panel14.TabIndex = 3;
             // 
             // buttonBaoTriTB
@@ -513,11 +544,12 @@
             this.buttonBaoTriTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonBaoTriTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonBaoTriTB.Image")));
             this.buttonBaoTriTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoTriTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonBaoTriTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonBaoTriTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBaoTriTB.Name = "buttonBaoTriTB";
-            this.buttonBaoTriTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonBaoTriTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonBaoTriTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonBaoTriTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonBaoTriTB.Size = new System.Drawing.Size(453, 106);
             this.buttonBaoTriTB.TabIndex = 2;
             this.buttonBaoTriTB.Text = "           Bảo trì thiết bị";
             this.buttonBaoTriTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -527,9 +559,10 @@
             // panelThanhLy
             // 
             this.panelThanhLy.Controls.Add(this.buttonThanhLyTB);
-            this.panelThanhLy.Location = new System.Drawing.Point(3, 259);
+            this.panelThanhLy.Location = new System.Drawing.Point(4, 320);
+            this.panelThanhLy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelThanhLy.Name = "panelThanhLy";
-            this.panelThanhLy.Size = new System.Drawing.Size(290, 58);
+            this.panelThanhLy.Size = new System.Drawing.Size(387, 71);
             this.panelThanhLy.TabIndex = 5;
             // 
             // buttonThanhLyTB
@@ -538,11 +571,12 @@
             this.buttonThanhLyTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonThanhLyTB.Image = ((System.Drawing.Image)(resources.GetObject("buttonThanhLyTB.Image")));
             this.buttonThanhLyTB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThanhLyTB.Location = new System.Drawing.Point(-35, -14);
+            this.buttonThanhLyTB.Location = new System.Drawing.Point(-47, -17);
+            this.buttonThanhLyTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonThanhLyTB.Name = "buttonThanhLyTB";
-            this.buttonThanhLyTB.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonThanhLyTB.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonThanhLyTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonThanhLyTB.Size = new System.Drawing.Size(340, 86);
+            this.buttonThanhLyTB.Size = new System.Drawing.Size(453, 106);
             this.buttonThanhLyTB.TabIndex = 2;
             this.buttonThanhLyTB.Text = "           Thanh lý thiết bị";
             this.buttonThanhLyTB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -557,18 +591,20 @@
             this.BaoCaoContainer.Controls.Add(this.panel19);
             this.BaoCaoContainer.Controls.Add(this.panel20);
             this.BaoCaoContainer.Controls.Add(this.panel21);
-            this.BaoCaoContainer.Location = new System.Drawing.Point(3, 414);
+            this.BaoCaoContainer.Location = new System.Drawing.Point(4, 511);
+            this.BaoCaoContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BaoCaoContainer.Name = "BaoCaoContainer";
-            this.BaoCaoContainer.Size = new System.Drawing.Size(290, 58);
+            this.BaoCaoContainer.Size = new System.Drawing.Size(387, 71);
             this.BaoCaoContainer.TabIndex = 7;
             this.BaoCaoContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.BaoCaoContainer_Paint);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.BaoCao);
-            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Location = new System.Drawing.Point(4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(290, 58);
+            this.panel6.Size = new System.Drawing.Size(387, 71);
             this.panel6.TabIndex = 5;
             // 
             // BaoCao
@@ -577,11 +613,12 @@
             this.BaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.BaoCao.Image = ((System.Drawing.Image)(resources.GetObject("BaoCao.Image")));
             this.BaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BaoCao.Location = new System.Drawing.Point(-35, -24);
+            this.BaoCao.Location = new System.Drawing.Point(-47, -30);
+            this.BaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BaoCao.Name = "BaoCao";
-            this.BaoCao.Padding = new System.Windows.Forms.Padding(48, 0, 0, 0);
+            this.BaoCao.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
             this.BaoCao.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BaoCao.Size = new System.Drawing.Size(340, 107);
+            this.BaoCao.Size = new System.Drawing.Size(453, 132);
             this.BaoCao.TabIndex = 2;
             this.BaoCao.Text = "            Báo cáo/Phân tích";
             this.BaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -591,9 +628,10 @@
             // panel18
             // 
             this.panel18.Controls.Add(this.buttonBaoCaoBaoTri);
-            this.panel18.Location = new System.Drawing.Point(3, 67);
+            this.panel18.Location = new System.Drawing.Point(4, 83);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(290, 58);
+            this.panel18.Size = new System.Drawing.Size(387, 71);
             this.panel18.TabIndex = 8;
             // 
             // buttonBaoCaoBaoTri
@@ -602,11 +640,12 @@
             this.buttonBaoCaoBaoTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonBaoCaoBaoTri.Image = ((System.Drawing.Image)(resources.GetObject("buttonBaoCaoBaoTri.Image")));
             this.buttonBaoCaoBaoTri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCaoBaoTri.Location = new System.Drawing.Point(-35, -14);
+            this.buttonBaoCaoBaoTri.Location = new System.Drawing.Point(-47, -17);
+            this.buttonBaoCaoBaoTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBaoCaoBaoTri.Name = "buttonBaoCaoBaoTri";
-            this.buttonBaoCaoBaoTri.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonBaoCaoBaoTri.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonBaoCaoBaoTri.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonBaoCaoBaoTri.Size = new System.Drawing.Size(340, 86);
+            this.buttonBaoCaoBaoTri.Size = new System.Drawing.Size(453, 106);
             this.buttonBaoCaoBaoTri.TabIndex = 2;
             this.buttonBaoCaoBaoTri.Text = "           Bảo trì thiết bị";
             this.buttonBaoCaoBaoTri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -616,9 +655,10 @@
             // panel19
             // 
             this.panel19.Controls.Add(this.buttonBaoCaoSuCo);
-            this.panel19.Location = new System.Drawing.Point(3, 131);
+            this.panel19.Location = new System.Drawing.Point(4, 162);
+            this.panel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(290, 58);
+            this.panel19.Size = new System.Drawing.Size(387, 71);
             this.panel19.TabIndex = 9;
             // 
             // buttonBaoCaoSuCo
@@ -627,11 +667,12 @@
             this.buttonBaoCaoSuCo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonBaoCaoSuCo.Image = ((System.Drawing.Image)(resources.GetObject("buttonBaoCaoSuCo.Image")));
             this.buttonBaoCaoSuCo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCaoSuCo.Location = new System.Drawing.Point(-35, -14);
+            this.buttonBaoCaoSuCo.Location = new System.Drawing.Point(-47, -17);
+            this.buttonBaoCaoSuCo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBaoCaoSuCo.Name = "buttonBaoCaoSuCo";
-            this.buttonBaoCaoSuCo.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonBaoCaoSuCo.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonBaoCaoSuCo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonBaoCaoSuCo.Size = new System.Drawing.Size(340, 86);
+            this.buttonBaoCaoSuCo.Size = new System.Drawing.Size(453, 106);
             this.buttonBaoCaoSuCo.TabIndex = 2;
             this.buttonBaoCaoSuCo.Text = "           Sự cố thiết bị";
             this.buttonBaoCaoSuCo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -641,9 +682,10 @@
             // panel20
             // 
             this.panel20.Controls.Add(this.buttonBaoCaoKiemKe);
-            this.panel20.Location = new System.Drawing.Point(3, 195);
+            this.panel20.Location = new System.Drawing.Point(4, 241);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(290, 58);
+            this.panel20.Size = new System.Drawing.Size(387, 71);
             this.panel20.TabIndex = 10;
             // 
             // buttonBaoCaoKiemKe
@@ -652,11 +694,12 @@
             this.buttonBaoCaoKiemKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonBaoCaoKiemKe.Image = ((System.Drawing.Image)(resources.GetObject("buttonBaoCaoKiemKe.Image")));
             this.buttonBaoCaoKiemKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCaoKiemKe.Location = new System.Drawing.Point(-35, -14);
+            this.buttonBaoCaoKiemKe.Location = new System.Drawing.Point(-47, -17);
+            this.buttonBaoCaoKiemKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBaoCaoKiemKe.Name = "buttonBaoCaoKiemKe";
-            this.buttonBaoCaoKiemKe.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonBaoCaoKiemKe.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonBaoCaoKiemKe.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonBaoCaoKiemKe.Size = new System.Drawing.Size(340, 86);
+            this.buttonBaoCaoKiemKe.Size = new System.Drawing.Size(453, 106);
             this.buttonBaoCaoKiemKe.TabIndex = 2;
             this.buttonBaoCaoKiemKe.Text = "           Kiểm kê thiết bị";
             this.buttonBaoCaoKiemKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -666,9 +709,10 @@
             // panel21
             // 
             this.panel21.Controls.Add(this.buttonBaoCaoNhapXuat);
-            this.panel21.Location = new System.Drawing.Point(3, 259);
+            this.panel21.Location = new System.Drawing.Point(4, 320);
+            this.panel21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(290, 58);
+            this.panel21.Size = new System.Drawing.Size(387, 71);
             this.panel21.TabIndex = 11;
             // 
             // buttonBaoCaoNhapXuat
@@ -677,11 +721,12 @@
             this.buttonBaoCaoNhapXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonBaoCaoNhapXuat.Image = ((System.Drawing.Image)(resources.GetObject("buttonBaoCaoNhapXuat.Image")));
             this.buttonBaoCaoNhapXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBaoCaoNhapXuat.Location = new System.Drawing.Point(-35, -21);
+            this.buttonBaoCaoNhapXuat.Location = new System.Drawing.Point(-47, -26);
+            this.buttonBaoCaoNhapXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBaoCaoNhapXuat.Name = "buttonBaoCaoNhapXuat";
-            this.buttonBaoCaoNhapXuat.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonBaoCaoNhapXuat.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonBaoCaoNhapXuat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonBaoCaoNhapXuat.Size = new System.Drawing.Size(340, 86);
+            this.buttonBaoCaoNhapXuat.Size = new System.Drawing.Size(453, 106);
             this.buttonBaoCaoNhapXuat.TabIndex = 2;
             this.buttonBaoCaoNhapXuat.Text = "           Nhập/Xuất thiết bị";
             this.buttonBaoCaoNhapXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -695,17 +740,19 @@
             this.TaiKhoanContainer.Controls.Add(this.panel23);
             this.TaiKhoanContainer.Controls.Add(this.panel24);
             this.TaiKhoanContainer.Controls.Add(this.panel22);
-            this.TaiKhoanContainer.Location = new System.Drawing.Point(3, 478);
+            this.TaiKhoanContainer.Location = new System.Drawing.Point(4, 590);
+            this.TaiKhoanContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TaiKhoanContainer.Name = "TaiKhoanContainer";
-            this.TaiKhoanContainer.Size = new System.Drawing.Size(290, 58);
+            this.TaiKhoanContainer.Size = new System.Drawing.Size(387, 71);
             this.TaiKhoanContainer.TabIndex = 8;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.button6);
-            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Location = new System.Drawing.Point(4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(290, 58);
+            this.panel7.Size = new System.Drawing.Size(387, 71);
             this.panel7.TabIndex = 6;
             // 
             // button6
@@ -714,11 +761,12 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-40, -21);
+            this.button6.Location = new System.Drawing.Point(-53, -26);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button6.Padding = new System.Windows.Forms.Padding(71, 0, 0, 0);
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(340, 97);
+            this.button6.Size = new System.Drawing.Size(453, 119);
             this.button6.TabIndex = 2;
             this.button6.Text = "            Tài khoản";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -728,9 +776,10 @@
             // panel23
             // 
             this.panel23.Controls.Add(this.buttonTKCapNhat);
-            this.panel23.Location = new System.Drawing.Point(3, 67);
+            this.panel23.Location = new System.Drawing.Point(4, 83);
+            this.panel23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(290, 58);
+            this.panel23.Size = new System.Drawing.Size(387, 71);
             this.panel23.TabIndex = 11;
             // 
             // buttonTKCapNhat
@@ -739,11 +788,12 @@
             this.buttonTKCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonTKCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("buttonTKCapNhat.Image")));
             this.buttonTKCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTKCapNhat.Location = new System.Drawing.Point(-35, -14);
+            this.buttonTKCapNhat.Location = new System.Drawing.Point(-47, -17);
+            this.buttonTKCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTKCapNhat.Name = "buttonTKCapNhat";
-            this.buttonTKCapNhat.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonTKCapNhat.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonTKCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonTKCapNhat.Size = new System.Drawing.Size(340, 86);
+            this.buttonTKCapNhat.Size = new System.Drawing.Size(453, 106);
             this.buttonTKCapNhat.TabIndex = 2;
             this.buttonTKCapNhat.Text = "           Cập nhật thông tin";
             this.buttonTKCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -753,9 +803,10 @@
             // panel24
             // 
             this.panel24.Controls.Add(this.buttonTKDoiMK);
-            this.panel24.Location = new System.Drawing.Point(3, 131);
+            this.panel24.Location = new System.Drawing.Point(4, 162);
+            this.panel24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(290, 58);
+            this.panel24.Size = new System.Drawing.Size(387, 71);
             this.panel24.TabIndex = 11;
             // 
             // buttonTKDoiMK
@@ -764,11 +815,12 @@
             this.buttonTKDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonTKDoiMK.Image = ((System.Drawing.Image)(resources.GetObject("buttonTKDoiMK.Image")));
             this.buttonTKDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTKDoiMK.Location = new System.Drawing.Point(-35, -14);
+            this.buttonTKDoiMK.Location = new System.Drawing.Point(-47, -17);
+            this.buttonTKDoiMK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTKDoiMK.Name = "buttonTKDoiMK";
-            this.buttonTKDoiMK.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonTKDoiMK.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonTKDoiMK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonTKDoiMK.Size = new System.Drawing.Size(340, 86);
+            this.buttonTKDoiMK.Size = new System.Drawing.Size(453, 106);
             this.buttonTKDoiMK.TabIndex = 2;
             this.buttonTKDoiMK.Text = "           Đổi mật khẩu";
             this.buttonTKDoiMK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -778,9 +830,10 @@
             // panel22
             // 
             this.panel22.Controls.Add(this.buttonTKDangXuat);
-            this.panel22.Location = new System.Drawing.Point(3, 195);
+            this.panel22.Location = new System.Drawing.Point(4, 241);
+            this.panel22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(290, 58);
+            this.panel22.Size = new System.Drawing.Size(387, 71);
             this.panel22.TabIndex = 10;
             // 
             // buttonTKDangXuat
@@ -789,11 +842,12 @@
             this.buttonTKDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonTKDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("buttonTKDangXuat.Image")));
             this.buttonTKDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTKDangXuat.Location = new System.Drawing.Point(-35, -14);
+            this.buttonTKDangXuat.Location = new System.Drawing.Point(-47, -17);
+            this.buttonTKDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTKDangXuat.Name = "buttonTKDangXuat";
-            this.buttonTKDangXuat.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
+            this.buttonTKDangXuat.Padding = new System.Windows.Forms.Padding(93, 0, 0, 0);
             this.buttonTKDangXuat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonTKDangXuat.Size = new System.Drawing.Size(340, 86);
+            this.buttonTKDangXuat.Size = new System.Drawing.Size(453, 106);
             this.buttonTKDangXuat.TabIndex = 2;
             this.buttonTKDangXuat.Text = "           Đăng xuất";
             this.buttonTKDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -826,25 +880,26 @@
             this.TenPhanMem.AutoSize = true;
             this.TenPhanMem.BackColor = System.Drawing.Color.Transparent;
             this.TenPhanMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenPhanMem.Location = new System.Drawing.Point(330, 156);
+            this.TenPhanMem.Location = new System.Drawing.Point(440, 192);
+            this.TenPhanMem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TenPhanMem.Name = "TenPhanMem";
-            this.TenPhanMem.Size = new System.Drawing.Size(777, 31);
+            this.TenPhanMem.Size = new System.Drawing.Size(963, 39);
             this.TenPhanMem.TabIndex = 1;
             this.TenPhanMem.Text = "HỆ THỐNG QUẢN LÝ THIẾT BỊ Y TẾ TRONG BỆNH VIỆN";
             // 
             // FormTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1140, 806);
+            this.ClientSize = new System.Drawing.Size(1520, 992);
             this.Controls.Add(this.TenPhanMem);
             this.Controls.Add(this.flowLayoutPanel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";

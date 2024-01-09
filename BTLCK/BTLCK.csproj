@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBT.Designer.cs">
+      <DependentUpon>FormBT.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangKyTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="FormQuanLyNhapKho.Designer.cs">
       <DependentUpon>FormQuanLyNhapKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSC.Designer.cs">
+      <DependentUpon>FormSC.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </Compile>
     <Compile Include="FormVanChuyen.Designer.cs">
       <DependentUpon>FormVanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVC.Designer.cs">
+      <DependentUpon>FormVC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -150,6 +168,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThietBiDataSet5.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormBT.resx">
+      <DependentUpon>FormBT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDangKyTK.resx">
       <DependentUpon>FormDangKyTK.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +199,9 @@
     <EmbeddedResource Include="FormQuanLyNhapKho.resx">
       <DependentUpon>FormQuanLyNhapKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSC.resx">
+      <DependentUpon>FormSC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSuaChua.resx">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVanChuyen.resx">
       <DependentUpon>FormVanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVC.resx">
+      <DependentUpon>FormVC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
