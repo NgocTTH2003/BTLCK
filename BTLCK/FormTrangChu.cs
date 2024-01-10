@@ -247,9 +247,11 @@ namespace BTLCK
 
         }
 
-        private void buttonBaoCaoNhapXuat_Click(object sender, EventArgs e)
+        private void buttonBaoCaoKiemKe_Click(object sender, EventArgs e)
         {
-
+            FormBaoCaoKiemKeThietBi formBaoCaoKiemKeThietBi = new FormBaoCaoKiemKeThietBi(this);
+            formBaoCaoKiemKeThietBi.Show();
+            this.Hide();
         }
 
         private void buttonTKCapNhat_Click(object sender, EventArgs e)

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSC));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Back = new System.Windows.Forms.PictureBox();
             this.buttonXuat = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.buttonKhoiTao = new System.Windows.Forms.Button();
@@ -57,16 +59,13 @@
             this.labelTenTB = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxTenTB = new System.Windows.Forms.ComboBox();
@@ -76,57 +75,53 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.buttonCapNhat3 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonKhoiTao3 = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTimKiem3 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dateTimePickerNHT3 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxChiPhiSC3 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxMaSC3 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.dateTimePickerNSC3 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxMaTB3 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Back = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.comboBoxTenTB3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDVSC3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTTSC3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -135,7 +130,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, -1);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(867, 544);
@@ -165,6 +160,31 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tra cứu thông tin chi tiết";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::BTLCK.Properties.Resources.Search_find_3519;
+            this.pictureBox1.Location = new System.Drawing.Point(337, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Back
+            // 
+            this.Back.BackColor = System.Drawing.Color.Transparent;
+            this.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Back.Image = global::BTLCK.Properties.Resources.power_on;
+            this.Back.Location = new System.Drawing.Point(814, 0);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(45, 38);
+            this.Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Back.TabIndex = 50;
+            this.Back.TabStop = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // buttonXuat
             // 
@@ -445,17 +465,26 @@
             this.tabPage2.Text = "Tạo yêu cầu sửa chữa";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Image = global::BTLCK.Properties.Resources.power_on;
+            this.pictureBox2.Location = new System.Drawing.Point(816, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 38);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 68;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.Back_Click);
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.comboBoxTenTB);
@@ -472,34 +501,11 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Điền thông tin";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(478, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 27);
-            this.button3.TabIndex = 67;
-            this.button3.Text = "Xuất file";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Image = global::BTLCK.Properties.Resources.add;
-            this.pictureBox5.Location = new System.Drawing.Point(444, 310);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 66;
-            this.pictureBox5.TabStop = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(290, 310);
+            this.button2.Location = new System.Drawing.Point(377, 309);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 27);
             this.button2.TabIndex = 65;
@@ -511,7 +517,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(256, 310);
+            this.pictureBox4.Location = new System.Drawing.Point(343, 309);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -520,24 +526,16 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(311, 39);
+            this.textBox2.Location = new System.Drawing.Point(311, 65);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(230, 26);
             this.textBox2.TabIndex = 63;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(311, 258);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 26);
-            this.textBox1.TabIndex = 62;
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(311, 200);
+            this.dateTimePicker2.Location = new System.Drawing.Point(311, 226);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(230, 26);
             this.dateTimePicker2.TabIndex = 61;
@@ -545,25 +543,15 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(311, 144);
+            this.dateTimePicker1.Location = new System.Drawing.Point(311, 170);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(230, 26);
             this.dateTimePicker1.TabIndex = 60;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(103, 260);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(150, 20);
-            this.label9.TabIndex = 59;
-            this.label9.Text = "Mô tả tình trạng sửa";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(103, 204);
+            this.label8.Location = new System.Drawing.Point(103, 230);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(189, 20);
@@ -573,7 +561,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(103, 148);
+            this.label7.Location = new System.Drawing.Point(103, 174);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 20);
@@ -583,7 +571,7 @@
             // comboBoxTenTB
             // 
             this.comboBoxTenTB.FormattingEnabled = true;
-            this.comboBoxTenTB.Location = new System.Drawing.Point(311, 89);
+            this.comboBoxTenTB.Location = new System.Drawing.Point(311, 115);
             this.comboBoxTenTB.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTenTB.Name = "comboBoxTenTB";
             this.comboBoxTenTB.Size = new System.Drawing.Size(230, 28);
@@ -592,7 +580,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(103, 91);
+            this.label6.Location = new System.Drawing.Point(103, 117);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 20);
@@ -602,7 +590,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(103, 41);
+            this.label5.Location = new System.Drawing.Point(103, 67);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 20);
@@ -613,7 +601,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(112, 310);
+            this.button1.Location = new System.Drawing.Point(199, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 27);
             this.button1.TabIndex = 53;
@@ -625,7 +613,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = global::BTLCK.Properties.Resources.arrow_circle;
-            this.pictureBox3.Location = new System.Drawing.Point(77, 310);
+            this.pictureBox3.Location = new System.Drawing.Point(164, 309);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(28, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -649,16 +637,16 @@
             this.tabPage3.BackgroundImage = global::BTLCK.Properties.Resources.Thiết_kế_chưa_có_tên__4_;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.pictureBox8);
-            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.buttonCapNhat3);
             this.tabPage3.Controls.Add(this.pictureBox9);
-            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.buttonKhoiTao3);
             this.tabPage3.Controls.Add(this.pictureBox10);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.pictureBox11);
-            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.textBoxTimKiem3);
             this.tabPage3.Controls.Add(this.groupBox2);
-            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
@@ -668,16 +656,30 @@
             this.tabPage3.Text = "Cập nhật thông tin";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // pictureBox8
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(540, 61);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 27);
-            this.button4.TabIndex = 60;
-            this.button4.Text = "Cập nhật";
-            this.button4.UseVisualStyleBackColor = false;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Image = global::BTLCK.Properties.Resources.power_on;
+            this.pictureBox8.Location = new System.Drawing.Point(814, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(45, 38);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 61;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // buttonCapNhat3
+            // 
+            this.buttonCapNhat3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCapNhat3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCapNhat3.Location = new System.Drawing.Point(540, 61);
+            this.buttonCapNhat3.Name = "buttonCapNhat3";
+            this.buttonCapNhat3.Size = new System.Drawing.Size(97, 27);
+            this.buttonCapNhat3.TabIndex = 60;
+            this.buttonCapNhat3.Text = "Cập nhật";
+            this.buttonCapNhat3.UseVisualStyleBackColor = false;
+            this.buttonCapNhat3.Click += new System.EventHandler(this.buttonCapNhat3_Click);
             // 
             // pictureBox9
             // 
@@ -691,16 +693,17 @@
             this.pictureBox9.TabIndex = 59;
             this.pictureBox9.TabStop = false;
             // 
-            // button5
+            // buttonKhoiTao3
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(706, 61);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(97, 27);
-            this.button5.TabIndex = 58;
-            this.button5.Text = "Khởi tạo";
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonKhoiTao3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonKhoiTao3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKhoiTao3.Location = new System.Drawing.Point(706, 61);
+            this.buttonKhoiTao3.Name = "buttonKhoiTao3";
+            this.buttonKhoiTao3.Size = new System.Drawing.Size(97, 27);
+            this.buttonKhoiTao3.TabIndex = 58;
+            this.buttonKhoiTao3.Text = "Khởi tạo";
+            this.buttonKhoiTao3.UseVisualStyleBackColor = false;
+            this.buttonKhoiTao3.Click += new System.EventHandler(this.buttonKhoiTao3_Click);
             // 
             // pictureBox10
             // 
@@ -751,29 +754,32 @@
             this.pictureBox11.TabIndex = 54;
             this.pictureBox11.TabStop = false;
             // 
-            // textBox3
+            // textBoxTimKiem3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(131, 61);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 28);
-            this.textBox3.TabIndex = 53;
+            this.textBoxTimKiem3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTimKiem3.Location = new System.Drawing.Point(131, 61);
+            this.textBoxTimKiem3.Multiline = true;
+            this.textBoxTimKiem3.Name = "textBoxTimKiem3";
+            this.textBoxTimKiem3.Size = new System.Drawing.Size(172, 28);
+            this.textBoxTimKiem3.TabIndex = 53;
+            this.textBoxTimKiem3.TextChanged += new System.EventHandler(this.textBoxTimKiem3_TextChanged);
+            this.textBoxTimKiem3.Enter += new System.EventHandler(this.textBoxTimKiem_Enter);
+            this.textBoxTimKiem3.Leave += new System.EventHandler(this.textBoxTimKiem_Leave);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.comboBoxDVSC3);
+            this.groupBox2.Controls.Add(this.comboBoxTTSC3);
+            this.groupBox2.Controls.Add(this.comboBoxTenTB3);
+            this.groupBox2.Controls.Add(this.dateTimePickerNHT3);
+            this.groupBox2.Controls.Add(this.textBoxChiPhiSC3);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.textBoxMaSC3);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.dateTimePicker4);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.dateTimePickerNSC3);
+            this.groupBox2.Controls.Add(this.textBoxMaTB3);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label17);
@@ -789,29 +795,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
             // 
-            // dateTimePicker3
+            // dateTimePickerNHT3
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(159, 215);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(230, 23);
-            this.dateTimePicker3.TabIndex = 52;
+            this.dateTimePickerNHT3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerNHT3.Location = new System.Drawing.Point(159, 215);
+            this.dateTimePickerNHT3.Name = "dateTimePickerNHT3";
+            this.dateTimePickerNHT3.Size = new System.Drawing.Size(230, 23);
+            this.dateTimePickerNHT3.TabIndex = 52;
             // 
-            // textBox4
+            // textBoxChiPhiSC3
             // 
-            this.textBox4.Location = new System.Drawing.Point(159, 130);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 28);
-            this.textBox4.TabIndex = 51;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(159, 258);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(230, 28);
-            this.textBox5.TabIndex = 50;
+            this.textBoxChiPhiSC3.Location = new System.Drawing.Point(159, 258);
+            this.textBoxChiPhiSC3.Multiline = true;
+            this.textBoxChiPhiSC3.Name = "textBoxChiPhiSC3";
+            this.textBoxChiPhiSC3.Size = new System.Drawing.Size(230, 28);
+            this.textBoxChiPhiSC3.TabIndex = 50;
             // 
             // label12
             // 
@@ -822,13 +820,13 @@
             this.label12.TabIndex = 49;
             this.label12.Text = "Chi phí sửa";
             // 
-            // textBox6
+            // textBoxMaSC3
             // 
-            this.textBox6.Location = new System.Drawing.Point(159, 43);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(230, 28);
-            this.textBox6.TabIndex = 48;
+            this.textBoxMaSC3.Location = new System.Drawing.Point(159, 43);
+            this.textBoxMaSC3.Multiline = true;
+            this.textBoxMaSC3.Name = "textBoxMaSC3";
+            this.textBoxMaSC3.Size = new System.Drawing.Size(230, 28);
+            this.textBoxMaSC3.TabIndex = 48;
             // 
             // label13
             // 
@@ -839,14 +837,6 @@
             this.label13.TabIndex = 47;
             this.label13.Text = "Mã sửa chữa";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(159, 354);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(230, 28);
-            this.textBox7.TabIndex = 46;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -856,29 +846,21 @@
             this.label14.TabIndex = 45;
             this.label14.Text = "Tình trạng sửa";
             // 
-            // textBox8
+            // dateTimePickerNSC3
             // 
-            this.textBox8.Location = new System.Drawing.Point(159, 306);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(230, 28);
-            this.textBox8.TabIndex = 43;
+            this.dateTimePickerNSC3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerNSC3.Location = new System.Drawing.Point(159, 172);
+            this.dateTimePickerNSC3.Name = "dateTimePickerNSC3";
+            this.dateTimePickerNSC3.Size = new System.Drawing.Size(230, 23);
+            this.dateTimePickerNSC3.TabIndex = 42;
             // 
-            // dateTimePicker4
+            // textBoxMaTB3
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(159, 172);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(230, 23);
-            this.dateTimePicker4.TabIndex = 42;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(159, 86);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(230, 28);
-            this.textBox9.TabIndex = 41;
+            this.textBoxMaTB3.Location = new System.Drawing.Point(159, 86);
+            this.textBoxMaTB3.Multiline = true;
+            this.textBoxMaTB3.Name = "textBoxMaTB3";
+            this.textBoxMaTB3.Size = new System.Drawing.Size(230, 28);
+            this.textBoxMaTB3.TabIndex = 41;
             // 
             // label15
             // 
@@ -925,67 +907,42 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "Mã thiết bị";
             // 
-            // dataGridView2
+            // dataGridView3
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(8, 98);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(425, 416);
-            this.dataGridView2.TabIndex = 51;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(8, 98);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(425, 416);
+            this.dataGridView3.TabIndex = 51;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
-            // Back
+            // comboBoxTenTB3
             // 
-            this.Back.BackColor = System.Drawing.Color.Transparent;
-            this.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Back.Image = global::BTLCK.Properties.Resources.power_on;
-            this.Back.Location = new System.Drawing.Point(814, 0);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(45, 38);
-            this.Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Back.TabIndex = 50;
-            this.Back.TabStop = false;
-            this.Back.Click += new System.EventHandler(this.Back_Click);
+            this.comboBoxTenTB3.FormattingEnabled = true;
+            this.comboBoxTenTB3.Location = new System.Drawing.Point(159, 129);
+            this.comboBoxTenTB3.Name = "comboBoxTenTB3";
+            this.comboBoxTenTB3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTenTB3.TabIndex = 59;
+            this.comboBoxTenTB3.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenTB3_SelectedIndexChanged);
             // 
-            // pictureBox2
+            // comboBoxDVSC3
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Image = global::BTLCK.Properties.Resources.power_on;
-            this.pictureBox2.Location = new System.Drawing.Point(816, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 68;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Back_Click);
+            this.comboBoxDVSC3.FormattingEnabled = true;
+            this.comboBoxDVSC3.Location = new System.Drawing.Point(159, 306);
+            this.comboBoxDVSC3.Name = "comboBoxDVSC3";
+            this.comboBoxDVSC3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxDVSC3.TabIndex = 62;
             // 
-            // pictureBox8
+            // comboBoxTTSC3
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Image = global::BTLCK.Properties.Resources.power_on;
-            this.pictureBox8.Location = new System.Drawing.Point(814, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(45, 38);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 61;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.Back_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::BTLCK.Properties.Resources.Search_find_3519;
-            this.pictureBox1.Location = new System.Drawing.Point(337, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
+            this.comboBoxTTSC3.FormattingEnabled = true;
+            this.comboBoxTTSC3.Location = new System.Drawing.Point(159, 354);
+            this.comboBoxTTSC3.Name = "comboBoxTTSC3";
+            this.comboBoxTTSC3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTTSC3.TabIndex = 61;
             // 
             // FormSC
             // 
@@ -995,7 +952,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Theo dõi sửa chữa thiết bị";
@@ -1003,6 +960,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox.ResumeLayout(false);
@@ -1010,23 +969,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1063,15 +1019,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxTenTB;
@@ -1080,35 +1032,35 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonCapNhat3;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonKhoiTao3;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxTimKiem3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNHT3;
+        private System.Windows.Forms.TextBox textBoxChiPhiSC3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxMaSC3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNSC3;
+        private System.Windows.Forms.TextBox textBoxMaTB3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.PictureBox Back;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBoxTenTB3;
+        private System.Windows.Forms.ComboBox comboBoxDVSC3;
+        private System.Windows.Forms.ComboBox comboBoxTTSC3;
     }
 }

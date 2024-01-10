@@ -35,8 +35,8 @@
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtXacNhanMK = new System.Windows.Forms.TextBox();
-            this.txtMK = new System.Windows.Forms.TextBox();
-            this.txtTK = new System.Windows.Forms.TextBox();
+            this.txtMKM = new System.Windows.Forms.TextBox();
+            this.txtMKHT = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,7 +69,6 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đổi mật khẩu";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnQuayLai
             // 
@@ -82,6 +81,7 @@
             this.btnQuayLai.TabIndex = 7;
             this.btnQuayLai.Text = "Quay lại";
             this.btnQuayLai.UseVisualStyleBackColor = false;
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
             // btnHuy
             // 
@@ -94,6 +94,7 @@
             this.btnHuy.TabIndex = 6;
             this.btnHuy.Text = "Khởi tạo";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXacNhan
             // 
@@ -110,8 +111,8 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.txtXacNhanMK);
-            this.panel3.Controls.Add(this.txtMK);
-            this.panel3.Controls.Add(this.txtTK);
+            this.panel3.Controls.Add(this.txtMKM);
+            this.panel3.Controls.Add(this.txtMKHT);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
@@ -134,31 +135,31 @@
             this.txtXacNhanMK.TabIndex = 12;
             this.txtXacNhanMK.Text = "Xác nhận mật khẩu";
             // 
-            // txtMK
+            // txtMKM
             // 
-            this.txtMK.BackColor = System.Drawing.Color.Ivory;
-            this.txtMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMK.ForeColor = System.Drawing.Color.Black;
-            this.txtMK.Location = new System.Drawing.Point(11, 60);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(206, 18);
-            this.txtMK.TabIndex = 11;
-            this.txtMK.Text = "Mật khẩu mới";
+            this.txtMKM.BackColor = System.Drawing.Color.Ivory;
+            this.txtMKM.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMKM.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMKM.ForeColor = System.Drawing.Color.Black;
+            this.txtMKM.Location = new System.Drawing.Point(11, 60);
+            this.txtMKM.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMKM.Name = "txtMKM";
+            this.txtMKM.Size = new System.Drawing.Size(206, 18);
+            this.txtMKM.TabIndex = 11;
+            this.txtMKM.Text = "Mật khẩu mới";
             // 
-            // txtTK
+            // txtMKHT
             // 
-            this.txtTK.BackColor = System.Drawing.Color.Ivory;
-            this.txtTK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTK.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTK.ForeColor = System.Drawing.Color.Black;
-            this.txtTK.Location = new System.Drawing.Point(11, 19);
-            this.txtTK.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(206, 18);
-            this.txtTK.TabIndex = 10;
-            this.txtTK.Text = "Mật khẩu hiện tại";
+            this.txtMKHT.BackColor = System.Drawing.Color.Ivory;
+            this.txtMKHT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMKHT.Font = new System.Drawing.Font("Bahnschrift Condensed", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMKHT.ForeColor = System.Drawing.Color.Black;
+            this.txtMKHT.Location = new System.Drawing.Point(11, 19);
+            this.txtMKHT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMKHT.Name = "txtMKHT";
+            this.txtMKHT.Size = new System.Drawing.Size(206, 18);
+            this.txtMKHT.TabIndex = 10;
+            this.txtMKHT.Text = "Mật khẩu hiện tại";
             // 
             // label8
             // 
@@ -258,7 +259,6 @@
             this.DoubleBuffered = true;
             this.Name = "FormTaiKhoan";
             this.Text = "Đổi mật khẩu";
-            this.Load += new System.EventHandler(this.FormTaiKhoan_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -277,8 +277,8 @@
         private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtXacNhanMK;
-        private System.Windows.Forms.TextBox txtMK;
-        private System.Windows.Forms.TextBox txtTK;
+        private System.Windows.Forms.TextBox txtMKM;
+        private System.Windows.Forms.TextBox txtMKHT;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

@@ -624,7 +624,7 @@
             this.buttonBaoCaoNhapXuat.Text = "           Nhập/Xuất thiết bị";
             this.buttonBaoCaoNhapXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBaoCaoNhapXuat.UseVisualStyleBackColor = false;
-            this.buttonBaoCaoNhapXuat.Click += new System.EventHandler(this.buttonBaoCaoNhapXuat_Click);
+            this.buttonBaoCaoNhapXuat.Click += new System.EventHandler(this.buttonBaoCaoKiemKe_Click);
             // 
             // TaiKhoanContainer
             // 
@@ -740,22 +740,27 @@
             // 
             // DanhMucTimer
             // 
+            this.DanhMucTimer.Interval = 5;
             this.DanhMucTimer.Tick += new System.EventHandler(this.DanhMucTimer_Tick);
             // 
             // NhapVaKiemKeTimer
             // 
+            this.NhapVaKiemKeTimer.Interval = 5;
             this.NhapVaKiemKeTimer.Tick += new System.EventHandler(this.NhapVaKiemKeTimer_Tick);
             // 
             // TheoDoiTimer
             // 
+            this.TheoDoiTimer.Interval = 5;
             this.TheoDoiTimer.Tick += new System.EventHandler(this.TheoDoiTimer_Tick);
             // 
             // BaoCaoTimer
             // 
+            this.BaoCaoTimer.Interval = 5;
             this.BaoCaoTimer.Tick += new System.EventHandler(this.BaoCaoTimer_Tick);
             // 
             // TaiKhoanTimer
             // 
+            this.TaiKhoanTimer.Interval = 5;
             this.TaiKhoanTimer.Tick += new System.EventHandler(this.TaiKhoanTimer_Tick);
             // 
             // TenPhanMem

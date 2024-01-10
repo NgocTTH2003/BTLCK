@@ -18,21 +18,15 @@ namespace BTLCK
         {
             InitializeComponent();
             this.formTrangChu = formTrangChu;
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //sự kiện ẩn hiện groupbox
-            this.Load += FormTaiKhoan_Load;
         }
-        public FormTaiKhoan()
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            this.formTrangChu.Show();
+            this.Hide();
         }
 
-        private void FormTaiKhoan_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
 
         }
