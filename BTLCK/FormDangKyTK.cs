@@ -197,24 +197,38 @@ namespace BTLCK
                         scn.Open();
 
                         // Kiểm tra xem giá trị của txtMaNV có tồn tại trong bảng NhanVien không
-                        string checkExistQuery = $"SELECT COUNT(*) FROM NhanVien WHERE IDNhanVien = '{txtMaNV.Text}'";
-                        SqlCommand checkExistCmd = new SqlCommand(checkExistQuery, scn);
+                        string checkExistNhanVienQuery = $"SELECT COUNT(*) FROM NhanVien WHERE IDNhanVien = '{txtMaNV.Text}'";
+                        SqlCommand checkExistNhanVienCmd = new SqlCommand(checkExistNhanVienQuery, scn);
 
-                        int count = Convert.ToInt32(checkExistCmd.ExecuteScalar());
+                        int countNhanVien = Convert.ToInt32(checkExistNhanVienCmd.ExecuteScalar());
 
-                        if (count > 0)
+                        if (countNhanVien > 0)
                         {
-                            // txtMaNV tồn tại trong bảng NhanVien, thực hiện chèn dữ liệu vào bảng TaiKhoan
-                            string insertQuery = "INSERT INTO TaiKhoan (IDNhanVien, TenDangNhap, MatKhau) VALUES (@IDNhanVien, @TaiKhoan, @MatKhau)";
-                            SqlCommand insertCmd = new SqlCommand(insertQuery, scn);
+                            // txtMaNV tồn tại trong bảng NhanVien, kiểm tra xem TenDangNhap đã tồn tại chưa
+                            string checkExistTaiKhoanQuery = $"SELECT COUNT(*) FROM TaiKhoan WHERE TenDangNhap = '{txtTK.Text}'";
+                            SqlCommand checkExistTaiKhoanCmd = new SqlCommand(checkExistTaiKhoanQuery, scn);
 
-                            insertCmd.Parameters.AddWithValue("@IDNhanVien", txtMaNV.Text);
-                            insertCmd.Parameters.AddWithValue("@TaiKhoan", txtTK.Text);
-                            insertCmd.Parameters.AddWithValue("@MatKhau", txtMK.Text);
+                            int countTaiKhoan = Convert.ToInt32(checkExistTaiKhoanCmd.ExecuteScalar());
 
-                            insertCmd.ExecuteNonQuery();
+                            if (countTaiKhoan > 0)
+                            {
+                                // txtTK đã tồn tại trong bảng TaiKhoan
+                                MessageBox.Show("Tài khoản đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                // txtTK chưa tồn tại trong bảng TaiKhoan, thực hiện chèn dữ liệu vào bảng TaiKhoan
+                                string insertQuery = "INSERT INTO TaiKhoan (IDNhanVien, TenDangNhap, MatKhau) VALUES (@IDNhanVien, @TaiKhoan, @MatKhau)";
+                                SqlCommand insertCmd = new SqlCommand(insertQuery, scn);
 
-                            MessageBox.Show("Chèn dữ liệu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                insertCmd.Parameters.AddWithValue("@IDNhanVien", txtMaNV.Text);
+                                insertCmd.Parameters.AddWithValue("@TaiKhoan", txtTK.Text);
+                                insertCmd.Parameters.AddWithValue("@MatKhau", txtMK.Text);
+
+                                insertCmd.ExecuteNonQuery();
+
+                                MessageBox.Show("Tạo tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
                         }
                         else
                         {
@@ -227,8 +241,9 @@ namespace BTLCK
                         MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+
             }
         }
+       }
 
-    }
 }

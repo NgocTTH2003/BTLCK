@@ -19,7 +19,7 @@ namespace BTLCK
         bool TaiKhoanExpand = false;
         public FormTrangChu()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
 
