@@ -46,7 +46,7 @@
             this.buttonDMThietBi = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DanhMuc = new System.Windows.Forms.Button();
-            this.NhapVaKiemKeContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.QuanLyTBContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.NhapVaKiemKe = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -74,14 +74,12 @@
             this.TaiKhoanContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.buttonTKCapNhat = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.buttonTKDoiMK = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
             this.buttonTKDangXuat = new System.Windows.Forms.Button();
             this.DanhMucTimer = new System.Windows.Forms.Timer(this.components);
-            this.NhapVaKiemKeTimer = new System.Windows.Forms.Timer(this.components);
+            this.QuanLyTBTimer = new System.Windows.Forms.Timer(this.components);
             this.TheoDoiTimer = new System.Windows.Forms.Timer(this.components);
             this.BaoCaoTimer = new System.Windows.Forms.Timer(this.components);
             this.TaiKhoanTimer = new System.Windows.Forms.Timer(this.components);
@@ -96,7 +94,7 @@
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.NhapVaKiemKeContainer.SuspendLayout();
+            this.QuanLyTBContainer.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panelThanhLy.SuspendLayout();
@@ -112,7 +110,6 @@
             this.panel20.SuspendLayout();
             this.TaiKhoanContainer.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel22.SuspendLayout();
             this.SuspendLayout();
@@ -125,7 +122,7 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.DanhMucContainer);
-            this.flowLayoutPanel1.Controls.Add(this.NhapVaKiemKeContainer);
+            this.flowLayoutPanel1.Controls.Add(this.QuanLyTBContainer);
             this.flowLayoutPanel1.Controls.Add(this.TheoDoiContainer);
             this.flowLayoutPanel1.Controls.Add(this.BaoCaoContainer);
             this.flowLayoutPanel1.Controls.Add(this.TaiKhoanContainer);
@@ -316,16 +313,16 @@
             this.DanhMuc.UseVisualStyleBackColor = false;
             this.DanhMuc.Click += new System.EventHandler(this.DanhMuc_Click);
             // 
-            // NhapVaKiemKeContainer
+            // QuanLyTBContainer
             // 
-            this.NhapVaKiemKeContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.NhapVaKiemKeContainer.Controls.Add(this.panel4);
-            this.NhapVaKiemKeContainer.Controls.Add(this.panel16);
-            this.NhapVaKiemKeContainer.Controls.Add(this.panelThanhLy);
-            this.NhapVaKiemKeContainer.Location = new System.Drawing.Point(3, 288);
-            this.NhapVaKiemKeContainer.Name = "NhapVaKiemKeContainer";
-            this.NhapVaKiemKeContainer.Size = new System.Drawing.Size(290, 58);
-            this.NhapVaKiemKeContainer.TabIndex = 7;
+            this.QuanLyTBContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.QuanLyTBContainer.Controls.Add(this.panel4);
+            this.QuanLyTBContainer.Controls.Add(this.panel16);
+            this.QuanLyTBContainer.Controls.Add(this.panelThanhLy);
+            this.QuanLyTBContainer.Location = new System.Drawing.Point(3, 288);
+            this.QuanLyTBContainer.Name = "QuanLyTBContainer";
+            this.QuanLyTBContainer.Size = new System.Drawing.Size(290, 58);
+            this.QuanLyTBContainer.TabIndex = 7;
             // 
             // panel4
             // 
@@ -350,7 +347,7 @@
             this.NhapVaKiemKe.Text = "             Quản lý thiết bị";
             this.NhapVaKiemKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NhapVaKiemKe.UseVisualStyleBackColor = false;
-            this.NhapVaKiemKe.Click += new System.EventHandler(this.NhapVaKiemKe_Click);
+            this.NhapVaKiemKe.Click += new System.EventHandler(this.QuanLyTB_Click);
             // 
             // panel16
             // 
@@ -437,7 +434,7 @@
             this.button4.Text = "             Theo dõi thiết bị";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.TheoDoi_Click);
             // 
             // panel15
             // 
@@ -630,7 +627,6 @@
             // 
             this.TaiKhoanContainer.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.TaiKhoanContainer.Controls.Add(this.panel7);
-            this.TaiKhoanContainer.Controls.Add(this.panel23);
             this.TaiKhoanContainer.Controls.Add(this.panel24);
             this.TaiKhoanContainer.Controls.Add(this.panel22);
             this.TaiKhoanContainer.Location = new System.Drawing.Point(3, 480);
@@ -663,35 +659,10 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.buttonTKCapNhat);
-            this.panel23.Location = new System.Drawing.Point(3, 67);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(290, 58);
-            this.panel23.TabIndex = 11;
-            // 
-            // buttonTKCapNhat
-            // 
-            this.buttonTKCapNhat.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.buttonTKCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonTKCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("buttonTKCapNhat.Image")));
-            this.buttonTKCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTKCapNhat.Location = new System.Drawing.Point(-35, -14);
-            this.buttonTKCapNhat.Name = "buttonTKCapNhat";
-            this.buttonTKCapNhat.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.buttonTKCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonTKCapNhat.Size = new System.Drawing.Size(340, 86);
-            this.buttonTKCapNhat.TabIndex = 2;
-            this.buttonTKCapNhat.Text = "           Cập nhật thông tin";
-            this.buttonTKCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTKCapNhat.UseVisualStyleBackColor = false;
-            this.buttonTKCapNhat.Click += new System.EventHandler(this.buttonTKCapNhat_Click);
-            // 
             // panel24
             // 
             this.panel24.Controls.Add(this.buttonTKDoiMK);
-            this.panel24.Location = new System.Drawing.Point(3, 131);
+            this.panel24.Location = new System.Drawing.Point(3, 67);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(290, 58);
             this.panel24.TabIndex = 11;
@@ -716,7 +687,7 @@
             // panel22
             // 
             this.panel22.Controls.Add(this.buttonTKDangXuat);
-            this.panel22.Location = new System.Drawing.Point(3, 195);
+            this.panel22.Location = new System.Drawing.Point(3, 131);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(290, 58);
             this.panel22.TabIndex = 10;
@@ -743,10 +714,10 @@
             this.DanhMucTimer.Interval = 5;
             this.DanhMucTimer.Tick += new System.EventHandler(this.DanhMucTimer_Tick);
             // 
-            // NhapVaKiemKeTimer
+            // QuanLyTBTimer
             // 
-            this.NhapVaKiemKeTimer.Interval = 5;
-            this.NhapVaKiemKeTimer.Tick += new System.EventHandler(this.NhapVaKiemKeTimer_Tick);
+            this.QuanLyTBTimer.Interval = 5;
+            this.QuanLyTBTimer.Tick += new System.EventHandler(this.QuanLyTBTimer_Tick);
             // 
             // TheoDoiTimer
             // 
@@ -802,7 +773,7 @@
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.NhapVaKiemKeContainer.ResumeLayout(false);
+            this.QuanLyTBContainer.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panelThanhLy.ResumeLayout(false);
@@ -818,7 +789,6 @@
             this.panel20.ResumeLayout(false);
             this.TaiKhoanContainer.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -860,10 +830,10 @@
         private System.Windows.Forms.Button buttonVanChuyenTB;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button buttonBaoTriTB;
-        private System.Windows.Forms.FlowLayoutPanel NhapVaKiemKeContainer;
+        private System.Windows.Forms.FlowLayoutPanel QuanLyTBContainer;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button buttonNhapKhoTB;
-        private System.Windows.Forms.Timer NhapVaKiemKeTimer;
+        private System.Windows.Forms.Timer QuanLyTBTimer;
         private System.Windows.Forms.Timer TheoDoiTimer;
         private System.Windows.Forms.FlowLayoutPanel BaoCaoContainer;
         private System.Windows.Forms.Panel panel18;
@@ -874,8 +844,6 @@
         private System.Windows.Forms.Timer BaoCaoTimer;
         private System.Windows.Forms.FlowLayoutPanel TaiKhoanContainer;
         private System.Windows.Forms.Timer TaiKhoanTimer;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Button buttonTKCapNhat;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Button buttonTKDangXuat;
         private System.Windows.Forms.Panel panel24;

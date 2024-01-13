@@ -1,6 +1,6 @@
 ﻿namespace BTLCK
 {
-    partial class FormTaiKhoan
+    partial class FormDoiMatKhau
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTaiKhoan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDoiMatKhau));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnQuayLai = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -284,7 +284,7 @@
             this.Back.TabStop = false;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
-            // FormTaiKhoan
+            // FormDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,7 +296,8 @@
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormTaiKhoan";
+            this.Name = "FormDoiMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi mật khẩu";
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

@@ -13,7 +13,7 @@ namespace BTLCK
     public partial class FormTrangChu : Form
     {
         bool DanhMucExpand = false;
-        bool NhapVaKiemKeExpand = false;
+        bool QuanLyTBExpand = false;
         bool TheoDoiExpand = false;
         bool BaoCaoExpand = false;
         bool TaiKhoanExpand = false;
@@ -50,33 +50,33 @@ namespace BTLCK
             DanhMucTimer.Start();
         }
 
-        private void NhapVaKiemKeTimer_Tick(object sender, EventArgs e)
+        private void QuanLyTBTimer_Tick(object sender, EventArgs e)
         {
-            if (NhapVaKiemKeExpand == false)
+            if (QuanLyTBExpand == false)
             {
-                NhapVaKiemKeContainer.Height += 5;
-                if (NhapVaKiemKeContainer.Height >= 197)
+                QuanLyTBContainer.Height += 5;
+                if (QuanLyTBContainer.Height >= 203)
                 {
-                    NhapVaKiemKeTimer.Stop();
-                    NhapVaKiemKeExpand = true;
+                    QuanLyTBTimer.Stop();
+                    QuanLyTBExpand = true;
                 }
             }
             else
             {
-                NhapVaKiemKeContainer.Height -= 5;
-                if (NhapVaKiemKeContainer.Height <= 58)
+                QuanLyTBContainer.Height -= 5;
+                if (QuanLyTBContainer.Height <= 58)
                 {
-                    NhapVaKiemKeTimer.Stop();
-                    NhapVaKiemKeExpand = false;
+                    QuanLyTBTimer.Stop();
+                    QuanLyTBExpand = false;
                 }
             }
         }
 
 
 
-        private void NhapVaKiemKe_Click(object sender, EventArgs e)
+        private void QuanLyTB_Click(object sender, EventArgs e)
         {
-            NhapVaKiemKeTimer.Start();
+            QuanLyTBTimer.Start();
         }
 
         private void TheoDoiTimer_Tick(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace BTLCK
             if (TheoDoiExpand == false)
             {
                 TheoDoiContainer.Height += 5;
-                if (TheoDoiContainer.Height >= 271)
+                if (TheoDoiContainer.Height >= 258)
                 {
                     TheoDoiTimer.Stop();
                     TheoDoiExpand = true;
@@ -101,7 +101,7 @@ namespace BTLCK
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void TheoDoi_Click(object sender, EventArgs e)
         {
             TheoDoiTimer.Start();
         }
@@ -111,7 +111,7 @@ namespace BTLCK
             if (BaoCaoExpand == false)
             {
                 BaoCaoContainer.Height += 5;
-                if (BaoCaoContainer.Height >= 317)
+                if (BaoCaoContainer.Height >= 275)
                 {
                     BaoCaoTimer.Stop();
                     BaoCaoExpand = true;
@@ -138,7 +138,7 @@ namespace BTLCK
             if (TaiKhoanExpand == false)
             {
                 TaiKhoanContainer.Height += 5;
-                if (TaiKhoanContainer.Height >= 256)
+                if (TaiKhoanContainer.Height >= 200)
                 {
                     TaiKhoanTimer.Stop();
                     TaiKhoanExpand = true;
@@ -239,29 +239,24 @@ namespace BTLCK
 
         private void buttonBaoCaoBaoTri_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hệ thống đang nâng cấp");
         }
 
         private void buttonBaoCaoSuCo_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hệ thống đang nâng cấp");
         }
 
         private void buttonBaoCaoKiemKe_Click(object sender, EventArgs e)
         {
-            FormBaoCaoKiemKeThietBi formBaoCaoKiemKeThietBi = new FormBaoCaoKiemKeThietBi(this);
+            FormBaoCaoNhapXuatTB formBaoCaoKiemKeThietBi = new FormBaoCaoNhapXuatTB(this);
             formBaoCaoKiemKeThietBi.Show();
             this.Hide();
         }
 
-        private void buttonTKCapNhat_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonTKDoiMK_Click(object sender, EventArgs e)
         {
-            FormTaiKhoan formTaiKhoan = new FormTaiKhoan(this);
+            FormDoiMatKhau formTaiKhoan = new FormDoiMatKhau(this);
             formTaiKhoan.Show();
             this.Hide();
         }

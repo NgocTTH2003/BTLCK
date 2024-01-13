@@ -47,11 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBaoCaoKiemKeThietBi.cs">
+    <Compile Include="ClassLayDuLieu.cs" />
+    <Compile Include="FormBaoCaoNhapXuatTB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBaoCaoKiemKeThietBi.Designer.cs">
-      <DependentUpon>FormBaoCaoKiemKeThietBi.cs</DependentUpon>
+    <Compile Include="FormBaoCaoNhapXuatTB.Designer.cs">
+      <DependentUpon>FormBaoCaoNhapXuatTB.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBaoCaoTinhTrangThietBi.cs">
       <SubType>Form</SubType>
@@ -131,11 +132,11 @@
     <Compile Include="FormSuaChua.Designer.cs">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTaiKhoan.cs">
+    <Compile Include="FormDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTaiKhoan.Designer.cs">
-      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
+    <Compile Include="FormDoiMatKhau.Designer.cs">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThanhLy.cs">
       <SubType>Form</SubType>
@@ -208,8 +209,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThietBiDataSetViewDanhMucNhanVien.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormBaoCaoKiemKeThietBi.resx">
-      <DependentUpon>FormBaoCaoKiemKeThietBi.cs</DependentUpon>
+    <EmbeddedResource Include="FormBaoCaoNhapXuatTB.resx">
+      <DependentUpon>FormBaoCaoNhapXuatTB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBaoCaoTinhTrangThietBi.resx">
       <DependentUpon>FormBaoCaoTinhTrangThietBi.cs</DependentUpon>
@@ -251,8 +252,8 @@
     <EmbeddedResource Include="FormSuaChua.resx">
       <DependentUpon>FormSuaChua.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTaiKhoan.resx">
-      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
+    <EmbeddedResource Include="FormDoiMatKhau.resx">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThanhLy.resx">
       <DependentUpon>FormThanhLy.cs</DependentUpon>

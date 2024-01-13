@@ -759,16 +759,6 @@
         /wBOUb+6VUoJigAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="buttonTKCapNhat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAATrzAAE68wEXCzLMAAAAxElE
-        QVR4Xu3WMQrCQBCF4a3UswgKehE9oxghXkWw8RbqCbTQ9yDCFGOZZvJ/8IOEbcZssmkAAAAAAAAAAADA
-        qBZqq/ZqpzZqribBg5/VU72HHuqkVqo0D39Tnz9d1VqV5C3eq2zw2FGVfBx8973Vs6FjXuN3Qjl+2b1U
-        NnTMa7y2nMn/Ad7Wd5UNHfOako/ATPmoy4aOHZTXluRz3kddNri7qKUqzed8p+KHkH/7zpcf/if7FPY1
-        AAAAAAAAAAAAYBStfQF1SVkEsij+/AAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="buttonTKDoiMK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -792,7 +782,7 @@
   <metadata name="DanhMucTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="NhapVaKiemKeTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="QuanLyTBTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>153, 17</value>
   </metadata>
   <metadata name="TheoDoiTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

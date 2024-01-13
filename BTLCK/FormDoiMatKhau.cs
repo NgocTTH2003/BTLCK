@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace BTLCK
 {
-    public partial class FormTaiKhoan : Form
+    public partial class FormDoiMatKhau : Form
     {
         private FormTrangChu formTrangChu;
-        public FormTaiKhoan(FormTrangChu formTrangChu)
+        public FormDoiMatKhau(FormTrangChu formTrangChu)
         {
             InitializeComponent();
             this.formTrangChu = formTrangChu;
@@ -22,10 +22,9 @@ namespace BTLCK
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
-            this.formDangNhap.Show();
+            this.formTrangChu.Show();
             this.Close();
         }
-
         private void btnHuy_Click(object sender, EventArgs e)
         {
             txtTDN.ResetText();

@@ -31,22 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDanhMucNhaCungCap));
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.buttonKhoiTao = new System.Windows.Forms.Button();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.groupBoxTTNCC = new System.Windows.Forms.GroupBox();
+            this.txtDCNCC = new System.Windows.Forms.TextBox();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxDC = new System.Windows.Forms.ComboBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.labelVTDat = new System.Windows.Forms.Label();
             this.labelMaNV = new System.Windows.Forms.Label();
             this.labelTenNCC = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.buttonHuy = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.buttonLuu = new System.Windows.Forms.Button();
             this.labelTTTBYT = new System.Windows.Forms.Label();
             this.textBoxTimKiem = new System.Windows.Forms.TextBox();
             this.Back = new System.Windows.Forms.PictureBox();
@@ -55,30 +51,23 @@
             this.buttonThem = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nhaCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThietBiDataSet2 = new BTLCK.QuanLyThietBiDataSet2();
             this.buttonSua = new System.Windows.Forms.Button();
             this.labelTimKiem = new System.Windows.Forms.Label();
-            this.quanLyThietBiDataSet2 = new BTLCK.QuanLyThietBiDataSet2();
-            this.nhaCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nhaCungCapTableAdapter = new BTLCK.QuanLyThietBiDataSet2TableAdapters.NhaCungCapTableAdapter();
-            this.iDNhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenNhaCungCapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtMaNCC = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.buttonKhoiTao = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBoxTTNCC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox5
@@ -94,18 +83,6 @@
             this.pictureBox5.TabIndex = 52;
             this.pictureBox5.TabStop = false;
             // 
-            // buttonKhoiTao
-            // 
-            this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonKhoiTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKhoiTao.Location = new System.Drawing.Point(349, 427);
-            this.buttonKhoiTao.Name = "buttonKhoiTao";
-            this.buttonKhoiTao.Size = new System.Drawing.Size(101, 36);
-            this.buttonKhoiTao.TabIndex = 16;
-            this.buttonKhoiTao.Text = "Khởi tạo";
-            this.buttonKhoiTao.UseVisualStyleBackColor = false;
-            this.buttonKhoiTao.Click += new System.EventHandler(this.buttonKhoiTao_Click);
-            // 
             // buttonXoa
             // 
             this.buttonXoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -118,42 +95,62 @@
             this.buttonXoa.TabIndex = 53;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = false;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
             // groupBoxTTNCC
             // 
             this.groupBoxTTNCC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxTTNCC.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxTTNCC.Controls.Add(this.txtDCNCC);
             this.groupBoxTTNCC.Controls.Add(this.txtMaNCC);
             this.groupBoxTTNCC.Controls.Add(this.label2);
             this.groupBoxTTNCC.Controls.Add(this.txtEmail);
             this.groupBoxTTNCC.Controls.Add(this.label1);
-            this.groupBoxTTNCC.Controls.Add(this.buttonKhoiTao);
-            this.groupBoxTTNCC.Controls.Add(this.comboBoxDC);
-            this.groupBoxTTNCC.Controls.Add(this.pictureBox7);
             this.groupBoxTTNCC.Controls.Add(this.txtSDT);
             this.groupBoxTTNCC.Controls.Add(this.txtTenNCC);
             this.groupBoxTTNCC.Controls.Add(this.labelVTDat);
             this.groupBoxTTNCC.Controls.Add(this.labelMaNV);
             this.groupBoxTTNCC.Controls.Add(this.labelTenNCC);
-            this.groupBoxTTNCC.Controls.Add(this.pictureBox6);
-            this.groupBoxTTNCC.Controls.Add(this.buttonHuy);
-            this.groupBoxTTNCC.Controls.Add(this.pictureBox4);
-            this.groupBoxTTNCC.Controls.Add(this.buttonLuu);
             this.groupBoxTTNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxTTNCC.Location = new System.Drawing.Point(20, 231);
             this.groupBoxTTNCC.Name = "groupBoxTTNCC";
-            this.groupBoxTTNCC.Size = new System.Drawing.Size(458, 479);
+            this.groupBoxTTNCC.Size = new System.Drawing.Size(618, 479);
             this.groupBoxTTNCC.TabIndex = 51;
             this.groupBoxTTNCC.TabStop = false;
             this.groupBoxTTNCC.Text = "Thông tin";
+            // 
+            // txtDCNCC
+            // 
+            this.txtDCNCC.Location = new System.Drawing.Point(172, 374);
+            this.txtDCNCC.Multiline = true;
+            this.txtDCNCC.Name = "txtDCNCC";
+            this.txtDCNCC.Size = new System.Drawing.Size(422, 28);
+            this.txtDCNCC.TabIndex = 33;
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.Location = new System.Drawing.Point(172, 41);
+            this.txtMaNCC.Multiline = true;
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(422, 28);
+            this.txtMaNCC.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 20);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Mã nhà cung cấp";
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(172, 284);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(230, 28);
+            this.txtEmail.Size = new System.Drawing.Size(422, 28);
             this.txtEmail.TabIndex = 30;
             // 
             // label1
@@ -165,95 +162,12 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "Email";
             // 
-            // comboBoxDC
-            // 
-            this.comboBoxDC.FormattingEnabled = true;
-            this.comboBoxDC.Items.AddRange(new object[] {
-            "An Giang",
-            "Bà Rịa - Vũng Tàu",
-            "Bạc Liêu",
-            "Bắc Giang",
-            "Bắc Kạn",
-            "Bắc Ninh",
-            "Bến Tre",
-            "Bình Định",
-            "Bình Dương",
-            "Bình Phước",
-            "Bình Thuận",
-            "Cà Mau",
-            "Cần Thơ (thành phố)",
-            "Cao Bằng",
-            "Đà Nẵng (thành phố)",
-            "Đắk Lắk",
-            "Đắk Nông",
-            "Điện Biên",
-            "Đồng Nai",
-            "Đồng Tháp",
-            "Gia Lai",
-            "Hà Giang",
-            "Hà Nam",
-            "Hà Nội (thủ đô)",
-            "Hà Tĩnh",
-            "Hải Dương",
-            "Hải Phòng (thành phố)",
-            "Hậu Giang",
-            "Hòa Bình",
-            "Hồ Chí Minh (thành phố)",
-            "Hưng Yên",
-            "Khánh Hòa",
-            "Kiên Giang",
-            "Kon Tum",
-            "Lai Châu",
-            "Lâm Đồng",
-            "Lạng Sơn",
-            "Lào Cai",
-            "Long An",
-            "Nam Định",
-            "Nghệ An",
-            "Ninh Bình",
-            "Ninh Thuận",
-            "Phú Thọ",
-            "Phú Yên",
-            "Quảng Bình",
-            "Quảng Nam",
-            "Quảng Ngãi",
-            "Quảng Ninh",
-            "Quảng Trị",
-            "Sóc Trăng",
-            "Sơn La",
-            "Tây Ninh",
-            "Thái Bình",
-            "Thái Nguyên",
-            "Thanh Hóa",
-            "Thừa Thiên Huế",
-            "Tiền Giang",
-            "Trà Vinh",
-            "Tuyên Quang",
-            "Vĩnh Long",
-            "Vĩnh Phúc",
-            "Yên Bái"});
-            this.comboBoxDC.Location = new System.Drawing.Point(172, 374);
-            this.comboBoxDC.Name = "comboBoxDC";
-            this.comboBoxDC.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxDC.TabIndex = 27;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(307, 427);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(172, 200);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(230, 28);
+            this.txtSDT.Size = new System.Drawing.Size(422, 28);
             this.txtSDT.TabIndex = 26;
             // 
             // txtTenNCC
@@ -261,7 +175,7 @@
             this.txtTenNCC.Location = new System.Drawing.Point(172, 113);
             this.txtTenNCC.Multiline = true;
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(230, 28);
+            this.txtTenNCC.Size = new System.Drawing.Size(422, 28);
             this.txtTenNCC.TabIndex = 21;
             // 
             // labelVTDat
@@ -291,58 +205,13 @@
             this.labelTenNCC.TabIndex = 13;
             this.labelTenNCC.Text = "Tên nhà cung cấp";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(158, 427);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
-            // buttonHuy
-            // 
-            this.buttonHuy.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHuy.Location = new System.Drawing.Point(200, 427);
-            this.buttonHuy.Name = "buttonHuy";
-            this.buttonHuy.Size = new System.Drawing.Size(101, 36);
-            this.buttonHuy.TabIndex = 12;
-            this.buttonHuy.Text = "Hủy";
-            this.buttonHuy.UseVisualStyleBackColor = false;
-            this.buttonHuy.Click += new System.EventHandler(this.buttonHuy_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(10, 427);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // buttonLuu
-            // 
-            this.buttonLuu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLuu.Location = new System.Drawing.Point(52, 427);
-            this.buttonLuu.Name = "buttonLuu";
-            this.buttonLuu.Size = new System.Drawing.Size(101, 36);
-            this.buttonLuu.TabIndex = 10;
-            this.buttonLuu.Text = "Lưu";
-            this.buttonLuu.UseVisualStyleBackColor = false;
-            // 
             // labelTTTBYT
             // 
             this.labelTTTBYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelTTTBYT.AutoSize = true;
             this.labelTTTBYT.BackColor = System.Drawing.Color.Transparent;
             this.labelTTTBYT.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTTTBYT.Location = new System.Drawing.Point(291, 18);
+            this.labelTTTBYT.Location = new System.Drawing.Point(292, 26);
             this.labelTTTBYT.Name = "labelTTTBYT";
             this.labelTTTBYT.Size = new System.Drawing.Size(579, 46);
             this.labelTTTBYT.TabIndex = 42;
@@ -353,11 +222,14 @@
             this.textBoxTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBoxTimKiem.Location = new System.Drawing.Point(108, 110);
+            this.textBoxTimKiem.Location = new System.Drawing.Point(111, 110);
             this.textBoxTimKiem.Multiline = true;
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(314, 34);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(476, 34);
             this.textBoxTimKiem.TabIndex = 41;
+            this.textBoxTimKiem.TextChanged += new System.EventHandler(this.textBoxTimKiem_TextChanged);
+            this.textBoxTimKiem.Enter += new System.EventHandler(this.textBoxTimKiem_Enter);
+            this.textBoxTimKiem.Leave += new System.EventHandler(this.textBoxTimKiem_Leave);
             // 
             // Back
             // 
@@ -378,7 +250,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(428, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(602, 110);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 36);
             this.pictureBox1.TabIndex = 43;
@@ -428,21 +300,24 @@
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDNhaCungCapDataGridViewTextBoxColumn,
-            this.tenNhaCungCapDataGridViewTextBoxColumn,
-            this.diaChiDataGridViewTextBoxColumn,
-            this.sDTDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.nhaCungCapBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(503, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(648, 110);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(652, 600);
+            this.dataGridView1.Size = new System.Drawing.Size(507, 600);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // nhaCungCapBindingSource
+            // 
+            this.nhaCungCapBindingSource.DataMember = "NhaCungCap";
+            this.nhaCungCapBindingSource.DataSource = this.quanLyThietBiDataSet2;
+            // 
+            // quanLyThietBiDataSet2
+            // 
+            this.quanLyThietBiDataSet2.DataSetName = "QuanLyThietBiDataSet2";
+            this.quanLyThietBiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // buttonSua
             // 
@@ -456,6 +331,7 @@
             this.buttonSua.TabIndex = 49;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // labelTimKiem
             // 
@@ -470,69 +346,32 @@
             this.labelTimKiem.TabIndex = 44;
             this.labelTimKiem.Text = "Tìm kiếm";
             // 
-            // quanLyThietBiDataSet2
-            // 
-            this.quanLyThietBiDataSet2.DataSetName = "QuanLyThietBiDataSet2";
-            this.quanLyThietBiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nhaCungCapBindingSource
-            // 
-            this.nhaCungCapBindingSource.DataMember = "NhaCungCap";
-            this.nhaCungCapBindingSource.DataSource = this.quanLyThietBiDataSet2;
-            // 
             // nhaCungCapTableAdapter
             // 
             this.nhaCungCapTableAdapter.ClearBeforeFill = true;
             // 
-            // iDNhaCungCapDataGridViewTextBoxColumn
+            // buttonKhoiTao
             // 
-            this.iDNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "IDNhaCungCap";
-            this.iDNhaCungCapDataGridViewTextBoxColumn.HeaderText = "Mã nhà cung cấp";
-            this.iDNhaCungCapDataGridViewTextBoxColumn.Name = "iDNhaCungCapDataGridViewTextBoxColumn";
-            this.iDNhaCungCapDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDNhaCungCapDataGridViewTextBoxColumn.Width = 120;
+            this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonKhoiTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKhoiTao.Location = new System.Drawing.Point(537, 164);
+            this.buttonKhoiTao.Name = "buttonKhoiTao";
+            this.buttonKhoiTao.Size = new System.Drawing.Size(101, 36);
+            this.buttonKhoiTao.TabIndex = 55;
+            this.buttonKhoiTao.Text = "Khởi tạo";
+            this.buttonKhoiTao.UseVisualStyleBackColor = false;
+            this.buttonKhoiTao.Click += new System.EventHandler(this.buttonKhoiTao_Click);
             // 
-            // tenNhaCungCapDataGridViewTextBoxColumn
+            // pictureBox7
             // 
-            this.tenNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "TenNhaCungCap";
-            this.tenNhaCungCapDataGridViewTextBoxColumn.HeaderText = "Tên nhà cung cấp";
-            this.tenNhaCungCapDataGridViewTextBoxColumn.Name = "tenNhaCungCapDataGridViewTextBoxColumn";
-            this.tenNhaCungCapDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // sDTDataGridViewTextBoxColumn
-            // 
-            this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
-            this.sDTDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
-            this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // txtMaNCC
-            // 
-            this.txtMaNCC.Location = new System.Drawing.Point(172, 41);
-            this.txtMaNCC.Multiline = true;
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(230, 28);
-            this.txtMaNCC.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 20);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Mã nhà cung cấp";
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(495, 164);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox7.TabIndex = 54;
+            this.pictureBox7.TabStop = false;
             // 
             // FormDanhMucNhaCungCap
             // 
@@ -542,6 +381,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1170, 728);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonKhoiTao);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.groupBoxTTNCC);
@@ -559,20 +400,18 @@
             this.Name = "FormDanhMucNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh mục nhà cung cấp";
-            this.Load += new System.EventHandler(this.FormDanhMucNhaCungCap_Load_1);
+            this.Load += new System.EventHandler(this.FormDanhMucNhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBoxTTNCC.ResumeLayout(false);
             this.groupBoxTTNCC.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhaCungCapBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThietBiDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -581,18 +420,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button buttonKhoiTao;
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.GroupBox groupBoxTTNCC;
-        private System.Windows.Forms.ComboBox comboBoxDC;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox txtTenNCC;
         private System.Windows.Forms.Label labelVTDat;
         private System.Windows.Forms.Label labelTenNCC;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button buttonHuy;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button buttonLuu;
         private System.Windows.Forms.Label labelTTTBYT;
         private System.Windows.Forms.TextBox textBoxTimKiem;
         private System.Windows.Forms.PictureBox Back;
@@ -610,12 +442,10 @@
         private QuanLyThietBiDataSet2 quanLyThietBiDataSet2;
         private System.Windows.Forms.BindingSource nhaCungCapBindingSource;
         private QuanLyThietBiDataSet2TableAdapters.NhaCungCapTableAdapter nhaCungCapTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDNhaCungCapDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenNhaCungCapDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtDCNCC;
+        private System.Windows.Forms.Button buttonKhoiTao;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

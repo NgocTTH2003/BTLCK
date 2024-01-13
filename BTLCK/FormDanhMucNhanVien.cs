@@ -143,11 +143,12 @@ namespace BTLCK
                     insertCommand.Parameters.AddWithValue("@TrangThaiHoatDong", txtTTHD.Text);
             
                     insertCommand.ExecuteNonQuery();
+                    MessageBox.Show("Thêm thành công.");
                     LoadData(); // Cập nhật lại dữ liệu trên DataGridView
                 }
                 else
                 {
-                    MessageBox.Show("Tên kho không tồn tại.");
+                    MessageBox.Show("Thêm không thành công.");
                 }
             }
             catch (Exception ex)

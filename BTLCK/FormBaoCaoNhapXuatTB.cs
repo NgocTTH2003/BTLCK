@@ -7,11 +7,11 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace BTLCK
 {
-    public partial class FormBaoCaoKiemKeThietBi : Form
+    public partial class FormBaoCaoNhapXuatTB : Form
     {
         private FormTrangChu formTrangChu;
 
-        public FormBaoCaoKiemKeThietBi(FormTrangChu formTrangChu)
+        public FormBaoCaoNhapXuatTB(FormTrangChu formTrangChu)
         {
             InitializeComponent();
             this.formTrangChu = formTrangChu;

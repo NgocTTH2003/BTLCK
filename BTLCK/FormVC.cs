@@ -931,5 +931,10 @@ namespace BTLCK
                     connection.Close();
             }
         }
+
+        private void buttonXuat2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hệ thống đang nâng cấp");
+        }
     }
 }

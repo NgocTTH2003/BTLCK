@@ -34,6 +34,12 @@ namespace BTLCK
             dataGridView1.Columns[1].HeaderText = "Tên kho";
             dataGridView1.Columns[2].HeaderText = "Địa chỉ";
 
+            //thêm items vào comboBoxKho
+            comboBoxKho.DataSource = table;
+            comboBoxKho.DisplayMember = "TenKho";
+
+            // Đặt sự kiện SelectedIndexChanged cho comboBoxKho
+            comboBoxKho.SelectedIndexChanged += ComboBoxKho_SelectedIndexChanged;
         }
         private void FormDanhMucKhoVatTu_Load(object sender, EventArgs e)
         {
@@ -107,10 +113,10 @@ namespace BTLCK
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem mã kho có được điền hay không
+            // Kiểm tra xem txtMaNV có được điền hay không
             if (!string.IsNullOrEmpty(txtMaKVT.Text))
             {
-                MessageBox.Show("Yêu cầu không nhập mã kho vật tư");
+                MessageBox.Show("Yêu cầu không nhập mã kho");
                 return; // Ngăn không cho hàm thực thi tiếp
             }
             // Kiểm tra kết nối và mở nếu cần thiết
@@ -123,8 +129,9 @@ namespace BTLCK
                 SqlCommand command = new SqlCommand(insertQuery, connection);
 
                 // Thêm các thông số vào câu lệnh SQL
-                command.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); // Giả sử txtTenKho là TextBox chứa tên kho
-                command.Parameters.AddWithValue("@DiaChi", comboBoxDC.Text); // Giả sử txtDiaChi là TextBox chứa địa chỉ
+                //command.Parameters.AddWithValue("@IDKhoVatTu", txtMaKVT.Text);
+                command.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); 
+                command.Parameters.AddWithValue("@DiaChi", textBoxDC.Text); 
 
                 int result = command.ExecuteNonQuery();
 
@@ -134,7 +141,6 @@ namespace BTLCK
                     LoadData(); // Cập nhật lại dữ liệu trên DataGridView1
                     //cập nhật vào comboBox
                     comboBoxKho.Items.Add(comboBoxKho.Text);
-                    comboBoxDC.Items.Add(comboBoxDC.Text);
                 }
                 else
                 {
@@ -157,7 +163,7 @@ namespace BTLCK
         {
             txtMaKVT.ResetText();  
             comboBoxKho.Text = string.Empty;
-            comboBoxDC.Text = string.Empty;
+            textBoxDC.Text = string.Empty;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -165,43 +171,37 @@ namespace BTLCK
             int i = dataGridView1.CurrentRow.Index;
             txtMaKVT.Text = dataGridView1.Rows[i].Cells[0].Value.ToString(); 
             comboBoxKho.Text = dataGridView1.Rows[i].Cells[1].Value.ToString(); 
-            comboBoxDC.Text = dataGridView1.Rows[i].Cells[2].Value.ToString(); 
+            textBoxDC.Text = dataGridView1.Rows[i].Cells[2].Value.ToString(); 
         }
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem mã kho có được điền hay không
-            if (!string.IsNullOrEmpty(txtMaKVT.Text))
-            {
-                MessageBox.Show("Yêu cầu không nhập mã kho vật tư");
-                return; // Ngăn không cho hàm thực thi tiếp
-            }
             // Kiểm tra kết nối và mở nếu cần thiết
             if (connection.State != ConnectionState.Open)
                 connection.Open();
 
             try
             {
-                string insertQuery = "INSERT INTO KhoVatTu (TenKho, DiaChi) VALUES (@TenKho, @DiaChi)";
-                SqlCommand command = new SqlCommand(insertQuery, connection);
+                string updateQuery = "UPDATE KhoVatTu SET TenKho = @TenKho, DiaChi = @DiaChi WHERE IDKhoVatTu = @IDKhoVatTu";
+                SqlCommand command = new SqlCommand(updateQuery, connection);
 
                 // Thêm các thông số vào câu lệnh SQL
-                command.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); // Giả sử txtTenKho là TextBox chứa tên kho
-                command.Parameters.AddWithValue("@DiaChi", comboBoxDC.Text); // Giả sử txtDiaChi là TextBox chứa địa chỉ
+                command.Parameters.AddWithValue("@IDKhoVatTu", txtMaKVT.Text);
+                command.Parameters.AddWithValue("@TenKho", comboBoxKho.Text); 
+                command.Parameters.AddWithValue("@DiaChi", textBoxDC.Text); 
 
                 int result = command.ExecuteNonQuery();
 
                 if (result > 0)
                 {
-                    MessageBox.Show("Thêm kho vật tư thành công.");
+                    MessageBox.Show("Sửa thành công.");
                     LoadData(); // Cập nhật lại dữ liệu trên DataGridView1
                     //cập nhật vào comboBox
                     comboBoxKho.Items.Add(comboBoxKho.Text);
-                    comboBoxDC.Items.Add(comboBoxDC.Text);
                 }
                 else
                 {
-                    MessageBox.Show("Thêm kho vật tư thất bại.");
+                    MessageBox.Show("Sửa không thành công.");
                 }
             }
             catch (Exception ex)
@@ -213,6 +213,24 @@ namespace BTLCK
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
+        }
+
+        private void ComboBoxKho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Hiển thị DiaChi tương ứng trên textBoxDC khi comboBoxKho thay đổi
+            string selectedKho = comboBoxKho.Text;
+            DataRow[] rows = table.Select($"TenKho = '{selectedKho}'");
+
+            if (rows.Length > 0)
+            {
+                string diaChi = rows[0]["DiaChi"].ToString();
+                textBoxDC.Text = diaChi;
+            }
+        }
+
+        private void buttonXoa_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sẽ nâng cấp sau");
         }
     }
 }

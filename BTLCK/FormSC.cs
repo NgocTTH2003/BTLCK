@@ -564,6 +564,16 @@ namespace BTLCK
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hệ thống đang nâng cấp");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hệ thống đang nâng cấp");
+        }
+
 
         //
     }

@@ -1,6 +1,6 @@
 ﻿namespace BTLCK
 {
-    partial class FormBaoCaoKiemKeThietBi
+    partial class FormBaoCaoNhapXuatTB
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBaoCaoKiemKeThietBi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBaoCaoNhapXuatTB));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -104,7 +104,7 @@
             this.chart1.TabIndex = 61;
             this.chart1.Text = "chart1";
             // 
-            // FormBaoCaoKiemKeThietBi
+            // FormBaoCaoNhapXuatTB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,9 +119,9 @@
             this.Controls.Add(this.labelTTTBYT);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormBaoCaoKiemKeThietBi";
+            this.Name = "FormBaoCaoNhapXuatTB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Báo cáo kiểm kê thiết bị";
+            this.Text = "Báo cáo nhập xuất thiết bị";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

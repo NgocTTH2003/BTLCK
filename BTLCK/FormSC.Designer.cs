@@ -85,6 +85,9 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.textBoxTimKiem3 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxDVSC3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTTSC3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTenTB3 = new System.Windows.Forms.ComboBox();
             this.dateTimePickerNHT3 = new System.Windows.Forms.DateTimePicker();
             this.textBoxChiPhiSC3 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -99,9 +102,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.comboBoxTenTB3 = new System.Windows.Forms.ComboBox();
-            this.comboBoxDVSC3 = new System.Windows.Forms.ComboBox();
-            this.comboBoxTTSC3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -511,6 +511,7 @@
             this.button2.TabIndex = 65;
             this.button2.Text = "Tạo yêu cầu ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox4
             // 
@@ -607,6 +608,7 @@
             this.button1.TabIndex = 53;
             this.button1.Text = "Khởi tạo";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
@@ -795,6 +797,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
             // 
+            // comboBoxDVSC3
+            // 
+            this.comboBoxDVSC3.FormattingEnabled = true;
+            this.comboBoxDVSC3.Location = new System.Drawing.Point(159, 306);
+            this.comboBoxDVSC3.Name = "comboBoxDVSC3";
+            this.comboBoxDVSC3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxDVSC3.TabIndex = 62;
+            // 
+            // comboBoxTTSC3
+            // 
+            this.comboBoxTTSC3.FormattingEnabled = true;
+            this.comboBoxTTSC3.Location = new System.Drawing.Point(159, 354);
+            this.comboBoxTTSC3.Name = "comboBoxTTSC3";
+            this.comboBoxTTSC3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTTSC3.TabIndex = 61;
+            // 
+            // comboBoxTenTB3
+            // 
+            this.comboBoxTenTB3.FormattingEnabled = true;
+            this.comboBoxTenTB3.Location = new System.Drawing.Point(159, 129);
+            this.comboBoxTenTB3.Name = "comboBoxTenTB3";
+            this.comboBoxTenTB3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTenTB3.TabIndex = 59;
+            this.comboBoxTenTB3.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenTB3_SelectedIndexChanged);
+            // 
             // dateTimePickerNHT3
             // 
             this.dateTimePickerNHT3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -918,31 +945,6 @@
             this.dataGridView3.Size = new System.Drawing.Size(425, 416);
             this.dataGridView3.TabIndex = 51;
             this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
-            // comboBoxTenTB3
-            // 
-            this.comboBoxTenTB3.FormattingEnabled = true;
-            this.comboBoxTenTB3.Location = new System.Drawing.Point(159, 129);
-            this.comboBoxTenTB3.Name = "comboBoxTenTB3";
-            this.comboBoxTenTB3.Size = new System.Drawing.Size(230, 25);
-            this.comboBoxTenTB3.TabIndex = 59;
-            this.comboBoxTenTB3.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenTB3_SelectedIndexChanged);
-            // 
-            // comboBoxDVSC3
-            // 
-            this.comboBoxDVSC3.FormattingEnabled = true;
-            this.comboBoxDVSC3.Location = new System.Drawing.Point(159, 306);
-            this.comboBoxDVSC3.Name = "comboBoxDVSC3";
-            this.comboBoxDVSC3.Size = new System.Drawing.Size(230, 25);
-            this.comboBoxDVSC3.TabIndex = 62;
-            // 
-            // comboBoxTTSC3
-            // 
-            this.comboBoxTTSC3.FormattingEnabled = true;
-            this.comboBoxTTSC3.Location = new System.Drawing.Point(159, 354);
-            this.comboBoxTTSC3.Name = "comboBoxTTSC3";
-            this.comboBoxTTSC3.Size = new System.Drawing.Size(230, 25);
-            this.comboBoxTTSC3.TabIndex = 61;
             // 
             // FormSC
             // 

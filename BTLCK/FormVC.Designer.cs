@@ -86,6 +86,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxTinhTrang3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTenTB3 = new System.Windows.Forms.ComboBox();
+            this.textBoxMaTB3 = new System.Windows.Forms.TextBox();
             this.textBoxSL = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerNN3 = new System.Windows.Forms.DateTimePicker();
@@ -111,9 +114,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.textBoxTimKiem3 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.comboBoxTenTB3 = new System.Windows.Forms.ComboBox();
-            this.textBoxMaTB3 = new System.Windows.Forms.TextBox();
-            this.comboBoxTinhTrang3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -703,6 +703,7 @@
             this.buttonXuat2.TabIndex = 67;
             this.buttonXuat2.Text = "Xuất file";
             this.buttonXuat2.UseVisualStyleBackColor = false;
+            this.buttonXuat2.Click += new System.EventHandler(this.buttonXuat2_Click);
             // 
             // pictureBox5
             // 
@@ -806,6 +807,31 @@
             this.groupBox2.TabIndex = 63;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
+            // 
+            // comboBoxTinhTrang3
+            // 
+            this.comboBoxTinhTrang3.FormattingEnabled = true;
+            this.comboBoxTinhTrang3.Location = new System.Drawing.Point(166, 376);
+            this.comboBoxTinhTrang3.Name = "comboBoxTinhTrang3";
+            this.comboBoxTinhTrang3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTinhTrang3.TabIndex = 71;
+            // 
+            // comboBoxTenTB3
+            // 
+            this.comboBoxTenTB3.FormattingEnabled = true;
+            this.comboBoxTenTB3.Location = new System.Drawing.Point(166, 112);
+            this.comboBoxTenTB3.Name = "comboBoxTenTB3";
+            this.comboBoxTenTB3.Size = new System.Drawing.Size(230, 25);
+            this.comboBoxTenTB3.TabIndex = 70;
+            this.comboBoxTenTB3.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenVC3_SelectedIndexChanged);
+            // 
+            // textBoxMaTB3
+            // 
+            this.textBoxMaTB3.Location = new System.Drawing.Point(166, 65);
+            this.textBoxMaTB3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMaTB3.Name = "textBoxMaTB3";
+            this.textBoxMaTB3.Size = new System.Drawing.Size(230, 23);
+            this.textBoxMaTB3.TabIndex = 69;
             // 
             // textBoxSL
             // 
@@ -1057,31 +1083,6 @@
             this.dataGridView3.Size = new System.Drawing.Size(441, 416);
             this.dataGridView3.TabIndex = 51;
             this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
-            // comboBoxTenTB3
-            // 
-            this.comboBoxTenTB3.FormattingEnabled = true;
-            this.comboBoxTenTB3.Location = new System.Drawing.Point(166, 112);
-            this.comboBoxTenTB3.Name = "comboBoxTenTB3";
-            this.comboBoxTenTB3.Size = new System.Drawing.Size(230, 25);
-            this.comboBoxTenTB3.TabIndex = 70;
-            this.comboBoxTenTB3.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenVC3_SelectedIndexChanged);
-            // 
-            // textBoxMaTB3
-            // 
-            this.textBoxMaTB3.Location = new System.Drawing.Point(166, 65);
-            this.textBoxMaTB3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxMaTB3.Name = "textBoxMaTB3";
-            this.textBoxMaTB3.Size = new System.Drawing.Size(230, 23);
-            this.textBoxMaTB3.TabIndex = 69;
-            // 
-            // comboBoxTinhTrang3
-            // 
-            this.comboBoxTinhTrang3.FormattingEnabled = true;
-            this.comboBoxTinhTrang3.Location = new System.Drawing.Point(166, 376);
-            this.comboBoxTinhTrang3.Name = "comboBoxTinhTrang3";
-            this.comboBoxTinhTrang3.Size = new System.Drawing.Size(230, 25);
-            this.comboBoxTinhTrang3.TabIndex = 71;
             // 
             // FormVC
             // 

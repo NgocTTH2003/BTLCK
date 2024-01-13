@@ -39,7 +39,6 @@
             this.txtMaKVT = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxKho = new System.Windows.Forms.ComboBox();
-            this.comboBoxDC = new System.Windows.Forms.ComboBox();
             this.labelVTDat = new System.Windows.Forms.Label();
             this.labelTenNCC = new System.Windows.Forms.Label();
             this.labelTTTBYT = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.buttonXoa = new System.Windows.Forms.Button();
+            this.textBoxDC = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Back)).BeginInit();
@@ -67,7 +67,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(428, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(549, 110);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 36);
             this.pictureBox1.TabIndex = 69;
@@ -80,7 +80,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(176, 164);
+            this.pictureBox3.Location = new System.Drawing.Point(227, 164);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 36);
             this.pictureBox3.TabIndex = 74;
@@ -116,18 +116,18 @@
             this.groupBoxKho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBoxKho.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxKho.Controls.Add(this.textBoxDC);
             this.groupBoxKho.Controls.Add(this.buttonKhoiTao);
             this.groupBoxKho.Controls.Add(this.pictureBox7);
             this.groupBoxKho.Controls.Add(this.txtMaKVT);
             this.groupBoxKho.Controls.Add(this.label2);
             this.groupBoxKho.Controls.Add(this.comboBoxKho);
-            this.groupBoxKho.Controls.Add(this.comboBoxDC);
             this.groupBoxKho.Controls.Add(this.labelVTDat);
             this.groupBoxKho.Controls.Add(this.labelTenNCC);
             this.groupBoxKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxKho.Location = new System.Drawing.Point(20, 231);
             this.groupBoxKho.Name = "groupBoxKho";
-            this.groupBoxKho.Size = new System.Drawing.Size(458, 307);
+            this.groupBoxKho.Size = new System.Drawing.Size(565, 307);
             this.groupBoxKho.TabIndex = 77;
             this.groupBoxKho.TabStop = false;
             this.groupBoxKho.Text = "Thông tin";
@@ -136,7 +136,7 @@
             // 
             this.buttonKhoiTao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonKhoiTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonKhoiTao.Location = new System.Drawing.Point(301, 25);
+            this.buttonKhoiTao.Location = new System.Drawing.Point(378, 25);
             this.buttonKhoiTao.Name = "buttonKhoiTao";
             this.buttonKhoiTao.Size = new System.Drawing.Size(101, 36);
             this.buttonKhoiTao.TabIndex = 35;
@@ -149,7 +149,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(412, 25);
+            this.pictureBox7.Location = new System.Drawing.Point(489, 25);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(36, 36);
             this.pictureBox7.TabIndex = 34;
@@ -159,7 +159,7 @@
             // 
             this.txtMaKVT.Location = new System.Drawing.Point(172, 81);
             this.txtMaKVT.Name = "txtMaKVT";
-            this.txtMaKVT.Size = new System.Drawing.Size(230, 26);
+            this.txtMaKVT.Size = new System.Drawing.Size(353, 26);
             this.txtMaKVT.TabIndex = 33;
             // 
             // label2
@@ -174,30 +174,11 @@
             // comboBoxKho
             // 
             this.comboBoxKho.FormattingEnabled = true;
-            this.comboBoxKho.Items.AddRange(new object[] {
-            "Kho thiết bị loại A",
-            "Kho thiết bị loại B",
-            "Kho thiết bị loại C",
-            "Kho thiết bị loại D",
-            "Kho thiết bị loại E"});
             this.comboBoxKho.Location = new System.Drawing.Point(172, 163);
             this.comboBoxKho.Name = "comboBoxKho";
-            this.comboBoxKho.Size = new System.Drawing.Size(230, 28);
+            this.comboBoxKho.Size = new System.Drawing.Size(353, 28);
             this.comboBoxKho.TabIndex = 30;
-            // 
-            // comboBoxDC
-            // 
-            this.comboBoxDC.FormattingEnabled = true;
-            this.comboBoxDC.Items.AddRange(new object[] {
-            "Tòa A - Bệnh viện đa khoa huyện Mê Linh",
-            "Tòa B - Bệnh viện đa khoa huyện Mê Linh",
-            "Tòa C - Bệnh viện đa khoa huyện Mê Linh",
-            "Tòa D - Bệnh viện đa khoa huyện Mê Linh",
-            "Tòa E - Bệnh viện đa khoa huyện Mê Linh"});
-            this.comboBoxDC.Location = new System.Drawing.Point(172, 252);
-            this.comboBoxDC.Name = "comboBoxDC";
-            this.comboBoxDC.Size = new System.Drawing.Size(230, 28);
-            this.comboBoxDC.TabIndex = 27;
+            this.comboBoxKho.SelectedIndexChanged += new System.EventHandler(this.ComboBoxKho_SelectedIndexChanged);
             // 
             // labelVTDat
             // 
@@ -235,7 +216,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSua.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSua.Location = new System.Drawing.Point(218, 164);
+            this.buttonSua.Location = new System.Drawing.Point(269, 164);
             this.buttonSua.Name = "buttonSua";
             this.buttonSua.Size = new System.Drawing.Size(101, 36);
             this.buttonSua.TabIndex = 75;
@@ -278,7 +259,7 @@
             this.textBoxTimKiem.Location = new System.Drawing.Point(108, 110);
             this.textBoxTimKiem.Multiline = true;
             this.textBoxTimKiem.Name = "textBoxTimKiem";
-            this.textBoxTimKiem.Size = new System.Drawing.Size(314, 34);
+            this.textBoxTimKiem.Size = new System.Drawing.Size(435, 34);
             this.textBoxTimKiem.TabIndex = 67;
             this.textBoxTimKiem.TextChanged += new System.EventHandler(this.textBoxTimKiem_TextChanged);
             this.textBoxTimKiem.Enter += new System.EventHandler(this.textBoxTimKiem_Enter);
@@ -291,9 +272,9 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(502, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(607, 110);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 591);
+            this.dataGridView1.Size = new System.Drawing.Size(537, 591);
             this.dataGridView1.TabIndex = 80;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -304,7 +285,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(335, 164);
+            this.pictureBox5.Location = new System.Drawing.Point(442, 164);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(36, 36);
             this.pictureBox5.TabIndex = 78;
@@ -316,12 +297,20 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonXoa.Location = new System.Drawing.Point(377, 164);
+            this.buttonXoa.Location = new System.Drawing.Point(484, 164);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(101, 36);
             this.buttonXoa.TabIndex = 79;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = false;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
+            // 
+            // textBoxDC
+            // 
+            this.textBoxDC.Location = new System.Drawing.Point(172, 252);
+            this.textBoxDC.Name = "textBoxDC";
+            this.textBoxDC.Size = new System.Drawing.Size(353, 26);
+            this.textBoxDC.TabIndex = 36;
             // 
             // FormDanhMucKhoVatTu
             // 
@@ -374,7 +363,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBoxKho;
         private System.Windows.Forms.ComboBox comboBoxKho;
-        private System.Windows.Forms.ComboBox comboBoxDC;
         private System.Windows.Forms.Label labelVTDat;
         private System.Windows.Forms.Label labelTenNCC;
         private System.Windows.Forms.Label labelTTTBYT;
@@ -389,5 +377,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button buttonXoa;
+        private System.Windows.Forms.TextBox textBoxDC;
     }
 }
